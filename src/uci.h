@@ -68,6 +68,7 @@ private:
 };
 
 void init(OptionsMap&);
+bool command(const std::string&);
 void loop(int argc, char* argv[]);
 std::string value(Value v);
 std::string square(Square s);

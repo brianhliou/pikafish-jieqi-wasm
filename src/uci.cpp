@@ -262,28 +262,28 @@ namespace {
 } // namespace
 
 
-/// UCI::loop() waits for a command from the stdin, parses it and then calls the appropriate
-/// function. It also intercepts an end-of-file (EOF) indication from the stdin to ensure a
-/// graceful exit if the GUI dies unexpectedly. When called with some command-line arguments, 
-/// like running 'bench', the function returns immediately after the command is executed.
-/// In addition to the UCI ones, some additional debug commands are also supported.
-
-void UCI::loop(int argc, char* argv[]) {
-
+struct UciSession {
   Position pos;
-  string token, cmd;
-  StateListPtr states(new std::deque<StateInfo>(1));
-
-  pos.set(StartFEN, &states->back(), Threads.main());
-
-  for (int i = 1; i < argc; ++i)
-      cmd += std::string(argv[i]) + " ";
-
+  StateListPtr states{new std::deque<StateInfo>(1)};
   std::vector<Move> banmoves = {};
 
-  do {
-      if (argc == 1 && !getline(cin, cmd)) // Wait for an input or an end-of-file (EOF) indication
-          cmd = "quit";
+  UciSession() {
+    pos.set(StartFEN, &states->back(), Threads.main());
+  }
+};
+
+UciSession& uci_session() {
+  static UciSession session;
+  return session;
+}
+
+bool UCI::command(const std::string& cmd) {
+
+      auto& session = uci_session();
+      auto& pos = session.pos;
+      auto& states = session.states;
+      auto& banmoves = session.banmoves;
+      string token;
 
       istringstream is(cmd);
 
@@ -346,7 +346,28 @@ void UCI::loop(int argc, char* argv[]) {
       else if (!token.empty() && token[0] != '#')
           sync_cout << "Unknown command: '" << cmd << "'. Type help for more information." << sync_endl;
 
-  } while (token != "quit" && argc == 1); // The command-line arguments are one-shot
+      return token == "quit";
+}
+
+
+/// UCI::loop() waits for a command from the stdin, parses it and then calls the appropriate
+/// function. It also intercepts an end-of-file (EOF) indication from the stdin to ensure a
+/// graceful exit if the GUI dies unexpectedly. When called with some command-line arguments,
+/// like running 'bench', the function returns immediately after the command is executed.
+/// In addition to the UCI ones, some additional debug commands are also supported.
+
+void UCI::loop(int argc, char* argv[]) {
+
+  string cmd;
+
+  for (int i = 1; i < argc; ++i)
+      cmd += std::string(argv[i]) + " ";
+
+  do {
+      if (argc == 1 && !getline(cin, cmd)) // Wait for an input or an end-of-file (EOF) indication
+          cmd = "quit";
+
+  } while (!UCI::command(cmd) && argc == 1); // The command-line arguments are one-shot
 }
 
 
