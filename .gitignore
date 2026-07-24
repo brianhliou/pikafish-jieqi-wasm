@@ -14,8 +14,9 @@ src/x64/
 
 # Built binary
 src/pikafish*
+src/PikaJieQi*
+dist/
 src/-lstdc++.res
 
 # Neural network for the NNUE evaluation
 **/*.nnue
-

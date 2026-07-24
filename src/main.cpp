@@ -21,9 +21,19 @@
 #include "thread.h"
 #include "uci.h"
 
+#ifdef __EMSCRIPTEN__
+#include <emscripten/emscripten.h>
+#endif
+
 using namespace Stockfish;
 
-int main(int argc, char* argv[]) {
+namespace {
+
+void initialize_engine(int argc, char* argv[]) {
+  static bool initialized = false;
+  if (initialized)
+      return;
+  initialized = true;
 
   std::cout << engine_info() << std::endl;
 
@@ -36,9 +46,37 @@ int main(int argc, char* argv[]) {
   Threads.set(size_t(Options["Threads"]));
   Search::clear(); // After threads are up
   Eval::NNUE::init();
+}
 
+}
+
+#ifdef __EMSCRIPTEN__
+extern "C" {
+
+EMSCRIPTEN_KEEPALIVE
+void pikajieqi_initialize() {
+  char program[] = "PikaJieQi";
+  char* argv[] = {program, nullptr};
+  initialize_engine(1, argv);
+}
+
+EMSCRIPTEN_KEEPALIVE
+void pikajieqi_command(const char* command) {
+  if (command)
+      UCI::command(command);
+}
+
+}
+#endif
+
+int main(int argc, char* argv[]) {
+
+  initialize_engine(argc, argv);
+
+#ifndef __EMSCRIPTEN__
   UCI::loop(argc, argv);
 
   Threads.set(0);
+#endif
   return 0;
 }
