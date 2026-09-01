@@ -348,6 +348,13 @@ private:
 };
 
 
+// Forced-loss share required to override the clamped average: MATELOSS_DEN/MATELOSS_NUM.
+// 1/2 = at least half the flip outcomes lose by force.
+#ifndef MATELOSS_NUM
+#define MATELOSS_NUM 2
+#define MATELOSS_DEN 1
+#endif
+
 class ScoreCalc {
 public:
     ScoreCalc(int Ldepth, int depth, bool us) :
@@ -359,6 +366,10 @@ public:
         if (!_us) score *= -1;
         if (_min > score)_min = score;
         if (_max < score)_max = score;
+        // Count flip outcomes that lose by force. The clamp below is left exactly
+        // as-is: _totalScore/_totalCount/_min/_max stay bit-identical to upstream,
+        // so every case upstream already gets right is untouched.
+        if (score <= -VALUE_MATE_IN_MAX_PLY) _mateLossCount += count;
         score = std::clamp(score, -DARKVALRATE, DARKVALRATE);
         _totalScore += score * count;
         _totalCount += count;
@@ -383,6 +394,10 @@ public:
         {
             v = evg;
         }
+        // A clamped average cannot express "most revealed identities lose by force".
+        // _min is the true worst outcome, so this never raises v, and where the
+        // chain above already chose _min it changes nothing.
+        if (_mateLossCount * MATELOSS_NUM >= _totalCount * MATELOSS_DEN) v = std::min(v, _min);
         if (!_us) v *= -1;
         assert(v > -VALUE_INFINITE && v < VALUE_INFINITE);
         return Value(v);
@@ -399,6 +414,7 @@ private:
     //int _types = 0;
     int _min = 99999999;
     int _max = -99999999;
+    int _mateLossCount = 0;
 };
 
 
