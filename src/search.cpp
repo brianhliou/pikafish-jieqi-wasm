@@ -1680,6 +1680,17 @@ dark_undo:
     }
 
     Thread* thisThread = pos.this_thread();
+
+    // qsearch had no time check and no stop check, and the jieqi dark-piece
+    // recursion re-enters it at depth 0 without reducing depth, so a thread in
+    // one of these tails could not be stopped by `go movetime` and bestmove
+    // waited on the slowest helper. Same contract as search(): a value returned
+    // after a stop is discarded by the caller.
+    if (thisThread == Threads.main())
+        static_cast<MainThread*>(thisThread)->check_time();
+    if (Threads.stop.load(std::memory_order_relaxed))
+        return VALUE_ZERO;
+
     bestMove = MOVE_NONE;
     ss->inCheck = pos.checkers();
     moveCount = 0;
