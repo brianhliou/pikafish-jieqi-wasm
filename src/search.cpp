@@ -1355,6 +1355,13 @@ dark_while:
       
 
 dark_calc:
+      // Each revealed identity is its own child: the re-search decisions below must
+      // read this identity's result, not the minimum over the identities searched
+      // before it, or one identity failing low skips the PV search of the rest and
+      // their null-window bounds get averaged as scores. #497.
+      if (fromWhile)
+          darkTryTimes = 0;
+
       // Step 16. Late moves reduction / extension (LMR, ~98 Elo)
       // We use various heuristics for the sons of a node after the first son has
       // been searched. In general we would like to reduce them, but there are many
@@ -1461,6 +1468,20 @@ dark_calc:
 
           vTmp = -search<PV>(pos, ss+1, -beta, -alpha,
               isDarkDepth ? 0 : std::min(maxNextDepth, newDepth), false);
+
+          // A revealed identity's score is averaged, not compared with alpha, so a
+          // fail-low is not good enough: it returns the window edge and the average
+          // took it as exact (three mated identities scored at alpha, #497). Only a
+          // fail-low over-rates the average, so re-search those, at the root only:
+          // everywhere cost ~150 Elo in depth; the root alone costs ~20 and cut the
+          // over-rated decisive reveals in our 71-position set from 16 to 3.
+          if (fromWhile && ss->ply == 0 && vTmp <= alpha)
+          {
+              (ss+1)->pv = pv;
+              (ss+1)->pv[0] = MOVE_NONE;
+              vTmp = -search<PV>(pos, ss+1, -(alpha+1), VALUE_INFINITE,
+                  isDarkDepth ? 0 : std::min(maxNextDepth, newDepth), false);
+          }
           //get worse
           if (darkTryTimes == 0 || vTmp < value) value = vTmp;
           darkTryTimes++;

@@ -357,10 +357,14 @@ private:
 
 class ScoreCalc {
 public:
-    ScoreCalc(int Ldepth, int depth, bool us) :
-        _Ldepth(Ldepth), _depth(depth), _us(us){}
+    // Every caller appends -search(child), which is already from the mover's point
+    // of view. The old code flipped it for one colour, keyed on firstSideMove, a
+    // field nothing assigns (so always Red): Black's reveals (and Red's, at the
+    // ProbCut site) took the best identity instead of the worst. #497.
+    ScoreCalc(int Ldepth, int depth, bool) :
+        _Ldepth(Ldepth), _depth(depth), _us(true){}
 
-    void setUs(bool us) { _us = !us; }
+    void setUs(bool) {}
 
     void append(Piece p, int score, int count) {
         if (!_us) score *= -1;
