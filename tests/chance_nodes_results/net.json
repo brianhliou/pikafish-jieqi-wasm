@@ -1,0 +1,7 @@
+{
+  "raw_sha256": "3b7fe3801d9ad2026967716431b89e85e856367233a42f97d1a10db086f2289c",
+  "raw_bytes": 16229159,
+  "wrapped_sha256": "75125bf89d5f1ad60051a1283a9becb481e52f1c2a1f5ff94275e2248e3f091c",
+  "wrapped_bytes": 10564746,
+  "explanation": "The supplied raw NNUE is wrapped in zstd, required by read_compressed_nnue; weights unchanged."
+}

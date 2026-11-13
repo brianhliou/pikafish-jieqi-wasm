@@ -1,0 +1,20 @@
+{
+  "wins": 70,
+  "losses": 79,
+  "draws": 51,
+  "games": 200,
+  "score": 0.4775,
+  "score_percent": 47.75,
+  "score_standard_error": 0.030551361318146848,
+  "score_95_interval": [
+    0.417620432137762,
+    0.537379567862238
+  ],
+  "elo": -15.645167545330589,
+  "elo_95_interval": [
+    -57.76975656105836,
+    26.02253592173358
+  ],
+  "interval_method": "normal score interval from unbiased trinomial sample variance, transformed to Elo",
+  "log_sha256": "831d71ec793c31626585cd4eb41bbc9d37fdaf5a6b6043e53ef27b6e328b8582"
+}

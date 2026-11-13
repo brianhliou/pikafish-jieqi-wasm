@@ -1,0 +1,3 @@
+FAIL one winning identity plus three losing identities is a non-mate expectation
+FAIL opposite fail-soft bounds do not bias the null-window expectation
+7 checks, 2 failures

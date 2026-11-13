@@ -1,0 +1,228 @@
+Pikafish dev-20250808-9b963f72 by the Pikafish developers (see AUTHORS file)
+info string Using 1 thread
+info string NNUE evaluation using pikafish.nnue (30MiB, (7560, 2048, 15, 32, 1))
+info depth 1 seldepth 4 multipv 1 score cp -107 nodes 345 nps 345000 hashfull 1 tbhits 0 time 1 pv e3e4
+info depth 2 seldepth 4 multipv 1 score cp -107 nodes 661 nps 661000 hashfull 1 tbhits 0 time 1 pv e3e4
+info depth 3 seldepth 4 multipv 1 score cp -107 nodes 998 nps 998000 hashfull 1 tbhits 0 time 1 pv e3e4
+info depth 4 seldepth 4 multipv 1 score cp -107 nodes 1358 nps 1358000 hashfull 1 tbhits 0 time 1 pv e3e4
+info depth 5 seldepth 6 multipv 1 score cp -105 nodes 1741 nps 1741000 hashfull 1 tbhits 0 time 1 pv e3e4
+info depth 6 seldepth 8 multipv 1 score cp -122 nodes 6297 nps 1259400 hashfull 2 tbhits 0 time 5 pv e3e4
+info depth 7 seldepth 9 multipv 1 score cp -101 nodes 7035 nps 1172500 hashfull 3 tbhits 0 time 6 pv e3e4
+info depth 8 seldepth 11 multipv 1 score cp -88 nodes 9774 nps 1086000 hashfull 4 tbhits 0 time 9 pv e3e4
+info depth 9 seldepth 15 multipv 1 score cp -117 nodes 16475 nps 1098333 hashfull 6 tbhits 0 time 15 pv e3e4
+info depth 10 seldepth 19 multipv 1 score cp -148 nodes 28437 nps 980586 hashfull 12 tbhits 0 time 29 pv h2h5
+info depth 11 seldepth 17 multipv 1 score cp -147 nodes 58344 nps 788432 hashfull 30 tbhits 0 time 74 pv h2h5
+info depth 12 seldepth 17 multipv 1 score cp -147 nodes 60619 nps 787259 hashfull 32 tbhits 0 time 77 pv h2h5
+info depth 13 seldepth 18 multipv 1 score cp -150 nodes 158783 nps 699484 hashfull 97 tbhits 0 time 227 pv h2h5
+bestmove h2h5
+info string NNUE evaluation using pikafish.nnue (30MiB, (7560, 2048, 15, 32, 1))
+info depth 1 seldepth 6 multipv 1 score cp -533 nodes 432 nps 432000 hashfull 0 tbhits 0 time 1 pv b0d1
+info depth 2 seldepth 3 multipv 1 score cp -533 nodes 700 nps 700000 hashfull 0 tbhits 0 time 1 pv b0d1
+info depth 3 seldepth 3 multipv 1 score cp -525 nodes 978 nps 978000 hashfull 0 tbhits 0 time 1 pv b0d1
+info depth 4 seldepth 7 multipv 1 score cp -428 nodes 1600 nps 1600000 hashfull 0 tbhits 0 time 1 pv b0d1
+info depth 5 seldepth 8 multipv 1 score cp -425 nodes 2472 nps 2472000 hashfull 0 tbhits 0 time 1 pv b0d1
+info depth 6 seldepth 7 multipv 1 score cp -421 nodes 4324 nps 2162000 hashfull 0 tbhits 0 time 2 pv b0d1
+info depth 7 seldepth 9 multipv 1 score cp -396 nodes 9868 nps 1096444 hashfull 5 tbhits 0 time 9 pv b0d1
+info depth 8 seldepth 17 multipv 1 score cp -378 nodes 14421 nps 961400 hashfull 8 tbhits 0 time 15 pv b0d1
+info depth 9 seldepth 13 multipv 1 score cp -304 nodes 19216 nps 960800 hashfull 10 tbhits 0 time 20 pv b0d1
+info depth 10 seldepth 12 multipv 1 score cp -321 nodes 24811 nps 918925 hashfull 13 tbhits 0 time 27 pv b0c2
+info depth 11 seldepth 13 multipv 1 score cp -349 nodes 51472 nps 830193 hashfull 32 tbhits 0 time 62 pv b0c2
+info depth 12 seldepth 19 multipv 1 score cp -337 nodes 133929 nps 797196 hashfull 75 tbhits 0 time 168 pv b0c2
+info depth 13 seldepth 23 multipv 1 score cp -325 nodes 226268 nps 834937 hashfull 120 tbhits 0 time 271 pv b0c2
+bestmove b0c2
+info string NNUE evaluation using pikafish.nnue (30MiB, (7560, 2048, 15, 32, 1))
+info depth 1 seldepth 4 multipv 1 score cp -128 nodes 13 nps 13000 hashfull 0 tbhits 0 time 1 pv d0e1
+info depth 2 seldepth 4 multipv 1 score cp -128 nodes 20 nps 20000 hashfull 0 tbhits 0 time 1 pv d0e1
+info depth 3 seldepth 4 multipv 1 score cp -127 nodes 35 nps 35000 hashfull 0 tbhits 0 time 1 pv d0e1
+info depth 4 seldepth 8 multipv 1 score cp -125 nodes 74 nps 74000 hashfull 0 tbhits 0 time 1 pv d0e1
+info depth 5 seldepth 5 multipv 1 score cp -117 nodes 177 nps 177000 hashfull 0 tbhits 0 time 1 pv d0e1
+info depth 6 seldepth 7 multipv 1 score cp -91 nodes 328 nps 328000 hashfull 0 tbhits 0 time 1 pv d0e1
+info depth 7 seldepth 8 multipv 1 score cp -96 nodes 552 nps 552000 hashfull 0 tbhits 0 time 1 pv d0e1
+info depth 8 seldepth 10 multipv 1 score cp -93 nodes 631 nps 631000 hashfull 0 tbhits 0 time 1 pv d0e1
+info depth 9 seldepth 13 multipv 1 score cp -28 nodes 769 nps 769000 hashfull 0 tbhits 0 time 1 pv d0e1
+info depth 10 seldepth 15 multipv 1 score cp -11 nodes 3767 nps 941750 hashfull 2 tbhits 0 time 4 pv d0e1
+info depth 11 seldepth 18 multipv 1 score cp -56 nodes 11020 nps 787142 hashfull 6 tbhits 0 time 14 pv d0e1
+info depth 12 seldepth 24 multipv 1 score cp -68 nodes 41053 nps 804960 hashfull 23 tbhits 0 time 51 pv d0e1
+info depth 13 seldepth 23 multipv 1 score cp -66 nodes 62659 nps 773567 hashfull 32 tbhits 0 time 81 pv d0e1
+bestmove d0e1
+info string NNUE evaluation using pikafish.nnue (30MiB, (7560, 2048, 15, 32, 1))
+info depth 1 seldepth 8 multipv 1 score cp 48 nodes 273 nps 273000 hashfull 0 tbhits 0 time 1 pv e8e9
+info depth 2 seldepth 4 multipv 1 score cp 48 nodes 462 nps 462000 hashfull 0 tbhits 0 time 1 pv e8e9
+info depth 3 seldepth 4 multipv 1 score cp 95 nodes 667 nps 667000 hashfull 0 tbhits 0 time 1 pv e8e9
+info depth 4 seldepth 8 multipv 1 score cp 43 nodes 2211 nps 2211000 hashfull 0 tbhits 0 time 1 pv e8e9 c2a4 b6e6 d5e6
+info depth 5 seldepth 7 multipv 1 score cp 102 nodes 2468 nps 2468000 hashfull 0 tbhits 0 time 1 pv e8e9
+info depth 6 seldepth 7 multipv 1 score cp 106 nodes 2811 nps 2811000 hashfull 0 tbhits 0 time 1 pv e8e9 c2a4 i7i3
+info depth 7 seldepth 9 multipv 1 score cp 115 nodes 3371 nps 1685500 hashfull 0 tbhits 0 time 2 pv e8e9 a0a4
+info depth 8 seldepth 16 multipv 1 score cp 120 nodes 4518 nps 1506000 hashfull 1 tbhits 0 time 3 pv e8e9 c3c4
+info depth 9 seldepth 15 multipv 1 score cp 114 nodes 9989 nps 1109888 hashfull 4 tbhits 0 time 9 pv e8e9 e6e2 h9f8
+info depth 10 seldepth 18 multipv 1 score cp 112 nodes 12418 nps 1034833 hashfull 6 tbhits 0 time 12 pv e8e9 e6e2 h9f8
+info depth 11 seldepth 14 multipv 1 score cp 112 nodes 15503 nps 968937 hashfull 7 tbhits 0 time 16 pv e8e9 e6e2 h9f8
+info depth 12 seldepth 19 multipv 1 score cp 110 nodes 24428 nps 842344 hashfull 14 tbhits 0 time 29 pv e8e9 e6e2 h9f8
+info depth 13 seldepth 19 multipv 1 score cp 113 nodes 34727 nps 789250 hashfull 21 tbhits 0 time 44 pv e8e9 f0e1
+bestmove e8e9 ponder f0e1
+info string NNUE evaluation using pikafish.nnue (30MiB, (7560, 2048, 15, 32, 1))
+info depth 1 seldepth 10 multipv 1 score cp -480 nodes 295 nps 295000 hashfull 1 tbhits 0 time 1 pv a0b0
+info depth 2 seldepth 8 multipv 1 score cp -509 nodes 568 nps 568000 hashfull 1 tbhits 0 time 1 pv a0b0
+info depth 3 seldepth 8 multipv 1 score cp -533 nodes 874 nps 874000 hashfull 1 tbhits 0 time 1 pv d4g4 d8d9
+info depth 4 seldepth 10 multipv 1 score cp -546 nodes 1077 nps 1077000 hashfull 1 tbhits 0 time 1 pv d4f4
+info depth 5 seldepth 7 multipv 1 score cp -550 nodes 1274 nps 1274000 hashfull 1 tbhits 0 time 1 pv d4g4 d8d9 g4g6 g7f9 g6e6 f9e7
+info depth 6 seldepth 7 multipv 1 score cp -550 nodes 1429 nps 1429000 hashfull 1 tbhits 0 time 1 pv d4g4 d8d9 g4g6 g7f9 g6e6 f9e7
+info depth 7 seldepth 7 multipv 1 score cp -550 nodes 1584 nps 1584000 hashfull 1 tbhits 0 time 1 pv d4g4 d8d9 g4g6 g7f9 g6e6 f9e7
+info depth 8 seldepth 11 multipv 1 score cp -531 nodes 1793 nps 1793000 hashfull 1 tbhits 0 time 1 pv d4g4 d8d9 g4g6 d9d5 g6g4
+info depth 9 seldepth 10 multipv 1 score cp -549 nodes 2061 nps 2061000 hashfull 1 tbhits 0 time 1 pv d4g4 d8d9 g4g6 d9d5 g6g4 g7f9 g4g9 d3d1 g9g4
+info depth 10 seldepth 13 multipv 1 score cp -524 nodes 2476 nps 2476000 hashfull 1 tbhits 0 time 1 pv d4g4 d8h8 g4f4 d3d9 f4g4 d9d2
+info depth 11 seldepth 14 multipv 1 score cp -516 nodes 3443 nps 1721500 hashfull 1 tbhits 0 time 2 pv d4d3 d8d3 a0b0
+info depth 12 seldepth 15 multipv 1 score cp -473 nodes 4306 nps 1435333 hashfull 2 tbhits 0 time 3 pv d4d3 d8d3 a0b0
+info depth 13 seldepth 18 multipv 1 score cp -452 nodes 5776 nps 1155200 hashfull 3 tbhits 0 time 5 pv d4d3 d8d3 a0b0
+bestmove d4d3 ponder d8d3
+info string NNUE evaluation using pikafish.nnue (30MiB, (7560, 2048, 15, 32, 1))
+info depth 1 seldepth 5 multipv 1 score cp -692 nodes 138 nps 138000 hashfull 0 tbhits 0 time 1 pv h9f8
+info depth 2 seldepth 3 multipv 1 score cp -692 nodes 213 nps 213000 hashfull 0 tbhits 0 time 1 pv h9f8
+info depth 3 seldepth 7 multipv 1 score cp -699 nodes 301 nps 301000 hashfull 0 tbhits 0 time 1 pv h9f8
+info depth 4 seldepth 7 multipv 1 score cp -707 nodes 435 nps 435000 hashfull 0 tbhits 0 time 1 pv h9f8
+info depth 5 seldepth 7 multipv 1 score cp -707 nodes 533 nps 533000 hashfull 0 tbhits 0 time 1 pv h9f8
+info depth 6 seldepth 7 multipv 1 score cp -712 nodes 728 nps 364000 hashfull 0 tbhits 0 time 2 pv a9a6
+info depth 7 seldepth 10 multipv 1 score cp -711 nodes 918 nps 459000 hashfull 0 tbhits 0 time 2 pv a9a6
+info depth 8 seldepth 13 multipv 1 score cp -713 nodes 1563 nps 521000 hashfull 0 tbhits 0 time 3 pv a9a6
+info depth 9 seldepth 17 multipv 1 score cp -713 nodes 2744 nps 548800 hashfull 0 tbhits 0 time 5 pv a9a6
+info depth 10 seldepth 16 multipv 1 score cp -717 nodes 6168 nps 616800 hashfull 2 tbhits 0 time 10 pv a9a6
+info depth 11 seldepth 17 multipv 1 score cp -711 nodes 10657 nps 626882 hashfull 6 tbhits 0 time 17 pv a9a6
+info depth 12 seldepth 18 multipv 1 score cp -700 nodes 28443 nps 646431 hashfull 20 tbhits 0 time 44 pv a9a6
+info depth 13 seldepth 23 multipv 1 score cp -681 nodes 93174 nps 629554 hashfull 63 tbhits 0 time 148 pv c5d4 c6c4 h9f8
+bestmove c5d4 ponder c6c4
+info string NNUE evaluation using pikafish.nnue (30MiB, (7560, 2048, 15, 32, 1))
+info depth 1 seldepth 3 multipv 1 score cp 52 nodes 95 nps 95000 hashfull 0 tbhits 0 time 1 pv g8g5
+info depth 2 seldepth 2 multipv 1 score cp 52 nodes 186 nps 186000 hashfull 0 tbhits 0 time 1 pv g8g5
+info depth 3 seldepth 6 multipv 1 score cp -3 nodes 1073 nps 1073000 hashfull 0 tbhits 0 time 1 pv h7h1
+info depth 4 seldepth 7 multipv 1 score cp 41 nodes 1308 nps 1308000 hashfull 0 tbhits 0 time 1 pv g8g5
+info depth 5 seldepth 11 multipv 1 score cp 53 nodes 1536 nps 1536000 hashfull 0 tbhits 0 time 1 pv g8g5
+info depth 6 seldepth 13 multipv 1 score cp 32 nodes 3077 nps 1538500 hashfull 0 tbhits 0 time 2 pv g8g5 e3e4
+info depth 7 seldepth 10 multipv 1 score cp 43 nodes 3501 nps 1167000 hashfull 0 tbhits 0 time 3 pv g8g5 e3e4
+info depth 8 seldepth 15 multipv 1 score cp 37 nodes 6079 nps 1013166 hashfull 2 tbhits 0 time 6 pv g8g5 e3e4
+info depth 9 seldepth 15 multipv 1 score cp 40 nodes 6727 nps 961000 hashfull 2 tbhits 0 time 7 pv g8g5 e3e4
+info depth 10 seldepth 14 multipv 1 score cp 45 nodes 7286 nps 1040857 hashfull 2 tbhits 0 time 7 pv g8g5 e3e4
+info depth 11 seldepth 14 multipv 1 score cp 47 nodes 8619 nps 957666 hashfull 3 tbhits 0 time 9 pv g8g5 e3e4
+info depth 12 seldepth 15 multipv 1 score cp 51 nodes 11500 nps 958333 hashfull 5 tbhits 0 time 12 pv g8g5 e3e4
+info depth 13 seldepth 18 multipv 1 score cp 52 nodes 20574 nps 894521 hashfull 10 tbhits 0 time 23 pv g8g5 e3e4
+bestmove g8g5 ponder e3e4
+info string NNUE evaluation using pikafish.nnue (30MiB, (7560, 2048, 15, 32, 1))
+info depth 1 seldepth 5 multipv 1 score cp 206 nodes 138 nps 138000 hashfull 0 tbhits 0 time 1 pv c2b2
+info depth 2 seldepth 3 multipv 1 score cp 206 nodes 258 nps 258000 hashfull 0 tbhits 0 time 1 pv c2b2
+info depth 3 seldepth 3 multipv 1 score cp 228 nodes 381 nps 381000 hashfull 0 tbhits 0 time 1 pv c2b2
+info depth 4 seldepth 7 multipv 1 score cp 217 nodes 634 nps 634000 hashfull 0 tbhits 0 time 1 pv d1d8 g2h2
+info depth 5 seldepth 6 multipv 1 score cp 223 nodes 857 nps 857000 hashfull 0 tbhits 0 time 1 pv d1d5 g2h2 d5c5
+info depth 6 seldepth 10 multipv 1 score cp 235 nodes 1347 nps 673500 hashfull 0 tbhits 0 time 2 pv a4a2 g2h2 e3e4
+info depth 7 seldepth 9 multipv 1 score cp 245 nodes 1566 nps 783000 hashfull 0 tbhits 0 time 2 pv a4a2 g2h2 e3e4
+info depth 8 seldepth 9 multipv 1 score cp 242 nodes 1721 nps 573666 hashfull 0 tbhits 0 time 3 pv a4a2 g2h2 e3e4
+info depth 9 seldepth 15 multipv 1 score cp 243 nodes 2184 nps 728000 hashfull 0 tbhits 0 time 3 pv a4a2 g2h2 e3e4
+info depth 10 seldepth 14 multipv 1 score cp 246 nodes 2713 nps 678250 hashfull 0 tbhits 0 time 4 pv a4a2 g2h2 d1d8 f9e8
+info depth 11 seldepth 13 multipv 1 score cp 248 nodes 3925 nps 654166 hashfull 2 tbhits 0 time 6 pv e3e4
+info depth 12 seldepth 15 multipv 1 score cp 242 nodes 13355 nps 556458 hashfull 13 tbhits 0 time 24 pv h2h5
+info depth 13 seldepth 17 multipv 1 score cp 234 nodes 32167 nps 554603 hashfull 27 tbhits 0 time 58 pv a4a2 g2h2 c2d2 i9i4
+bestmove a4a2 ponder g2h2
+info string NNUE evaluation using pikafish.nnue (30MiB, (7560, 2048, 15, 32, 1))
+info depth 1 seldepth 3 multipv 1 score cp -179 nodes 31 nps 31000 hashfull 0 tbhits 0 time 1 pv e1e2
+info depth 2 seldepth 2 multipv 1 score cp -179 nodes 57 nps 57000 hashfull 0 tbhits 0 time 1 pv e1e2
+info depth 3 seldepth 4 multipv 1 score cp -210 nodes 207 nps 207000 hashfull 0 tbhits 0 time 1 pv e1e2 i3i2
+info depth 4 seldepth 4 multipv 1 score cp -175 nodes 239 nps 239000 hashfull 0 tbhits 0 time 1 pv e1e2
+info depth 5 seldepth 7 multipv 1 score cp -240 nodes 446 nps 446000 hashfull 0 tbhits 0 time 1 pv e1e2 g2i0 e3e4
+info depth 6 seldepth 10 multipv 1 score cp -137 nodes 668 nps 668000 hashfull 0 tbhits 0 time 1 pv e1e5
+info depth 7 seldepth 9 multipv 1 score cp -233 nodes 1023 nps 1023000 hashfull 0 tbhits 0 time 1 pv h8g8 g3f4 g8f8 e8f8 e1e2
+info depth 8 seldepth 12 multipv 1 score cp -245 nodes 1351 nps 1351000 hashfull 0 tbhits 0 time 1 pv h8g8 f8h6 e1e2 a0h0 g8g9 c4b4 c2b4
+info depth 9 seldepth 13 multipv 1 score cp -268 nodes 1817 nps 1817000 hashfull 0 tbhits 0 time 1 pv h8g8 f8h6 e1e2 a0h0 g8g9 g2i0 g9f9 g3f4 f9g9 i3i2 g9f9 f4g5
+info depth 10 seldepth 16 multipv 1 score cp -161 nodes 2772 nps 1386000 hashfull 1 tbhits 0 time 2 pv h8g8 f8h6 e1e2 a0h0 b5a7 h0h5 a7c8
+info depth 11 seldepth 16 multipv 1 score cp -207 nodes 3766 nps 1255333 hashfull 1 tbhits 0 time 3 pv h8g8 f8h6 e1e2 g2i0 b5a7 d6e7 a7c8 g3f4 c8b6 i3h3 b6c8 f4e3 c2e3
+info depth 12 seldepth 21 multipv 1 score cp -191 nodes 5699 nps 1139800 hashfull 2 tbhits 0 time 5 pv h8g8 f8h6 e1e2 a0i0 b5a7 g3f4 a7c8 d6e7 c8b6 i3h3 b6d7
+info depth 13 seldepth 21 multipv 1 score cp -313 nodes 17017 nps 1063562 hashfull 4 tbhits 0 time 16 pv h8g8 f8h6 b5a7 c4c3 a7c8 c3c2 c8d6 e8d8 d6f7 d8d9 e1e5 i3h3 e5d5 a0h0 d5d1 c2c1 d1d6
+bestmove h8g8 ponder f8h6
+info string NNUE evaluation using pikafish.nnue (30MiB, (7560, 2048, 15, 32, 1))
+info depth 1 seldepth 3 multipv 1 score cp 480 nodes 30 nps 30000 hashfull 0 tbhits 0 time 1 pv d9d8
+info depth 2 seldepth 2 multipv 1 score cp 480 nodes 57 nps 57000 hashfull 0 tbhits 0 time 1 pv d9d8
+info depth 3 seldepth 4 multipv 1 score cp 565 nodes 88 nps 88000 hashfull 0 tbhits 0 time 1 pv d9d8
+info depth 4 seldepth 4 multipv 1 score cp 643 nodes 121 nps 121000 hashfull 0 tbhits 0 time 1 pv d9d8
+info depth 5 seldepth 5 multipv 1 score cp 672 nodes 156 nps 156000 hashfull 0 tbhits 0 time 1 pv d9d8 e2c0 h2g4
+info depth 6 seldepth 6 multipv 1 score cp 739 nodes 218 nps 218000 hashfull 0 tbhits 0 time 1 pv d9d8 e2c0 h2g4
+info depth 7 seldepth 8 multipv 1 score cp 696 nodes 299 nps 299000 hashfull 0 tbhits 0 time 1 pv d9d8 f0f5 d8e8 f5i5 h2g4 i5i0
+info depth 8 seldepth 9 multipv 1 score cp 699 nodes 355 nps 355000 hashfull 0 tbhits 0 time 1 pv d9d8 f0f8 d8e8 f8f5 h2g4 f5f1
+info depth 9 seldepth 12 multipv 1 score cp 693 nodes 908 nps 908000 hashfull 0 tbhits 0 time 1 pv d9d8 f0f8 d8e8 f8f5 h2g4 f5f1 g4i3 f1e1 e8d8
+info depth 10 seldepth 11 multipv 1 score cp 582 nodes 1727 nps 863500 hashfull 0 tbhits 0 time 2 pv d9d8 f0f4 d8e8 f4e4 h2f3 e4f4 f3g1 f4f1 g1f3
+info depth 11 seldepth 17 multipv 1 score cp 676 nodes 2460 nps 820000 hashfull 0 tbhits 0 time 3 pv d9d8 f0f4 d8e8 f4e4 c7d9 e0e1 h2f3 e1e0
+info depth 12 seldepth 17 multipv 1 score cp 612 nodes 2830 nps 943333 hashfull 0 tbhits 0 time 3 pv d9d8 f0f4 d8e8 f4e4 c7d9 e0e1 h2f3 e1d1 d9c7 e2g0 f3d4 e4e1 d4c2 g0e2 c2e1 d1e1
+info depth 13 seldepth 19 multipv 1 score cp 606 nodes 5221 nps 1044200 hashfull 1 tbhits 0 time 5 pv d9d8 g4g5 g6g5
+bestmove d9d8 ponder g4g5
+info string NNUE evaluation using pikafish.nnue (30MiB, (7560, 2048, 15, 32, 1))
+info depth 1 seldepth 2 multipv 1 score cp -388 nodes 37 nps 37000 hashfull 0 tbhits 0 time 1 pv c7e7
+info depth 2 seldepth 2 multipv 1 score cp -388 nodes 72 nps 72000 hashfull 0 tbhits 0 time 1 pv c7e7
+info depth 3 seldepth 5 multipv 1 score cp -412 nodes 165 nps 165000 hashfull 0 tbhits 0 time 1 pv c7e7 f2f1 e1e0 f1a1
+info depth 4 seldepth 5 multipv 1 score cp -412 nodes 205 nps 205000 hashfull 0 tbhits 0 time 1 pv c7e7 f2f1 e1e0 f1a1
+info depth 5 seldepth 7 multipv 1 score cp -419 nodes 257 nps 257000 hashfull 0 tbhits 0 time 1 pv c7e7 f2f1 e1e0 f1f0 e0e1
+info depth 6 seldepth 7 multipv 1 score cp -419 nodes 306 nps 306000 hashfull 0 tbhits 0 time 1 pv c7e7 f2f1 e1e0 f1f0 e0e1
+info depth 7 seldepth 7 multipv 1 score cp -390 nodes 397 nps 397000 hashfull 0 tbhits 0 time 1 pv c7e7 f2f1 e1e0 f1f0 e0e1
+info depth 8 seldepth 9 multipv 1 score cp -386 nodes 552 nps 552000 hashfull 0 tbhits 0 time 1 pv c7e7 f2c2 e7b7 c2c0 h6h2 c0c1 e1e0 c1a1
+info depth 9 seldepth 14 multipv 1 score cp -397 nodes 1894 nps 947000 hashfull 0 tbhits 0 time 2 pv h6i6 h8h4 c7c8 f8f9 c8c9 f9f8
+info depth 10 seldepth 12 multipv 1 score cp -399 nodes 2644 nps 1322000 hashfull 0 tbhits 0 time 2 pv h6i6 f2f4 i6i8 h8h3 i8i9 f4e4 e1d1 e4d4 d1e1
+info depth 11 seldepth 15 multipv 1 score cp -395 nodes 3574 nps 1191333 hashfull 1 tbhits 0 time 3 pv h6i6 f2f1 e1e2 f1f4 c7c4 f4f2 e2e1 f2f1 e1e2 f1f4 e2e1
+info depth 12 seldepth 17 multipv 1 score cp -391 nodes 4840 nps 1210000 hashfull 1 tbhits 0 time 4 pv h6i6 f2f4 i6i8 h8h3 c7c4 f8f9 e1e2 f4f2 e2e1 f2f1 e1e2
+info depth 13 seldepth 19 multipv 1 score cp -412 nodes 7959 nps 1326500 hashfull 3 tbhits 0 time 6 pv h6i6 f2f4 c7e7 h8h4 e7e6 h4e4 i6i8 f4f1 e1e2 f1f2 e2e1
+bestmove h6i6 ponder f2f4
+info string NNUE evaluation using pikafish.nnue (30MiB, (7560, 2048, 15, 32, 1))
+info depth 1 seldepth 4 multipv 1 score cp -1100 nodes 34 nps 34000 hashfull 0 tbhits 0 time 1 pv d3c4 i0i2
+info depth 2 seldepth 3 multipv 1 score cp -1100 nodes 50 nps 50000 hashfull 0 tbhits 0 time 1 pv d3c4 i0i2
+info depth 3 seldepth 7 multipv 1 score cp -1075 nodes 115 nps 115000 hashfull 0 tbhits 0 time 1 pv e2d0 h7d7
+info depth 4 seldepth 7 multipv 1 score cp -1082 nodes 141 nps 141000 hashfull 0 tbhits 0 time 1 pv e2d0 h7d7
+info depth 5 seldepth 7 multipv 1 score cp -1082 nodes 171 nps 171000 hashfull 0 tbhits 0 time 1 pv e2d0 h7d7
+info depth 6 seldepth 7 multipv 1 score cp -1088 nodes 199 nps 199000 hashfull 0 tbhits 0 time 1 pv e2d0 h7d7
+info depth 7 seldepth 7 multipv 1 score cp -1063 nodes 241 nps 241000 hashfull 0 tbhits 0 time 1 pv e2d0 h7d7
+info depth 8 seldepth 10 multipv 1 score cp -1067 nodes 313 nps 313000 hashfull 0 tbhits 0 time 1 pv e2d0 h7d7
+info depth 9 seldepth 12 multipv 1 score cp -1088 nodes 478 nps 478000 hashfull 0 tbhits 0 time 1 pv e2g3 f4g3
+info depth 10 seldepth 10 multipv 1 score cp -1074 nodes 776 nps 776000 hashfull 0 tbhits 0 time 1 pv e2f0 h7d7
+info depth 11 seldepth 11 multipv 1 score cp -1073 nodes 1070 nps 1070000 hashfull 0 tbhits 0 time 1 pv e2f0 f4e3 f0h1 c6a5 b5d7 a5b3 h1i3 i0i2
+info depth 12 seldepth 14 multipv 1 score cp -1084 nodes 2081 nps 1040500 hashfull 0 tbhits 0 time 2 pv e2g1 i0a0 g1f3 a0a1 d1d0 f4e3 d0e0
+info depth 13 seldepth 15 multipv 1 score cp -1097 nodes 3470 nps 867500 hashfull 1 tbhits 0 time 4 pv e2f0 i0i1 d1d0 i1i2 d3e2 f4e3 e2d3 i2d2 d0e0 e9d9 c3c4 d2d3
+bestmove e2f0 ponder i0i1
+info string NNUE evaluation using pikafish.nnue (30MiB, (7560, 2048, 15, 32, 1))
+info depth 1 seldepth 2 multipv 1 score cp 37 nodes 4 nps 4000 hashfull 0 tbhits 0 time 1 pv e1e0
+info depth 2 seldepth 2 multipv 1 score cp 37 nodes 7 nps 7000 hashfull 0 tbhits 0 time 1 pv e1e0
+info depth 3 seldepth 3 multipv 1 score cp 76 nodes 16 nps 16000 hashfull 0 tbhits 0 time 1 pv e1e0
+info depth 4 seldepth 5 multipv 1 score cp 73 nodes 33 nps 33000 hashfull 0 tbhits 0 time 1 pv e1e0 d3c1 h1d1 d5e6
+info depth 5 seldepth 5 multipv 1 score cp 73 nodes 47 nps 47000 hashfull 0 tbhits 0 time 1 pv e1e0 d3c1 h1d1 d5e6
+info depth 6 seldepth 6 multipv 1 score cp 23 nodes 129 nps 129000 hashfull 0 tbhits 0 time 1 pv e1e0 d3c1 h1d1 d5e6 e2g0
+info depth 7 seldepth 7 multipv 1 score cp 67 nodes 173 nps 173000 hashfull 0 tbhits 0 time 1 pv e1e0 d3c1 h1d1 d5e6
+info depth 8 seldepth 8 multipv 1 score cp 92 nodes 257 nps 257000 hashfull 0 tbhits 0 time 1 pv e1e0 d3c1 h1d1 d5e6
+info depth 9 seldepth 9 multipv 1 score cp 168 nodes 433 nps 433000 hashfull 0 tbhits 0 time 1 pv e1e0 d3c1 h1d1 b5d6 e2g0
+info depth 10 seldepth 13 multipv 1 score cp 40 nodes 1573 nps 786500 hashfull 0 tbhits 0 time 2 pv e1e0 d5e6 g3h2 c6d7 h1i1 b5d6 i5h5 d3c1 i1d1
+info depth 11 seldepth 13 multipv 1 score cp 88 nodes 1832 nps 916000 hashfull 0 tbhits 0 time 2 pv e1e0 d5e6 g3h2 c6d7 h1i1 b5d6 i5h5 d3b4
+info depth 12 seldepth 16 multipv 1 score cp 59 nodes 2862 nps 954000 hashfull 1 tbhits 0 time 3 pv e1e0 d5e6 h6g8 d3b2 i5h5 c6d7 h1i1 b5d6
+info depth 13 seldepth 17 multipv 1 score cp 1 nodes 4564 nps 1141000 hashfull 1 tbhits 0 time 4 pv e1f1 d3b4 i5h5 d5e6 g3h2 c6d7 f1e1 b4d3 e1f1 d3b4
+bestmove e1f1 ponder d3b4
+
+Position: 1/13 (x1xxkxxxx/9/c6x1/2x6/a3r1n1p/R1P3A2/4X3X/1X2B1AX1/4P4/1C2KXX1X w R1A0C1P3N1B1r0a1c1p4n1b2 1 8)
+
+Position: 2/13 (xx2kx1Bx/4p4/1x2r2xc/2x6/p5a2/2P1p1A1c/X1B1X4/1X2A1N1P/9/XX2KXP2 w R2A0C2P1N1B0r1a1c0p2n1b2 1 113)
+
+Position: 3/13 (P3kxx1x/4a4/4p1a2/9/4b1p1p/CR2B4/8X/B1r1r4/9/X2XK2XX w R1A1C0P2N1B0r0a0c0p2n1b0 0 18)
+
+Position: 4/13 (C1xx1x1xx/4k4/2a5c/1r2C4/2pA2p1b/p6p1/2X3X1X/2B3P1B/3N5/X2XKX2X b R1A1C0P4N1B0r1a1c1p0n1b1 0 12)
+
+Position: 5/13 (x1x1k1x2/3r5/1xb3n2/2x1x4/p3c4/2PR4P/X2r5/2N3N2/9/X1X1KXX2 w R1A2C0P1N0B1r0a2c1p1n1b1 4 18)
+
+Position: 6/13 (x2x1k1x1/3pp4/6n1p/2R3BNx/2a6/P5P2/9/1XP1C4/9/X2XKXXXX b R1A2C1P1N1B1r1a0c1p1n1b0 2 17)
+
+Position: 7/13 (x2x1k3/3p2r2/4p2xp/x8/2a1b1N2/Pp7/2X1X1b2/6B2/4A4/XXXXKCX2 b R2A1C0P3N0B1r1a1c0p1n1b0 0 14)
+
+Position: 8/13 (2n1kx2x/9/axp1n1px1/4x1x2/2b6/C1N5A/4X4/2R1P1rX1/3R1P3/X1XXK3X w R0A1C1P3N0B1r1a1c1p2n0b1 3 14)
+
+Position: 9/13 (3P5/4kb1P1/9/3a5/1Np1p4/2p6/4X1a1p/2N3b2/4CK3/c8 w R0A0C0P1N0B1r1a0c1p0n1b0 1 33)
+
+Position: 10/13 (x2k5/9/2n3p2/6x2/9/6P2/9/4B2n1/9/4KC3 b R0A0C0P0N0B0r0a0c0p2n0b0 0 50)
+
+Position: 11/13 (9/5k1c1/2R1p4/7C1/p7p/4P4/X8/5r3/P3K4/2X4c1 w R0A0C0P1N0B1r0a0c0p0n0b0 3 51)
+
+Position: 12/13 (x1x1k3x/4p4/b1p4x1/2n4a1/1B7/5a3/2PAP1b2/4N3P/3K5/8r w R0A0C0P0N0B0r0a0c1p2n1b0 0 34)
+
+Position: 13/13 (2bk5/9/4b4/2a4N1/1n1a4P/p8/3nP1A2/4BA3/4K2C1/9 w R0A0C0P0N0B0r0a0c0p0n0b0 14 40)
+
+===========================
+Total time (ms) : 894
+Nodes searched  : 672359
+Nodes/second    : 752079

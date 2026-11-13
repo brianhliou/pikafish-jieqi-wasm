@@ -1405,7 +1405,7 @@ moves_loop:  // When in check, search starts here
 // See https://www.chessprogramming.org/Horizon_Effect
 // and https://www.chessprogramming.org/Quiescence_Search
 template<NodeType nodeType>
-Value Search::Worker::qsearch(Position& pos, Stack* ss, Value alpha, Value beta) {
+Value Search::Worker::qsearch(Position& pos, Stack* ss, Value alpha, Value beta, int qply) {
 
     static_assert(nodeType != Root);
     constexpr bool PvNode = nodeType == PV;
@@ -1414,7 +1414,7 @@ Value Search::Worker::qsearch(Position& pos, Stack* ss, Value alpha, Value beta)
     if ((ss - 1)->currentMove.is_ok() && pos.is_dark((ss - 1)->currentMove.to_sq()))
     {
         constexpr auto nt = PvNode ? PV : NonPV;
-        return flip_search<nt>(pos, ss, alpha, beta);
+        return flip_search<nt>(pos, ss, alpha, beta, true, 0, false, qply);
     }
 
     assert(alpha >= -VALUE_INFINITE && alpha < beta && beta <= VALUE_INFINITE);
@@ -1612,7 +1612,7 @@ Value Search::Worker::qsearch(Position& pos, Stack* ss, Value alpha, Value beta)
         ss->continuationCorrectionHistory =
           &thisThread->continuationCorrectionHistory[movedPiece][move.to_sq()];
 
-        value = -qsearch<nodeType>(pos, ss + 1, -beta, -alpha);
+        value = -qsearch<nodeType>(pos, ss + 1, -beta, -alpha, qply + 1);
         undo_move(pos, move);
 
         assert(value > -VALUE_INFINITE && value < VALUE_INFINITE);
@@ -1667,8 +1667,14 @@ Value Search::Worker::qsearch(Position& pos, Stack* ss, Value alpha, Value beta)
 
 
 template<NodeType nodeType>
-Value Search::Worker::flip_search(
-    Position& pos, Stack* ss, Value alpha, Value beta, bool isQsearch, Depth depth, bool cutNode) {
+Value Search::Worker::flip_search(Position& pos,
+                                  Stack*    ss,
+                                  Value     alpha,
+                                  Value     beta,
+                                  bool      isQsearch,
+                                  Depth     depth,
+                                  bool      cutNode,
+                                  int       qply) {
     constexpr double scaling          = 360.83524;
     constexpr auto   score_to_winrate = [&](Value v) { return 1.0 / (1.0 + exp(-v / scaling)); };
     constexpr auto   winrate_to_score = [&](double winrate) {
@@ -1680,7 +1686,7 @@ Value Search::Worker::flip_search(
     };
 
     auto restPieces = pos.rest_pieces(~pos.side_to_move());
-    int  total = 0;
+    int  total      = 0;
     for (const auto& [piece, num] : restPieces)
         total += num;
 
@@ -1688,6 +1694,140 @@ Value Search::Worker::flip_search(
 
     DirtyPiece dp = accumulatorStack.latest().dirtyPiece;
 
+    if (bool(options["ChanceMix"]) && restPieces.size() > 1)
+    {
+        // jqe bounds reveals after the first quiescence move with the identity
+        // closest in material value to the urn mean. Its child() sees the
+        // parent's qply >= 1; we detect the flip after moving, at qply >= 2.
+        // A single sampled identity cannot establish a forced mate.
+        if (isQsearch && qply >= 2 && restPieces.size() > 1)
+        {
+            int material = 0;
+            for (const auto& [piece, num] : restPieces)
+                material += PieceValue[piece] * num;
+            const int  mean           = material / total;
+            const auto representative = std::min_element(
+              restPieces.begin(), restPieces.end(), [&](const auto& a, const auto& b) {
+                  return std::abs(PieceValue[a.first] - mean)
+                       < std::abs(PieceValue[b.first] - mean);
+              });
+            accumulatorStack.pop();
+            const Piece dark =
+              pos.do_flip((ss - 1)->currentMove.to_sq(), representative->first, &dp, &tt);
+            accumulatorStack.push(dp);
+            const Value value = qsearch<nodeType>(pos, ss, alpha, beta, qply);
+            pos.undo_flip((ss - 1)->currentMove.to_sq(), dark);
+            return std::clamp(value, VALUE_MATED_IN_MAX_PLY + 1, VALUE_MATE_IN_MAX_PLY - 1);
+        }
+
+        // ChanceMix (jqe): open-window probes six plies shallower, then replace
+        // the most numerous identity's probe with its full-depth value. Bounds
+        // from the parent's window cannot be averaged as exact outcome values.
+        const auto representative =
+          std::max_element(restPieces.begin(), restPieces.end(),
+                           [](const auto& a, const auto& b) { return a.second < b.second; });
+        std::array<Value, PIECE_NB> values{};
+        Move                        pv[MAX_PLY + 1];
+        Move* const                 savedPv = ss->pv;
+        ss->pv                              = pv;
+
+        const auto outcome = [&](Piece piece, Depth d, Value a, Value b) {
+            pv[0] = Move::none();
+            accumulatorStack.pop();
+            const Piece dark = pos.do_flip((ss - 1)->currentMove.to_sq(), piece, &dp, &tt);
+            accumulatorStack.push(dp);
+
+            // As in jqe, depth <= 0 runs quiescence, not static evaluation.
+            // Even a NonPV chance node needs PV searches for open-window values.
+            const Value value =
+              isQsearch ? qsearch<PV>(pos, ss, a, b, qply) : search<PV>(pos, ss, a, b, d, false);
+            pos.undo_flip((ss - 1)->currentMove.to_sq(), dark);
+            return value;
+        };
+
+        for (const auto& [piece, num] : restPieces)
+        {
+            values[piece] = outcome(piece, isQsearch ? 0 : std::max(0, depth - 6), -VALUE_INFINITE,
+                                    VALUE_INFINITE);
+            if (threads.stop.load(std::memory_order_relaxed))
+            {
+                ss->pv = savedPv;
+                return VALUE_ZERO;
+            }
+        }
+
+        Value deepAlpha = -VALUE_INFINITE, deepBeta = VALUE_INFINITE;
+        Value deepValue = VALUE_NONE;
+        // Map the parent's window through the other identities' fixed probe
+        // values, as in jqe's cvValue with rho = 0. Only the deep identity may
+        // return a bound, so its weighted contribution remains a valid bound
+        // on this approximation; unrelated fail-high/low bounds are never mixed.
+        // Keep mate windows open to retain actual mate distances and signs.
+        if (!isQsearch)
+        {
+            bool   decisive = is_decisive(alpha) || is_decisive(beta);
+            double offset   = 0.0;
+            for (const auto& [piece, num] : restPieces)
+            {
+                decisive |= is_decisive(values[piece]);
+                if (piece != representative->first)
+                    offset += double(num) / total * score_to_winrate(values[piece]);
+            }
+            if (!decisive)
+            {
+                const double probability = double(representative->second) / total;
+                const double a           = (score_to_winrate(alpha) - offset) / probability;
+                const double b           = (score_to_winrate(beta) - offset) / probability;
+                if (a >= 1.0 || b <= 0.0)
+                {
+                    ss->pv = savedPv;
+                    if constexpr (nodeType == PV)
+                        savedPv[0] = Move::none();
+                    return a >= 1.0 ? alpha : beta;
+                }
+                if (a > 0.0)
+                    deepAlpha = static_cast<Value>(std::floor(scaling * std::log(a / (1.0 - a))));
+                if (b < 1.0)
+                    deepBeta = static_cast<Value>(std::ceil(scaling * std::log(b / (1.0 - b))));
+            }
+            deepValue = outcome(representative->first, depth, deepAlpha, deepBeta);
+            values[representative->first] = deepValue;
+        }
+
+        if constexpr (nodeType == PV)
+            std::copy(pv, std::find(pv, pv + MAX_PLY, Move::none()) + 1, savedPv);
+        ss->pv = savedPv;
+
+        if (threads.stop.load(std::memory_order_relaxed))
+            return VALUE_ZERO;
+
+        bool   allWins = true, allLosses = true;
+        Value  slowestWin = VALUE_MATE, longestLoss = -VALUE_MATE;
+        double winrateSum = 0.0;
+        for (const auto& [piece, num] : restPieces)
+        {
+            const Value value = values[piece];
+            allWins &= is_win(value);
+            allLosses &= is_loss(value);
+            slowestWin  = std::min(slowestWin, value);
+            longestLoss = std::max(longestLoss, value);
+            winrateSum += num
+                        * (is_win(value)    ? 1.0
+                           : is_loss(value) ? 0.0
+                                            : score_to_winrate(value));
+        }
+
+        if (allWins)
+            return slowestWin;
+        if (allLosses)
+            return longestLoss;
+        const Value expected = winrate_to_score(winrateSum / total);
+        if (!isQsearch && deepValue <= deepAlpha)
+            return std::min(expected, alpha);
+        if (!isQsearch && deepValue >= deepBeta)
+            return std::max(expected, beta);
+        return expected;
+    }
     // Collect per-flip results
     struct Entry { Value value; int count; };
     std::vector<Entry> results;
@@ -1701,7 +1841,7 @@ Value Search::Worker::flip_search(
         Value value;
 
         if (isQsearch)
-            value = qsearch<nodeType>(pos, ss, alpha, beta);
+            value = qsearch<nodeType>(pos, ss, alpha, beta, qply);
         else
             value = search<nodeType>(pos, ss, alpha, beta, depth, cutNode);
 

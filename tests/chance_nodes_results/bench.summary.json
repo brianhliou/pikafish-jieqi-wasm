@@ -1,0 +1,20 @@
+{
+  "baseline": {
+    "binary_sha256": "cdb640254223f2c8c495d20532121300e7495a424a92b3653f5b5cdc67fe8036",
+    "time_ms": 390,
+    "nodes": 219085,
+    "nps": 561756
+  },
+  "fixed": {
+    "binary_sha256": "6786e336b7653cf86f30ab12ca57aea9e172a34a0cdfcf5779ebd26de2bbbfad",
+    "time_ms": 894,
+    "nodes": 672359,
+    "nps": 752079
+  },
+  "old-option": {
+    "binary_sha256": "6786e336b7653cf86f30ab12ca57aea9e172a34a0cdfcf5779ebd26de2bbbfad",
+    "time_ms": 387,
+    "nodes": 219085,
+    "nps": 566111
+  }
+}

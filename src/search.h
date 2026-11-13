@@ -278,7 +278,7 @@ class Worker {
 
     // Quiescence search function, which is called by the main search
     template<NodeType nodeType>
-    Value qsearch(Position& pos, Stack* ss, Value alpha, Value beta);
+    Value qsearch(Position& pos, Stack* ss, Value alpha, Value beta, int qply = 0);
 
     // This is the flip search function for any nodes
     template<NodeType nodeType>
@@ -288,7 +288,8 @@ class Worker {
                       Value                  beta,
                       bool                   isQsearch = true,
                       [[maybe_unused]] Depth depth     = -1,
-                      [[maybe_unused]] bool  cutNode   = false);
+                      [[maybe_unused]] bool  cutNode   = false,
+                      int                    qply      = 0);
 
     Depth reduction(bool i, Depth d, int mn, int delta) const;
 
