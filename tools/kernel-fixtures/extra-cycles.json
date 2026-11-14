@@ -1,0 +1,147 @@
+[
+  {
+    "id": "quiet-unequal-length",
+    "pieces": {
+      "e0": "K",
+      "d9": "k"
+    },
+    "moves": [
+      "e0f0",
+      "d9d8",
+      "f0e0",
+      "d8d9",
+      "e0f0",
+      "d9d8",
+      "f0f1",
+      "d8d9",
+      "f1e1",
+      "d9d8",
+      "e1e0",
+      "d8d9"
+    ]
+  },
+  {
+    "id": "mate-before-clock",
+    "pieces": {
+      "f0": "K",
+      "d9": "k",
+      "b8": "R",
+      "e8": "R"
+    },
+    "moves": [
+      "b8d8"
+    ],
+    "idle": 79
+  },
+  {
+    "id": "stalemate-before-clock",
+    "pieces": {
+      "f0": "K",
+      "d9": "k",
+      "a8": "R",
+      "e7": "R"
+    },
+    "moves": [
+      "a8b8"
+    ],
+    "idle": 79
+  },
+  {
+    "id": "mixed-new-chase-and-check",
+    "pieces": {
+      "d0": "K",
+      "e9": "k",
+      "e7": "R",
+      "f6": "n"
+    },
+    "turn": "black",
+    "moves": [
+      "e9f9",
+      "e7e6",
+      "f9f8",
+      "e6e7",
+      "f8f9",
+      "e7f7",
+      "f9e9",
+      "f7e7",
+      "e9f9"
+    ]
+  },
+  {
+    "id": "check-twofold-at-clock-80",
+    "pieces": {
+      "d0": "K",
+      "e9": "k",
+      "e7": "R"
+    },
+    "turn": "black",
+    "idle": 76,
+    "moves": [
+      "e9f9",
+      "e7f7",
+      "f9e9",
+      "f7e7"
+    ]
+  },
+  {
+    "id": "chase-twofold-at-clock-80",
+    "pieces": {
+      "d0": "K",
+      "e9": "k",
+      "a1": "R",
+      "b3": "n",
+      "h7": "n"
+    },
+    "idle": 76,
+    "moves": [
+      "a1b1",
+      "b3a5",
+      "b1a1",
+      "a5b3"
+    ]
+  },
+  {
+    "id": "chase-threefold-at-clock-80",
+    "pieces": {
+      "d0": "K",
+      "e9": "k",
+      "a1": "R",
+      "b3": "n",
+      "h7": "n"
+    },
+    "idle": 72,
+    "moves": [
+      "a1b1",
+      "b3a5",
+      "b1a1",
+      "a5b3",
+      "a1b1",
+      "b3a5",
+      "b1a1",
+      "a5b3"
+    ]
+  },
+  {
+    "id": "legacy-check-at-clock-120",
+    "pieces": {
+      "d0": "K",
+      "e9": "k",
+      "e7": "R"
+    },
+    "turn": "black",
+    "idle": 112,
+    "moves": [
+      "e9f9",
+      "e7f7",
+      "f9e9",
+      "f7e7",
+      "e9f9",
+      "e7f7",
+      "f9e9",
+      "f7e7"
+    ],
+    "rules": [
+      "legacy"
+    ]
+  }
+]

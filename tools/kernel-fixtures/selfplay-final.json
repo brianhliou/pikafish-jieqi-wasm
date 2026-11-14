@@ -1,0 +1,2990 @@
+{
+  "newBinary": "/Users/brianliou/projects/tools/pikafish-jieqi-wt-rules/src/PikaJieQi",
+  "oldBinary": "/Users/brianliou/projects/tools/pikafish-jieqi-wt-rules/tools/kernel-fixtures/.build/baseline/src/PikaJieQi",
+  "nodesPerMove": 1000000,
+  "threads": 1,
+  "hashMb": 64,
+  "seedBase": 45000,
+  "startedAt": "2026-11-09T06:33:31.205Z",
+  "games": [
+    {
+      "game": 0,
+      "pair": 0,
+      "rule": "jqe-v1",
+      "newColor": "red",
+      "plies": 46,
+      "status": {
+        "type": "finished",
+        "winner": "black",
+        "reason": "checkmate"
+      },
+      "moves": [
+        "g3g4",
+        "e6e5",
+        "g0e2",
+        "e5a5",
+        "b2a2",
+        "a5a2",
+        "b0a2",
+        "h9g7",
+        "g4i6",
+        "a6a5",
+        "c3c4",
+        "a5c3",
+        "e3e4",
+        "a9a3",
+        "h2h6",
+        "g7d7",
+        "i3i4",
+        "h7h0",
+        "i0h0",
+        "i9i6",
+        "h0f1",
+        "c9e7",
+        "e2f3",
+        "e7f7",
+        "f1d2",
+        "b7b2",
+        "d0e1",
+        "d7e7",
+        "e1e7",
+        "g9e7",
+        "c0e2",
+        "e7d7",
+        "d2c0",
+        "f7f3",
+        "c0b2",
+        "f3f2",
+        "b2c0",
+        "d7f7",
+        "e0d0",
+        "a3c2",
+        "d0d1",
+        "f2f0",
+        "a0b0",
+        "f0f1",
+        "c0e1",
+        "f7d7"
+      ],
+      "stats": [
+        {
+          "engine": 0,
+          "info": "info depth 5 seldepth 4 multipv 1 score cp 247 upperbound nodes 1000771 nps 3511477 hashfull 93 tbhits 0 time 285 pv g3g4"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 4 seldepth 4 multipv 1 score cp -196 upperbound nodes 1000804 nps 3392555 hashfull 116 tbhits 0 time 295 pv e6e5"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 5 seldepth 4 multipv 1 score cp -21 upperbound nodes 1000030 nps 3344581 hashfull 107 tbhits 0 time 299 pv g0e2"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 7 seldepth 6 multipv 1 score cp -104 upperbound nodes 1000568 nps 3227638 hashfull 101 tbhits 0 time 310 pv e5a5 b0a2"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 5 seldepth 5 multipv 1 score cp 177 nodes 1000618 nps 3560918 hashfull 100 tbhits 0 time 281 pv b2a2"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 9 seldepth 6 multipv 1 score cp -40 nodes 1000299 nps 3449306 hashfull 91 tbhits 0 time 290 pv a5a2 b0a2"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 7 seldepth 6 multipv 1 score cp -29 nodes 1000348 nps 3473430 hashfull 92 tbhits 0 time 288 pv b0a2"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 7 seldepth 5 multipv 1 score cp -67 upperbound nodes 1000712 nps 3176863 hashfull 105 tbhits 0 time 315 pv h9g7 h2h6 c6c5"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 13 seldepth 5 multipv 1 score cp -80 nodes 1000910 nps 3427773 hashfull 83 tbhits 0 time 292 pv g4i6 c6c5"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 12 seldepth 9 multipv 1 score cp 72 nodes 1000566 nps 3651700 hashfull 82 tbhits 0 time 274 pv a6a5"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 17 seldepth 6 multipv 1 score cp -167 upperbound nodes 1000949 nps 3679959 hashfull 60 tbhits 0 time 272 pv c3c4"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 16 seldepth 10 multipv 1 score cp 259 nodes 1000703 nps 3176834 hashfull 86 tbhits 0 time 315 pv a5c3 h2h6"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 15 seldepth 7 multipv 1 score cp -290 nodes 1000747 nps 3369518 hashfull 74 tbhits 0 time 297 pv e3e4"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 16 seldepth 8 multipv 1 score cp 364 nodes 1000108 nps 3559103 hashfull 82 tbhits 0 time 281 pv a9a3"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 14 seldepth 9 multipv 1 score cp -535 upperbound nodes 1000361 nps 3290661 hashfull 98 tbhits 0 time 304 pv h2h6 d9e8 e2d3 g7e7 c0e2 e7e2"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 19 seldepth 7 multipv 1 score cp 358 nodes 1000437 nps 3402846 hashfull 91 tbhits 0 time 294 pv g7d7 i3i4"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 19 seldepth 15 multipv 1 score cp -609 nodes 1000631 nps 3380510 hashfull 80 tbhits 0 time 296 pv i3i4"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 17 seldepth 7 multipv 1 score cp 457 nodes 1000915 nps 3416092 hashfull 81 tbhits 0 time 293 pv h7h0"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 21 seldepth 13 multipv 1 score cp -855 nodes 1000220 nps 3301056 hashfull 72 tbhits 0 time 303 pv i0h0 i9i6 a0b0"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 17 seldepth 14 multipv 1 score cp 895 nodes 1001023 nps 3187971 hashfull 90 tbhits 0 time 314 pv i9i6 h0g2 b7b1"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 13 seldepth 14 multipv 1 score cp -1080 nodes 1000793 nps 2909281 hashfull 99 tbhits 0 time 344 pv h0f1 d9e8"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 16 seldepth 14 multipv 1 score cp 973 nodes 1000130 nps 3145062 hashfull 87 tbhits 0 time 318 pv c9e7"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 16 seldepth 18 multipv 1 score cp -1686 nodes 1000814 nps 2675973 hashfull 96 tbhits 0 time 374 pv e2f3 e7h7 c0e2"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 17 seldepth 18 multipv 1 score cp 1589 nodes 1000411 nps 2891361 hashfull 92 tbhits 0 time 346 pv e7f7 f1d2 d7d0"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 17 seldepth 19 multipv 1 score cp -1732 nodes 1000384 nps 2933677 hashfull 105 tbhits 0 time 341 pv f1d2 b9d8 d2b1 b7b2"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 18 seldepth 19 multipv 1 score cp 1660 nodes 1001033 nps 2893158 hashfull 91 tbhits 0 time 346 pv b7b2 a0b0 d7e7 f0e1"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 18 seldepth 21 multipv 1 score cp -1713 nodes 1000374 nps 3068631 hashfull 92 tbhits 0 time 326 pv d0e1 d7e7 a0b0 b2c2"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 19 seldepth 24 multipv 1 score cp 1389 nodes 1000875 nps 2892702 hashfull 89 tbhits 0 time 346 pv d7e7 c0e2 e7e2 f3e2 b2c2"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 17 seldepth 23 multipv 1 score cp -1597 nodes 1000044 nps 2857268 hashfull 96 tbhits 0 time 350 pv e1e7 g9e7 f0e1 b9d8"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 19 seldepth 23 multipv 1 score cp 1424 nodes 1000053 nps 2985232 hashfull 97 tbhits 0 time 335 pv g9e7 f0e1 b2c2"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 16 seldepth 21 multipv 1 score cp -1907 nodes 1000011 nps 2890205 hashfull 106 tbhits 0 time 346 pv c0e2 e7d7 c4c5 c6c5 f0e1 b2a2 a0c0 d7d2"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 18 seldepth 25 multipv 1 score cp 3516 nodes 1000691 nps 2842872 hashfull 111 tbhits 0 time 352 pv e7d7 f0e1 f7f3"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 15 seldepth 13 multipv 1 score cp -3282 nodes 1000841 nps 2803476 hashfull 113 tbhits 0 time 357 pv d2c0 f7f3"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 16 seldepth 18 multipv 1 score cp 4903 nodes 1000705 nps 2960665 hashfull 98 tbhits 0 time 338 pv f7f3"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 13 seldepth 19 multipv 1 score mate -9 upperbound nodes 1000449 nps 3106984 hashfull 113 tbhits 0 time 322 pv c0b2 d7d2"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 15 seldepth 18 multipv 1 score mate 6 nodes 1000500 nps 3227419 hashfull 112 tbhits 0 time 310 pv f3f2 b2c0 d7f7 e0d0 f2f0 d0d1 f0c0 e4e5 f7d7 e5d5 d7d5"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 46 seldepth 11 multipv 1 score mate -4 nodes 1000223 nps 4256268 hashfull 29 tbhits 0 time 235 pv b2c0 d7f7 e0d0 a3c2 d0d1 f2f0 c0d2 f7f1"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 53 seldepth 10 multipv 1 score mate 4 nodes 1000338 nps 5496362 hashfull 23 tbhits 0 time 182 pv d7f7 e0d0 a3c2 d0d1 f2f0 c0d2 f7f1"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 167 seldepth 9 multipv 1 score mate -3 nodes 1000174 nps 11629930 hashfull 0 tbhits 0 time 86 pv e0d0 a3c2 d0d1 f2f0 c0d2 f7f1"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 112 seldepth 8 multipv 1 score mate 3 nodes 1000172 nps 11365590 hashfull 1 tbhits 0 time 88 pv a3c2 d0d1 f2f0 c0d2 f7f1"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 245 seldepth 7 multipv 1 score mate -2 nodes 69259 nps 7695444 hashfull 0 tbhits 0 time 9 pv d0d1 f2f0 c0d2 f7f1"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 245 seldepth 6 multipv 1 score mate 2 nodes 77775 nps 8641666 hashfull 0 tbhits 0 time 9 pv f2f0 c0d2 f7f1"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 245 seldepth 5 multipv 1 score mate -1 nodes 21373 nps 5343250 hashfull 0 tbhits 0 time 4 pv a0b0 f0d0"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 245 seldepth 4 multipv 1 score mate 2 nodes 29963 nps 5992600 hashfull 0 tbhits 0 time 5 pv f0f1 c0e1 f7d7"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 245 seldepth 3 multipv 1 score mate -1 nodes 989 nps 494500 hashfull 0 tbhits 0 time 2 pv c0e1 f7d7"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 245 seldepth 2 multipv 1 score mate 1 nodes 15927 nps 5309000 hashfull 0 tbhits 0 time 3 pv f7d7"
+        }
+      ],
+      "result": "loss"
+    },
+    {
+      "game": 1,
+      "pair": 0,
+      "rule": "jqe-v1",
+      "newColor": "black",
+      "plies": 107,
+      "status": {
+        "type": "finished",
+        "winner": "red",
+        "reason": "checkmate"
+      },
+      "moves": [
+        "g3g4",
+        "c6c5",
+        "a3a4",
+        "e6e5",
+        "c0e2",
+        "i6i5",
+        "g4i2",
+        "i5g3",
+        "h0g2",
+        "h7d7",
+        "h2h8",
+        "i9i5",
+        "b2b6",
+        "i5h4",
+        "b6b7",
+        "g9e7",
+        "b7b4",
+        "e7h7",
+        "e3e4",
+        "e5e7",
+        "i3i4",
+        "g6g5",
+        "g2e3",
+        "h7h8",
+        "b0d1",
+        "h8i8",
+        "b4b5",
+        "i8c8",
+        "i0h0",
+        "c8c6",
+        "h0g2",
+        "h9f8",
+        "d1b3",
+        "f8e8",
+        "d0e1",
+        "g3e1",
+        "f0e1",
+        "h4g3",
+        "e1d1",
+        "c6c7",
+        "b5b4",
+        "g3f2",
+        "d1f1",
+        "a6a5",
+        "f1f2",
+        "e8a8",
+        "a0d0",
+        "c7a7",
+        "d0d9",
+        "e9d9",
+        "f2f9",
+        "e7e9",
+        "f9g9",
+        "c9e7",
+        "g2f4",
+        "a5c7",
+        "f4g6",
+        "e7f7",
+        "c3c4",
+        "a8e8",
+        "c4c5",
+        "a7a4",
+        "b4a4",
+        "a9a4",
+        "c5d5",
+        "a4c3",
+        "d5d6",
+        "c3e2",
+        "g0e2",
+        "e8e3",
+        "e2f3",
+        "d7c8",
+        "e4e5",
+        "f7f3",
+        "e5e6",
+        "f3f2",
+        "i2g0",
+        "f2f4",
+        "b3d5",
+        "f4f2",
+        "d5b3",
+        "b9a7",
+        "g9g8",
+        "f2f6",
+        "g8c8",
+        "f6g6",
+        "d6d7",
+        "e9g9",
+        "c8f8",
+        "g9g8",
+        "e6e7",
+        "g6c6",
+        "f8g8",
+        "c6c0",
+        "e0e1",
+        "c0c1",
+        "e1e0",
+        "c1c0",
+        "e0e1",
+        "c0c1",
+        "e1e0",
+        "c1e1",
+        "e0e1",
+        "e3e2",
+        "d7d8",
+        "d9e9",
+        "g8g9"
+      ],
+      "stats": [
+        {
+          "engine": 1,
+          "info": "info depth 5 seldepth 4 multipv 1 score cp 233 upperbound nodes 1000308 nps 3664131 hashfull 112 tbhits 0 time 273 pv g3g4"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 4 seldepth 4 multipv 1 score cp -163 nodes 1000646 nps 3548390 hashfull 111 tbhits 0 time 282 pv c6c5"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 6 seldepth 6 multipv 1 score cp 346 nodes 1000805 nps 3462993 hashfull 98 tbhits 0 time 289 pv a3a4"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 6 seldepth 4 multipv 1 score cp -165 upperbound nodes 1001119 nps 3250386 hashfull 105 tbhits 0 time 308 pv e6e5"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 6 seldepth 5 multipv 1 score cp -30 nodes 1001028 nps 3475791 hashfull 84 tbhits 0 time 288 pv c0e2"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 4 seldepth 5 multipv 1 score cp 62 upperbound nodes 1000382 nps 3269222 hashfull 100 tbhits 0 time 306 pv i6i5 g4i2 e5e7 i3i4"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 6 seldepth 6 multipv 1 score cp -224 upperbound nodes 1001045 nps 3138072 hashfull 97 tbhits 0 time 319 pv g4i2 i5g7"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 11 seldepth 7 multipv 1 score cp 365 upperbound nodes 1001061 nps 3099260 hashfull 98 tbhits 0 time 323 pv i5g3 h2g2"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 5 seldepth 6 multipv 1 score cp -356 upperbound nodes 1000912 nps 2102756 hashfull 98 tbhits 0 time 476 pv h0g2 h9g7 i3i4"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 7 seldepth 5 multipv 1 score cp 456 nodes 1001019 nps 3137990 hashfull 104 tbhits 0 time 319 pv h7d7 b2b9"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 8 seldepth 7 multipv 1 score cp -402 nodes 1000759 nps 3187130 hashfull 96 tbhits 0 time 314 pv h2h8 e5e7 h8f6 g3e5 b0c2"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 9 seldepth 7 multipv 1 score cp 158 upperbound nodes 1000374 nps 3068631 hashfull 95 tbhits 0 time 326 pv i9i5"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 13 seldepth 11 multipv 1 score cp -175 lowerbound nodes 1000098 nps 3003297 hashfull 93 tbhits 0 time 333 pv b2b6"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 13 seldepth 10 multipv 1 score cp -573 nodes 1000812 nps 3147207 hashfull 86 tbhits 0 time 318 pv i5h4 b6b7 g9e7"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 15 seldepth 12 multipv 1 score cp 618 nodes 1000588 nps 2925695 hashfull 95 tbhits 0 time 342 pv b6b7 g9e7 b7d7"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 13 seldepth 15 multipv 1 score cp -665 upperbound nodes 1000345 nps 3068542 hashfull 99 tbhits 0 time 326 pv g9e7 b7d7 h4i3 b0d1"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 13 seldepth 14 multipv 1 score cp -90 nodes 1000993 nps 2835674 hashfull 99 tbhits 0 time 353 pv b7b4 e7h7"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 15 seldepth 11 multipv 1 score cp -45 nodes 1000231 nps 2849660 hashfull 90 tbhits 0 time 351 pv e7h7 i3i4 g6g5"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 12 seldepth 11 multipv 1 score cp -128 nodes 1000813 nps 2952250 hashfull 100 tbhits 0 time 339 pv e3e4"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 14 seldepth 13 multipv 1 score cp 107 upperbound nodes 1000912 nps 2918110 hashfull 97 tbhits 0 time 343 pv e5e7 i3i4"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 10 seldepth 12 multipv 1 score cp -292 nodes 1000375 nps 3031439 hashfull 74 tbhits 0 time 330 pv i3i4 g6g5 b4d4"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 13 seldepth 12 multipv 1 score cp 259 nodes 1000912 nps 3292473 hashfull 109 tbhits 0 time 304 pv g6g5"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 13 seldepth 12 multipv 1 score cp -236 nodes 1000664 nps 3291657 hashfull 95 tbhits 0 time 304 pv g2e3 h7f7 b0d1"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 14 seldepth 11 multipv 1 score cp 203 nodes 1001005 nps 3370387 hashfull 99 tbhits 0 time 297 pv h7h8 b0d1 h8i8"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 11 seldepth 11 multipv 1 score cp -300 upperbound nodes 1000512 nps 3450041 hashfull 99 tbhits 0 time 290 pv b0d1 h8h6 b4d4 d7e6 a0c0"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 13 seldepth 10 multipv 1 score cp 209 nodes 1000263 nps 3473135 hashfull 94 tbhits 0 time 288 pv h8i8 b4d4 i8i7 i0h0 b9a7"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 13 seldepth 10 multipv 1 score cp -414 nodes 1000967 nps 3208227 hashfull 111 tbhits 0 time 312 pv b4b5 i8c8 a0a3"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 13 seldepth 7 multipv 1 score cp 205 upperbound nodes 1000888 nps 3249636 hashfull 96 tbhits 0 time 308 pv i8c8 i0h0 e7e6"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 14 seldepth 14 multipv 1 score cp -452 upperbound nodes 1000291 nps 3106493 hashfull 100 tbhits 0 time 322 pv i0h0 e7e6 h0g2 h9i7 e4e5 g3e5 g2h4 i7i4 b5b4"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 14 seldepth 15 multipv 1 score cp 501 upperbound nodes 1000150 nps 3205608 hashfull 107 tbhits 0 time 312 pv c8c6 a0b0"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 14 seldepth 11 multipv 1 score cp -600 nodes 1000677 nps 3117373 hashfull 94 tbhits 0 time 321 pv h0g2"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 13 seldepth 12 multipv 1 score cp 420 nodes 1000154 nps 3096452 hashfull 96 tbhits 0 time 323 pv h9f8"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 17 seldepth 12 multipv 1 score cp -799 nodes 1000503 nps 2605476 hashfull 111 tbhits 0 time 384 pv d1b3 f8d8"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 19 seldepth 13 multipv 1 score cp 739 nodes 1000668 nps 2585705 hashfull 106 tbhits 0 time 387 pv f8e8 a4a5 a6a5"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 17 seldepth 16 multipv 1 score cp -950 nodes 1000657 nps 2654262 hashfull 102 tbhits 0 time 377 pv d0e1"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 21 seldepth 21 multipv 1 score cp 721 nodes 1000866 nps 2579551 hashfull 115 tbhits 0 time 388 pv g3e1 f0e1 h4g3 a4a5 g3f2"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 18 seldepth 18 multipv 1 score cp -881 nodes 1000776 nps 2572688 hashfull 110 tbhits 0 time 389 pv f0e1 e8e4 i4i5 h4i5 e3c2"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 21 seldepth 12 multipv 1 score cp 148 nodes 1000390 nps 2494738 hashfull 106 tbhits 0 time 401 pv h4g3 e1d1 c6c7 a0a2 g3f2"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 21 seldepth 22 multipv 1 score cp -234 nodes 1000450 nps 2321229 hashfull 105 tbhits 0 time 431 pv e1d1"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 19 seldepth 18 multipv 1 score cp 217 nodes 1000769 nps 2300618 hashfull 117 tbhits 0 time 435 pv c6c7 i4i5"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 20 seldepth 16 multipv 1 score cp -129 nodes 1000812 nps 2546595 hashfull 98 tbhits 0 time 393 pv b5b4 a9a7 d1f1"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 19 seldepth 21 multipv 1 score cp 165 nodes 1000413 nps 2786665 hashfull 116 tbhits 0 time 359 pv g3f2 d1d6"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 21 seldepth 20 multipv 1 score cp 174 nodes 1000205 nps 3003618 hashfull 94 tbhits 0 time 333 pv d1f1 c9a7"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 16 seldepth 16 multipv 1 score cp -307 upperbound nodes 1000554 nps 2661047 hashfull 112 tbhits 0 time 376 pv a6a5 f1f2 d7e6 e4e5 e7e5 f2f6 c7g7"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 23 seldepth 9 multipv 1 score cp 335 nodes 1000820 nps 2719619 hashfull 104 tbhits 0 time 368 pv f1f2 c5c4 c3c4"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 21 seldepth 16 multipv 1 score cp -500 nodes 1000841 nps 2647727 hashfull 103 tbhits 0 time 378 pv e8a8 a0d0 c9a7"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 16 seldepth 14 multipv 1 score cp 354 nodes 1000096 nps 2618052 hashfull 110 tbhits 0 time 382 pv a0d0 e7e3"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 19 seldepth 14 multipv 1 score cp -663 nodes 1000360 nps 2545445 hashfull 112 tbhits 0 time 393 pv c7a7"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 22 seldepth 15 multipv 1 score cp 572 upperbound nodes 1000389 nps 2439973 hashfull 106 tbhits 0 time 410 pv d0d9 e9d9"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 22 seldepth 23 multipv 1 score cp -700 nodes 1000187 nps 2488027 hashfull 102 tbhits 0 time 402 pv e9d9 f2f9 e7e9 f9f7 d7e6 f7a7 b9a7"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 21 seldepth 24 multipv 1 score cp 578 nodes 1000124 nps 2325869 hashfull 112 tbhits 0 time 430 pv f2f9 e7e9 g2h4 c9e7"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 22 seldepth 21 multipv 1 score cp -565 nodes 1000672 nps 2332568 hashfull 113 tbhits 0 time 429 pv e7e9 g2h4 c9e7 f9f7 d7e6 f7g7 b9d8 g7g5"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 22 seldepth 22 multipv 1 score cp 294 upperbound nodes 1000743 nps 2428987 hashfull 87 tbhits 0 time 412 pv f9g9 c9e7 e4e5"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 19 seldepth 20 multipv 1 score cp -556 nodes 1000250 nps 2331585 hashfull 117 tbhits 0 time 429 pv c9e7"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 24 seldepth 32 multipv 1 score cp -360 upperbound nodes 1000584 nps 2238442 hashfull 93 tbhits 0 time 447 pv g2f4 a5c7"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 27 seldepth 11 multipv 1 score cp 234 nodes 1000607 nps 2199136 hashfull 109 tbhits 0 time 455 pv a5c7 f4g6 e7f7 b4b8 b9d8"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 24 seldepth 23 multipv 1 score cp -423 nodes 1000210 nps 2273204 hashfull 106 tbhits 0 time 440 pv f4g6 e7f7 b3d5 f7f6 d5b3 d7e8 g6i5 f6d6"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 26 seldepth 22 multipv 1 score cp 300 nodes 1000323 nps 2247916 hashfull 115 tbhits 0 time 445 pv e7f7 b3d5 f7f6 g6h8 a8c8 h8f7 a7a4 b4a4 a9a4"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 22 seldepth 18 multipv 1 score cp -411 nodes 1000063 nps 2353089 hashfull 108 tbhits 0 time 425 pv c3c4"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 27 seldepth 35 multipv 1 score cp 291 nodes 1000474 nps 2513753 hashfull 106 tbhits 0 time 398 pv a8e8 c4c5 a7a4 b4a4 a9a4"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 35 seldepth 19 multipv 1 score cp -457 nodes 1000711 nps 2606018 hashfull 101 tbhits 0 time 384 pv c4c5 a7a4 b4a4 a9a4"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 31 seldepth 17 multipv 1 score cp 483 nodes 1000355 nps 2598324 hashfull 110 tbhits 0 time 385 pv a7a4 b4a4 a9a4"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 41 seldepth 23 multipv 1 score cp -455 nodes 1000014 nps 2500035 hashfull 109 tbhits 0 time 400 pv b4a4 a9a4"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 22 seldepth 20 multipv 1 score cp 462 nodes 1000639 nps 2365576 hashfull 115 tbhits 0 time 423 pv a9a4"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 26 seldepth 33 multipv 1 score cp -693 nodes 1000349 nps 2364891 hashfull 111 tbhits 0 time 423 pv c5d5 a4c3 d5d6 c3e2 g0e2 e8e3 e2f3 d7c8 i2g0 f7f6"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 27 seldepth 27 multipv 1 score cp 685 nodes 1000083 nps 2421508 hashfull 122 tbhits 0 time 413 pv a4c3"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 28 seldepth 39 multipv 1 score cp -562 nodes 1000185 nps 2695916 hashfull 109 tbhits 0 time 371 pv d5d6 c3e2 g0e2 e8e3 e2f3 d7c8 e4e5 f7f3 e5e6 f3f2 i2g0 f2g2 e6e7 e3g3 d6e6 g3g6 e7e8 g6h6 e8e9 c7e9 g9h9"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 27 seldepth 34 multipv 1 score cp 698 nodes 1000125 nps 2538388 hashfull 121 tbhits 0 time 394 pv c3e2 g0e2"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 24 seldepth 35 multipv 1 score cp -490 nodes 1000787 nps 2647584 hashfull 108 tbhits 0 time 378 pv g0e2 e8e3 e2f3 d7c8 e4e5 f7f3 e5e6 f3f2 i2g0 f2g2 e0f0 g2g0 f0f1 g0g1 f1f0 g1g4 e6e7 g4f4 f0e0 e3c3 e7d7 f4f6"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 27 seldepth 29 multipv 1 score cp 513 nodes 1000624 nps 2654175 hashfull 114 tbhits 0 time 377 pv e8e3 e0d0 d7c6 g6e5 e3e5 e4e5 f7f0 d0d1 f0f6 e5d5 c6d5 b3d5 f6d6 g9g5 d9d8 i4i5"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 28 seldepth 25 multipv 1 score cp -323 nodes 1000132 nps 2725155 hashfull 105 tbhits 0 time 367 pv e2f3 d9d8"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 26 seldepth 29 multipv 1 score cp 459 nodes 1000051 nps 2702840 hashfull 106 tbhits 0 time 370 pv d7c8 e4e5 f7f3 b3d5 f3f2 e5e6 f2i2 g6f8"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 26 seldepth 20 multipv 1 score cp -297 nodes 1000212 nps 2703275 hashfull 118 tbhits 0 time 370 pv e4e5 f7f3 e5e6 f3f4 i4i5 b9a7 g9g7"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 25 seldepth 21 multipv 1 score cp 295 nodes 1000846 nps 2668922 hashfull 123 tbhits 0 time 375 pv f7f3 e5e6"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 26 seldepth 19 multipv 1 score cp -448 nodes 1000646 nps 2605848 hashfull 110 tbhits 0 time 384 pv e5e6 e3e4"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 24 seldepth 26 multipv 1 score cp 354 upperbound nodes 1000238 nps 2674433 hashfull 102 tbhits 0 time 374 pv f3f2 g9g8"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 23 seldepth 20 multipv 1 score cp -307 nodes 1000462 nps 2619010 hashfull 115 tbhits 0 time 382 pv i2g0 g5g4 e6e7"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 23 seldepth 24 multipv 1 score cp 390 nodes 1000939 nps 2690696 hashfull 108 tbhits 0 time 372 pv f2f4 g9g8"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 26 seldepth 22 multipv 1 score cp -244 nodes 1000268 nps 2584671 hashfull 112 tbhits 0 time 387 pv b3d5 f4f5"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 23 seldepth 16 multipv 1 score cp 352 upperbound nodes 1000515 nps 2632934 hashfull 120 tbhits 0 time 380 pv f4f2 g9g8"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 36 seldepth 2 multipv 1 score cp 0 nodes 1000079 nps 2674008 hashfull 115 tbhits 0 time 374 pv d5b3"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 21 seldepth 15 multipv 1 score cp 351 nodes 1000230 nps 2817549 hashfull 122 tbhits 0 time 355 pv b9a7"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 26 seldepth 17 multipv 1 score cp 197 nodes 1000607 nps 3078790 hashfull 102 tbhits 0 time 325 pv g9g8"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 30 seldepth 15 multipv 1 score cp 0 nodes 1000322 nps 3116267 hashfull 102 tbhits 0 time 321 pv f2f6 g8c8 f6g6 d6d7 e9h9 e6e7 g6e6 d7d8 d9e9 d8e8 e9f9 e8f8 f9e9 f8e8"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 27 seldepth 22 multipv 1 score cp 347 nodes 1000684 nps 3166721 hashfull 114 tbhits 0 time 316 pv g8c8 e3c3 e6f6 c3c8 d6d7 c8d8 f6f7 g5g4 f7f8"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 33 seldepth 13 multipv 1 score cp 0 nodes 1000537 nps 2718850 hashfull 125 tbhits 0 time 368 pv f6g6 d6d7 e9h9 e6e7 g6e6 d7d8 d9e9 d8e8 e9f9 e8f8 f9e9 f8e8"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 23 seldepth 14 multipv 1 score cp 2100 nodes 1000785 nps 3404030 hashfull 99 tbhits 0 time 294 pv d6d7"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 28 seldepth 20 multipv 1 score cp -1431 upperbound nodes 1000096 nps 2915731 hashfull 97 tbhits 0 time 343 pv e9g9 c8f8"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 53 seldepth 16 multipv 1 score mate 8 nodes 1000733 nps 3450803 hashfull 53 tbhits 0 time 290 pv c8f8 g9g8 e6e7 g6a6 f8g8 a6a0 e0e1 a0a1 e1e0 a1f1 d7d8 d9e9 e7e8 e9f9 g8g9"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 19 seldepth 24 multipv 1 score cp -2200 nodes 1000395 nps 3402704 hashfull 88 tbhits 0 time 294 pv g9g8 e6f6 g6g7 f6f7 g7f7 f8f7 g8h8 f7e7"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 64 seldepth 14 multipv 1 score mate 7 nodes 1000029 nps 3508873 hashfull 41 tbhits 0 time 285 pv e6e7 g6a6 f8g8 a6a0 e0e1 a0a1 e1e0 a1f1 d7d8 d9e9 e7e8 e9f9 g8g9"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 65 seldepth 13 multipv 1 score mate -6 nodes 1000441 nps 3923298 hashfull 31 tbhits 0 time 255 pv g6c6 f8f9 c7e9 e7e8 c6c0 e0e1 c0c1 b3d1 c1d1 e1d1 g8g0 e8e9"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 72 seldepth 12 multipv 1 score mate 6 nodes 1000173 nps 4256055 hashfull 24 tbhits 0 time 235 pv f8g8 c6c0 e0e1 c0c1 e1e0 e3f3 d7d8 d9e9 g8g9 f3f9 e7e8"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 128 seldepth 13 multipv 1 score mate -6 nodes 1000715 nps 3720130 hashfull 70 tbhits 0 time 269 pv c6c0 e0e1 c0c1 b3d1 c1d1 e1d1 e3f3 g8g9 f3f9 g9f9 c7e9 d7d8"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 245 seldepth 10 multipv 1 score mate 5 nodes 577725 nps 9170238 hashfull 2 tbhits 0 time 63 pv e0e1 c0c1 e1e0 e3f3 d7d8 d9e9 g8g9 f3f9 e7e8"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 123 seldepth 11 multipv 1 score mate -5 nodes 1000381 nps 2891274 hashfull 95 tbhits 0 time 346 pv c0c1 b3d1 c1d1 e1d1 e3f3 g8g9 f3f9 g9f9 c7e9 d7d8"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 245 seldepth 8 multipv 1 score mate 4 nodes 34048 nps 6809600 hashfull 1 tbhits 0 time 5 pv e1e0 e3f3 d7d8 d9e9 g8g9 f3f9 e7e8"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 135 seldepth 13 multipv 1 score mate -6 nodes 1000717 nps 3088632 hashfull 103 tbhits 0 time 324 pv c1c0 e0e1 c0c1 b3d1 c1d1 e1d1 e3f3 g8g9 f3f9 g9f9 c7e9 d7d8"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 245 seldepth 2 multipv 1 score mate 1 nodes 245 nps 122500 hashfull 0 tbhits 0 time 2 pv e0e1"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 136 seldepth 11 multipv 1 score mate -4 nodes 1000493 nps 3237841 hashfull 125 tbhits 0 time 309 pv c0c1 e1e0 c1e1 e0e1 e3f3 e7e8 g5g4 d7d8"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 245 seldepth 2 multipv 1 score mate 1 nodes 735 nps 367500 hashfull 0 tbhits 0 time 2 pv e1e0"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 245 seldepth 7 multipv 1 score mate -3 nodes 70042 nps 7004200 hashfull 0 tbhits 0 time 10 pv c1e1 e0e1 e3f3 e7e8 g5g4 d7d8"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 245 seldepth 6 multipv 1 score mate 3 nodes 33739 nps 5623166 hashfull 2 tbhits 0 time 6 pv e0e1 e3f3 e7e8 f3f8 e8d8"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 245 seldepth 5 multipv 1 score mate -2 nodes 15751 nps 3937750 hashfull 0 tbhits 0 time 4 pv e3e2 d7d8 d9e9 g8g9"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 245 seldepth 4 multipv 1 score mate 2 nodes 11689 nps 3896333 hashfull 4 tbhits 0 time 3 pv d7d8 d9e9 g8g9"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 245 seldepth 3 multipv 1 score mate -1 nodes 503 nps 251500 hashfull 0 tbhits 0 time 2 pv d9e9 g8g9"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 245 seldepth 2 multipv 1 score mate 1 nodes 5648 nps 2824000 hashfull 3 tbhits 0 time 2 pv g8g9"
+        }
+      ],
+      "result": "loss"
+    },
+    {
+      "game": 2,
+      "pair": 1,
+      "rule": "legacy",
+      "newColor": "red",
+      "plies": 132,
+      "status": {
+        "type": "finished",
+        "winner": "black",
+        "reason": "checkmate"
+      },
+      "moves": [
+        "g3g4",
+        "b9c7",
+        "c0e2",
+        "i6i5",
+        "c3c4",
+        "a6a5",
+        "g4f3",
+        "b7b0",
+        "e3e4",
+        "e6e5",
+        "h0g2",
+        "h9i7",
+        "h2h6",
+        "e5e4",
+        "h6g7",
+        "a5a8",
+        "g2f2",
+        "c7e6",
+        "g7h6",
+        "e4d4",
+        "e2e3",
+        "a8b8",
+        "g0e2",
+        "b0d2",
+        "d0e1",
+        "b8b2",
+        "e1g1",
+        "b2b3",
+        "g1g6",
+        "b3e3",
+        "g6f6",
+        "g9e7",
+        "f6f7",
+        "d2f0",
+        "e0f0",
+        "a9a7",
+        "f2f1",
+        "d9e8",
+        "a3a4",
+        "h7h8",
+        "f1e1",
+        "e3c3",
+        "a0c0",
+        "c3c0",
+        "e2c0",
+        "h8h6",
+        "f7f5",
+        "d4c4",
+        "a4c6",
+        "e6d4",
+        "c6e4",
+        "e7d6",
+        "e4c6",
+        "e9d9",
+        "f5f7",
+        "d4c6",
+        "f7d7",
+        "e8d8",
+        "f3e2",
+        "h6f6",
+        "f0e0",
+        "c4d4",
+        "e1c1",
+        "d9e9",
+        "c1c9",
+        "d8b8",
+        "d7b7",
+        "i7g5",
+        "b7b6",
+        "d6c7",
+        "b6c6",
+        "b8b0",
+        "e0e1",
+        "f6c6",
+        "c9c6",
+        "b0i0",
+        "c6e6",
+        "g5i3",
+        "e2f3",
+        "i9h9",
+        "e1f1",
+        "i3g1",
+        "e6e7",
+        "c7d6",
+        "e7e6",
+        "h9g8",
+        "f1f0",
+        "g1e3",
+        "f0f1",
+        "g8f7",
+        "e6h6",
+        "f9e8",
+        "h6h2",
+        "e8g9",
+        "h2g2",
+        "g9h7",
+        "g2a2",
+        "h7g5",
+        "f3e2",
+        "e3c1",
+        "a2b2",
+        "g5i4",
+        "b2b8",
+        "i4g3",
+        "f1e1",
+        "d4d3",
+        "b8h8",
+        "d3d2",
+        "h8h3",
+        "d2e2",
+        "c0e2",
+        "i0a0",
+        "h3h7",
+        "d6c5",
+        "h7a7",
+        "a0a1",
+        "e1e0",
+        "c5d4",
+        "a7a5",
+        "g3e2",
+        "a5a2",
+        "d4e3",
+        "a2b2",
+        "e2g1",
+        "e0f0",
+        "e3f2",
+        "b2b0",
+        "f2e1",
+        "f0f1",
+        "g1f3",
+        "b0a0",
+        "f3d2"
+      ],
+      "stats": [
+        {
+          "engine": 0,
+          "info": "info depth 5 seldepth 4 multipv 1 score cp 213 upperbound nodes 1000967 nps 3820484 hashfull 104 tbhits 0 time 262 pv g3g4"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 4 seldepth 4 multipv 1 score cp -367 upperbound nodes 1000641 nps 3586526 hashfull 104 tbhits 0 time 279 pv b9c7 h0g2"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 5 seldepth 4 multipv 1 score cp 426 nodes 1000053 nps 3546287 hashfull 106 tbhits 0 time 282 pv c0e2"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 6 seldepth 4 multipv 1 score cp -141 nodes 1000524 nps 3893089 hashfull 92 tbhits 0 time 257 pv i6i5"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 7 seldepth 5 multipv 1 score cp 388 nodes 1001171 nps 3512880 hashfull 107 tbhits 0 time 285 pv c3c4"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 9 seldepth 6 multipv 1 score cp -151 nodes 1000499 nps 3848073 hashfull 74 tbhits 0 time 260 pv a6a5"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 5 seldepth 4 multipv 1 score cp -88 upperbound nodes 1001076 nps 3524915 hashfull 105 tbhits 0 time 284 pv g4f3 h7h0"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 10 seldepth 8 multipv 1 score cp 295 nodes 1000117 nps 3533982 hashfull 104 tbhits 0 time 283 pv b7b0 e3e4"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 6 seldepth 7 multipv 1 score cp -74 upperbound nodes 1001068 nps 3575242 hashfull 113 tbhits 0 time 280 pv e3e4"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 10 seldepth 8 multipv 1 score cp -68 upperbound nodes 1000988 nps 3325541 hashfull 117 tbhits 0 time 301 pv e6e5 h2g2 h9i7"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 7 seldepth 8 multipv 1 score cp -233 upperbound nodes 1000438 nps 3280124 hashfull 115 tbhits 0 time 305 pv h0g2 e5e4 f3e4 a5h5 h2h7"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 9 seldepth 10 multipv 1 score cp -77 upperbound nodes 1000374 nps 2959686 hashfull 121 tbhits 0 time 338 pv h9i7"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 9 seldepth 10 multipv 1 score cp -251 upperbound nodes 1000806 nps 3060568 hashfull 107 tbhits 0 time 327 pv h2h6 e5e4 f0e1 a5e5"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 14 seldepth 10 multipv 1 score cp 229 nodes 1000127 nps 3049167 hashfull 107 tbhits 0 time 328 pv e5e4 g0i2 a5b5"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 10 seldepth 8 multipv 1 score cp -515 upperbound nodes 1000772 nps 3137216 hashfull 107 tbhits 0 time 319 pv h6g7 a5a8"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 12 seldepth 11 multipv 1 score cp 286 nodes 1000430 nps 2968635 hashfull 112 tbhits 0 time 337 pv a5a8 f3e4"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 12 seldepth 11 multipv 1 score cp -341 upperbound nodes 1000577 nps 3238113 hashfull 121 tbhits 0 time 309 pv g2f2 c7e6"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 13 seldepth 11 multipv 1 score cp 286 nodes 1000527 nps 3227506 hashfull 104 tbhits 0 time 310 pv c7e6 i0h0"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 10 seldepth 8 multipv 1 score cp -498 nodes 1001127 nps 3304049 hashfull 109 tbhits 0 time 303 pv g7h6"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 12 seldepth 8 multipv 1 score cp 306 nodes 1000131 nps 3135206 hashfull 99 tbhits 0 time 319 pv e4d4 d0e1"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 10 seldepth 9 multipv 1 score cp -419 nodes 1000882 nps 3381358 hashfull 120 tbhits 0 time 296 pv e2e3 i9h9"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 12 seldepth 8 multipv 1 score cp 348 nodes 1000322 nps 3135805 hashfull 108 tbhits 0 time 319 pv a8b8 g0e2 b8b3"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 10 seldepth 9 multipv 1 score cp -566 upperbound nodes 1001229 nps 3337430 hashfull 110 tbhits 0 time 300 pv g0e2 b0d2 b2c2 b8b3 d0e1"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 15 seldepth 11 multipv 1 score cp 832 nodes 1000461 nps 3136241 hashfull 107 tbhits 0 time 319 pv b0d2 i0g0 b8b2"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 10 seldepth 11 multipv 1 score cp -994 nodes 1000935 nps 3051631 hashfull 117 tbhits 0 time 328 pv d0e1 b8b2 h6i7 i9i7 i0i2 a9a3 a0a3"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 11 seldepth 10 multipv 1 score cp 339 nodes 1000903 nps 3303310 hashfull 111 tbhits 0 time 303 pv b8b2 e1d1 h7e7 d1g1 f9e8 a3a4"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 13 seldepth 13 multipv 1 score cp -375 nodes 1000285 nps 3290411 hashfull 115 tbhits 0 time 304 pv e1g1 b2b3"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 14 seldepth 12 multipv 1 score cp 421 nodes 1000506 nps 3391545 hashfull 106 tbhits 0 time 295 pv b2b3 g1g6 b3e3 g6f6 g9e7 f0e1 a9a3"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 15 seldepth 13 multipv 1 score cp -414 nodes 1000864 nps 3147371 hashfull 109 tbhits 0 time 318 pv g1g6 b3e3 g6f6 g9e7 f0e1"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 16 seldepth 17 multipv 1 score cp 411 nodes 1000154 nps 3247253 hashfull 109 tbhits 0 time 308 pv b3e3 g6f6 g9e7"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 14 seldepth 9 multipv 1 score cp -316 nodes 1001016 nps 3282019 hashfull 101 tbhits 0 time 305 pv g6f6 g9e7 f0e1"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 16 seldepth 14 multipv 1 score cp 384 nodes 1000311 nps 3003936 hashfull 102 tbhits 0 time 333 pv g9e7 h6g7 d2f0 g7f8 e9e8 e0f0 a9a8"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 14 seldepth 11 multipv 1 score cp -580 nodes 1000540 nps 3259087 hashfull 96 tbhits 0 time 307 pv f6f7 d2f0 i0f0 d4c4"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 15 seldepth 12 multipv 1 score cp 827 nodes 1000911 nps 3023900 hashfull 110 tbhits 0 time 331 pv d2f0 e0f0 d4c4"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 14 seldepth 10 multipv 1 score cp -634 nodes 1000707 nps 3098164 hashfull 106 tbhits 0 time 323 pv e0f0 a9a3"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 15 seldepth 13 multipv 1 score cp 691 nodes 1000915 nps 2961286 hashfull 113 tbhits 0 time 338 pv a9a7"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 15 seldepth 12 multipv 1 score cp -221 nodes 1000349 nps 3031360 hashfull 103 tbhits 0 time 330 pv f2f1 e6c7 a3a4"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 16 seldepth 16 multipv 1 score cp 186 nodes 1000194 nps 2817447 hashfull 100 tbhits 0 time 355 pv d9e8"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 16 seldepth 15 multipv 1 score cp -685 nodes 1000292 nps 2532384 hashfull 114 tbhits 0 time 395 pv a3a4"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 20 seldepth 15 multipv 1 score cp 466 nodes 1000199 nps 2667197 hashfull 125 tbhits 0 time 375 pv h7h8"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 19 seldepth 23 multipv 1 score cp -1344 nodes 1000541 nps 2585377 hashfull 107 tbhits 0 time 387 pv f1e1 e3c3 h6g7 e6g5"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 20 seldepth 22 multipv 1 score cp 1417 nodes 1000931 nps 2377508 hashfull 108 tbhits 0 time 421 pv e3c3 h6i7 h8h1 e1e6 e8e6 e2g0 h1h4"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 19 seldepth 25 multipv 1 score cp -1482 nodes 1000217 nps 2427711 hashfull 108 tbhits 0 time 412 pv a0c0 c3c0 e2c0 h8h6 a4c6 e8b8 e1b1 h6f6"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 21 seldepth 23 multipv 1 score cp 1080 nodes 1000090 nps 2631815 hashfull 116 tbhits 0 time 380 pv c3c0 e2c0 h8h6 e1b1 e6c7 b1b6 c6c5"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 22 seldepth 31 multipv 1 score cp -1124 nodes 1000876 nps 2514763 hashfull 119 tbhits 0 time 398 pv e2c0 h8h6 e1b1 e8b8 f7f5 e6g7 b1e1 f9e8"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 20 seldepth 28 multipv 1 score cp 1156 nodes 1000134 nps 2577664 hashfull 108 tbhits 0 time 388 pv h8h6 e1b1 e6c7 b1b2"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 19 seldepth 26 multipv 1 score cp -1070 nodes 1000294 nps 2422019 hashfull 106 tbhits 0 time 413 pv f7f5 d4c4 a4c6 e6d4 c6e4 e7d6 e1d1 e8c8 c0a2"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 22 seldepth 6 multipv 1 score cp 1185 upperbound nodes 1000277 nps 2604888 hashfull 119 tbhits 0 time 384 pv d4c4 a4c6"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 20 seldepth 21 multipv 1 score cp -975 nodes 1000850 nps 2697708 hashfull 125 tbhits 0 time 371 pv a4c6 e6d4 c6e4 e7d6 e4c6 c9e7"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 23 seldepth 18 multipv 1 score cp 1072 nodes 1000504 nps 2689526 hashfull 102 tbhits 0 time 372 pv e6d4 c6e4 e7d6 e4c6 e9d9 f5i5 e8e6"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 21 seldepth 22 multipv 1 score cp -1053 nodes 1000708 nps 2704616 hashfull 124 tbhits 0 time 370 pv c6e4 e7d6 e4c6 e9d9 e1d1 e8d8 f3e4 c4c3 d1g1"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 21 seldepth 10 multipv 1 score cp 1039 nodes 1000873 nps 2377370 hashfull 110 tbhits 0 time 421 pv e7d6 e4c6 c9e7"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 22 seldepth 28 multipv 1 score cp -1073 nodes 1000856 nps 2400134 hashfull 134 tbhits 0 time 417 pv e4c6 c9e7"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 19 seldepth 20 multipv 1 score cp 1118 nodes 1000947 nps 2559966 hashfull 112 tbhits 0 time 391 pv e9d9 e1d1 e8d8 f3e4 c4b4"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 21 seldepth 19 multipv 1 score cp -1093 nodes 1000529 nps 2434377 hashfull 120 tbhits 0 time 411 pv f5f7 e8e7 f7f8 e7e9 f8f7 d6e7"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 19 seldepth 27 multipv 1 score cp 1148 nodes 1000062 nps 2314958 hashfull 123 tbhits 0 time 432 pv d4c6 f7d7 e8d8 e1b1 c6b4"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 20 seldepth 24 multipv 1 score cp -1039 nodes 1000290 nps 2320858 hashfull 123 tbhits 0 time 431 pv f7d7 e8d8 e1c1 c4b4 d7b7 d8f8"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 20 seldepth 23 multipv 1 score cp 1058 nodes 1000976 nps 2349708 hashfull 113 tbhits 0 time 426 pv e8d8 f0e0 f9e8"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 21 seldepth 25 multipv 1 score cp -1087 nodes 1000880 nps 2366146 hashfull 110 tbhits 0 time 423 pv f3e2 c4d4"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 19 seldepth 22 multipv 1 score cp 1078 nodes 1000372 nps 2294431 hashfull 106 tbhits 0 time 436 pv h6f6 f0e0 c4d4 e1c1 d9e9"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 22 seldepth 22 multipv 1 score cp -1020 nodes 1000359 nps 2445865 hashfull 110 tbhits 0 time 409 pv f0e0 i7g9 i0f0 a7a6 f0g2"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 20 seldepth 18 multipv 1 score cp 1094 nodes 1000078 nps 2309648 hashfull 114 tbhits 0 time 433 pv c4d4 e1c1 d9e9 c1c9 d8e8 e0d0 i7g5 c9a9"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 20 seldepth 26 multipv 1 score cp -1063 nodes 1000567 nps 2218552 hashfull 117 tbhits 0 time 451 pv e1c1 i7g9 c1c9 d9e9 c9b9 d8b8 i0i1"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 20 seldepth 26 multipv 1 score cp 1094 nodes 1000722 nps 2477034 hashfull 115 tbhits 0 time 404 pv d9e9 c1c9 d8b8 e0e1 i7g5"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 20 seldepth 31 multipv 1 score cp -1021 nodes 1000784 nps 2527232 hashfull 117 tbhits 0 time 396 pv c1c9 i7g5 c9c8"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 19 seldepth 23 multipv 1 score cp 1091 nodes 1000059 nps 2551170 hashfull 117 tbhits 0 time 392 pv d8b8 d7b7 i7g5 i3i4"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 19 seldepth 24 multipv 1 score cp -1137 nodes 1000472 nps 2348525 hashfull 121 tbhits 0 time 426 pv d7b7 d4d3 b7b3 i7g5"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 17 seldepth 22 multipv 1 score cp 1080 nodes 1000244 nps 2469738 hashfull 105 tbhits 0 time 405 pv i7g5 e0e1 i9i6 c9a9 i6h8"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 20 seldepth 26 multipv 1 score cp -993 nodes 1000113 nps 2624968 hashfull 111 tbhits 0 time 381 pv b7b6 g5i3 b6c6 b8b0 e0e1"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 20 seldepth 23 multipv 1 score cp 1124 nodes 1000859 nps 2579533 hashfull 112 tbhits 0 time 388 pv d6c7 b6b7 b8e8 e2d1 f6e6 e0d0"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 22 seldepth 31 multipv 1 score cp -1217 nodes 1000649 nps 2826692 hashfull 111 tbhits 0 time 354 pv b6c6 b8b0 c0a2 f6c6 c9c6 b0i0 c6c1 i9i7 c1a1 g5i3 a1a7 i3g1"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 20 seldepth 26 multipv 1 score cp 1186 nodes 1000569 nps 2969047 hashfull 107 tbhits 0 time 337 pv b8b0 c0a2 f6c6 c9c6 b0i0 i3i4 i5i4 c6c1 i9i5"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 21 seldepth 26 multipv 1 score cp -1235 nodes 1000143 nps 2950274 hashfull 122 tbhits 0 time 339 pv e0e1 f6c6 c9c6 b0i0 i3i4"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 20 seldepth 24 multipv 1 score cp 1183 nodes 1000200 nps 2950442 hashfull 108 tbhits 0 time 339 pv f6c6 c9c6 b0i0 i3i4 i5i4"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 22 seldepth 22 multipv 1 score cp -1314 nodes 1000525 nps 2850498 hashfull 116 tbhits 0 time 351 pv c9c6 b0i0 c6e6 c7d6 i3i4 i5i4"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 19 seldepth 24 multipv 1 score cp 1216 nodes 1000845 nps 2867750 hashfull 114 tbhits 0 time 349 pv b0i0 i3i4 i5i4"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 19 seldepth 23 multipv 1 score cp -1344 nodes 1000551 nps 2810536 hashfull 108 tbhits 0 time 356 pv c6e6 c7d6 i3i4"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 19 seldepth 25 multipv 1 score cp 1256 nodes 1000464 nps 2726059 hashfull 114 tbhits 0 time 367 pv g5i3 e2f3 i3g1 e1d1 i9i7"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 21 seldepth 26 multipv 1 score cp -1308 nodes 1000718 nps 2811005 hashfull 100 tbhits 0 time 356 pv e2f3 i3g1 f3g4 e9d9 e6e7 d9e9 g4f5"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 18 seldepth 23 multipv 1 score cp 1209 nodes 1000356 nps 2874586 hashfull 109 tbhits 0 time 348 pv i9h9"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 21 seldepth 25 multipv 1 score cp -1387 nodes 1000059 nps 2890343 hashfull 102 tbhits 0 time 346 pv e1f1 i5i4 e6e1 h9g8"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 21 seldepth 25 multipv 1 score cp 1260 nodes 1000473 nps 2951247 hashfull 127 tbhits 0 time 339 pv i3g1 e6e2 d4d3"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 20 seldepth 27 multipv 1 score cp -1489 nodes 1000258 nps 2732945 hashfull 111 tbhits 0 time 366 pv e6e7 a7a6 f3g4"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 21 seldepth 24 multipv 1 score cp 1251 nodes 1000003 nps 2849011 hashfull 113 tbhits 0 time 351 pv c7d6 e7e6 g1e3 f1e1 e9d9 e6g6 f9e8"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 19 seldepth 27 multipv 1 score cp -1512 nodes 1000052 nps 2849150 hashfull 117 tbhits 0 time 351 pv e7e6 d4d3 f3g4 e9d9"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 22 seldepth 25 multipv 1 score cp 1275 nodes 1000523 nps 2916976 hashfull 98 tbhits 0 time 343 pv h9g8 f3g2 g8f7 e6e0 i0c0 e0f0 d4e4"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 20 seldepth 26 multipv 1 score cp -1502 nodes 1000857 nps 2935064 hashfull 107 tbhits 0 time 341 pv f1f0 d6e5 f0f1 d4d3 f1e1 i5i4 f3g4 g8f7 e6e7 d3d2 g4f5 i4h4 c0a2 h4i4 e1e0 e5f4 f5e4 f4g3 e4d5 g1e3"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 20 seldepth 25 multipv 1 score cp 1356 nodes 1000691 nps 2969409 hashfull 110 tbhits 0 time 337 pv g1e3 c0e2 i5i4"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 24 seldepth 32 multipv 1 score cp -1539 nodes 1000394 nps 3004186 hashfull 103 tbhits 0 time 333 pv f0f1 g8f7 e6h6 d6e5 h6h3 d4d3 f3g2 d3d2"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 22 seldepth 28 multipv 1 score cp 1346 nodes 1000820 nps 2978630 hashfull 108 tbhits 0 time 336 pv g8f7 e6h6 f9e8 h6h2 d6c7"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 22 seldepth 27 multipv 1 score cp -1574 nodes 1000519 nps 2834331 hashfull 108 tbhits 0 time 353 pv e6h6 f9e8 h6h2 i5i4 h2h7 d4d3"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 21 seldepth 30 multipv 1 score cp 1341 nodes 1000404 nps 3059339 hashfull 111 tbhits 0 time 327 pv f9e8 h6h2 d6c5 h2f2 e8d6 f1e1 c5b4 f2e2 f7e8"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 23 seldepth 26 multipv 1 score cp -1363 nodes 1000744 nps 3107900 hashfull 113 tbhits 0 time 322 pv h6h2 e3g1 h2f2 d4d3 f2f7 e8f6 f3g2"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 21 seldepth 28 multipv 1 score cp 1316 nodes 1000029 nps 3077012 hashfull 116 tbhits 0 time 325 pv e8g9 h2d2 d6c7 d2i2 g9i8"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 21 seldepth 28 multipv 1 score cp -1433 nodes 1000411 nps 3116545 hashfull 113 tbhits 0 time 321 pv h2g2 f7e8 g2g3"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 21 seldepth 27 multipv 1 score cp 1495 nodes 1000342 nps 3135868 hashfull 119 tbhits 0 time 319 pv g9h7 g2f2 e3c1"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 19 seldepth 24 multipv 1 score cp -1520 nodes 1000706 nps 2909029 hashfull 105 tbhits 0 time 344 pv g2a2 e3g1 a2e2 h7g5 f3e4 e9d9 e4f5 g5f3 e2f2 i5i4 f2g2 i4h4"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 23 seldepth 30 multipv 1 score cp 1615 nodes 1000068 nps 2739912 hashfull 109 tbhits 0 time 365 pv h7g5 a2e2 e9d9 f3g4 d4d3 g4f5 i5i4 e2e0 g5f3"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 22 seldepth 27 multipv 1 score cp -1608 nodes 1000378 nps 3013186 hashfull 121 tbhits 0 time 332 pv f3e2 e3g1 a2d2 d6c7 d2a2 g5e4 e2f3 e4d2 c0e2 d4d3 f3g2"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 21 seldepth 23 multipv 1 score cp 1573 nodes 1000598 nps 2858851 hashfull 114 tbhits 0 time 350 pv e3c1 f1e1 d6e5"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 21 seldepth 25 multipv 1 score cp -1575 nodes 1000385 nps 3145864 hashfull 112 tbhits 0 time 318 pv a2b2 d6c7 b2b1 g5e4 b1b7"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 23 seldepth 34 multipv 1 score cp 1759 nodes 1000469 nps 2959967 hashfull 93 tbhits 0 time 338 pv g5i4 b2b5 i4g3 f1e1 d4d3 c0a2 i0i4"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 22 seldepth 30 multipv 1 score cp -1692 nodes 1000609 nps 3196833 hashfull 107 tbhits 0 time 313 pv b2b8 i4h2 f1f0 h2g0 f0f1 i0c0 b8b2 c0a0"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 23 seldepth 34 multipv 1 score cp 1995 nodes 1000115 nps 3096331 hashfull 96 tbhits 0 time 323 pv i4g3 f1e1 d4d3 b8b4 d3d2 b4g4 i0i4 g4h4 d2e2 c0e2 d6c5 e1e0 c5d4"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 22 seldepth 28 multipv 1 score cp -1758 nodes 1000892 nps 2909569 hashfull 102 tbhits 0 time 344 pv f1e1 d4d3 b8h8 d6c5 e1d1 d3e3 d1e1 c5b4 e2f3 b4c3 f3g2 c3d2 e1f1 f7e6"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 23 seldepth 36 multipv 1 score cp 2302 nodes 1000564 nps 3117021 hashfull 89 tbhits 0 time 321 pv d4d3 b8b5 i0i4 b5b4 d3d2 b4g4 d6c5 g4c4 i4i1 c4a4 c5d4"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 23 seldepth 27 multipv 1 score cp -1762 nodes 1000822 nps 3218077 hashfull 115 tbhits 0 time 311 pv b8h8 d3d2 h8h7 a7a6 h7h2 d2e2 c0e2 d6c5 h2f2 i0i4"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 24 seldepth 34 multipv 1 score cp 2585 nodes 1000807 nps 3207714 hashfull 87 tbhits 0 time 312 pv d3d2 h8h7 i0i4 h7h4 d6c5 h4c4 i4i1 c4e4 d2e2 c0e2 g3e4 e2c0 c5d4 c0a2 i1i0 e1e0 d4e3 a2c4 e3f2 c4a2 c1e3 e0d0 e4g3 d0e0 g3e2"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 21 seldepth 30 multipv 1 score cp -2019 nodes 1000375 nps 3031439 hashfull 100 tbhits 0 time 330 pv h8h3 d2e2 c0e2 d6c5 h3h0 i0i4 h0f0 i4a4"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 48 seldepth 24 multipv 1 score mate 12 nodes 1000601 nps 4331606 hashfull 51 tbhits 0 time 231 pv d2e2 c0e2 i0a0 e1e0 d6c5 h3h7 a0a1 h7a7 g3e2 a7d7 c5d4 d7e7 e2g1 e0f0 d4e3 e7e4 e3f2 e4a4 g1f3 a4e4 f2e1 f0e0 f3d2"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 22 seldepth 26 multipv 1 score cp -2273 nodes 1000310 nps 3279704 hashfull 102 tbhits 0 time 305 pv c0e2 i0i4 h3h2 d6c5 h2f2 g3e2"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 61 seldepth 22 multipv 1 score mate 11 nodes 1000022 nps 3424732 hashfull 56 tbhits 0 time 292 pv i0a0 e1e0 d6c5 h3h7 a0a1 h7a7 g3e2 a7d7 c5d4 d7e7 e2g1 e0f0 d4e3 e7e4 e3f2 e4a4 g1f3 a4e4 f2e1 f0e0 f3d2"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 24 seldepth 19 multipv 1 score cp -2648 nodes 1000794 nps 3523922 hashfull 78 tbhits 0 time 284 pv h3h7 g3e2"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 59 seldepth 20 multipv 1 score mate 10 nodes 1000689 nps 3878639 hashfull 60 tbhits 0 time 258 pv d6c5 e1d1 g3e2 d1e1 a0a1 e1e0 c5d4 h7a7 d4e3 a7b7 e2g1 e0f0 e3f2 b7b0 f2e1 f0f1 g1f3 b0b1 f3d2"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 21 seldepth 25 multipv 1 score mate -17 nodes 1000074 nps 4237601 hashfull 83 tbhits 0 time 236 pv h7a7 a0a1 e1e0 a1a4 a7c7 a4e4 e0d0 g3e2 d0d1 c5d4 c7e7 e4i4 e7e4 e2g1 e4f4 d4c3 f4h4 g1f3 h4g4 i4i1 g4h4 c3d2 h4h7 i1i4"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 61 seldepth 18 multipv 1 score mate 9 nodes 1000461 nps 3485926 hashfull 61 tbhits 0 time 287 pv a0a1 e1e0 c5d4 a7a9 g3e2 a9a5 d4e3 a5b5 e2g1 e0f0 e3f2 b5b0 f2e1 f0f1 g1f3 b0b1 f3d2"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 56 seldepth 17 multipv 1 score mate -8 nodes 1000398 nps 3624630 hashfull 71 tbhits 0 time 276 pv e1e0 g3e2 a7b7 c5d4 b7b1 d4e3 b1b3 e2g1 e0f0 e3d2 b3d3 d2e1 f0f1 c1a3 d3d1 a1c1"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 66 seldepth 16 multipv 1 score mate 8 nodes 1000109 nps 3597514 hashfull 70 tbhits 0 time 278 pv c5d4 a7a9 g3e2 a9a5 d4e3 a5b5 e2g1 e0f0 e3f2 b5b0 f2e1 f0f1 g1f3 b0b1 f3d2"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 31 seldepth 19 multipv 1 score mate -8 nodes 1000401 nps 3165825 hashfull 77 tbhits 0 time 316 pv a7a5 g3e2 a5b5 d4e3 b5b3 e2g1 e0d0 e3f2 b3b1 f2e1 b1e1 a1e1 d0d1 g1h3 d1d0 h3f2"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 67 seldepth 14 multipv 1 score mate 7 nodes 1000195 nps 3597823 hashfull 56 tbhits 0 time 278 pv g3e2 a5a8 d4e3 a8a2 e2g1 e0f0 e3f2 a2b2 g1f3 b2e2 f2e1 f0f1 c1a3"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 71 seldepth 13 multipv 1 score mate -6 nodes 1000433 nps 3907941 hashfull 45 tbhits 0 time 256 pv a5a2 d4e3 a2c2 e2g1 e0f0 e3f2 c2b2 g1e2 f0e0 f2e1 b2a2 e2g1"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 72 seldepth 12 multipv 1 score mate 6 nodes 1000170 nps 4673691 hashfull 44 tbhits 0 time 214 pv d4e3 a2c2 e2g1 e0f0 e3f2 c2b2 g1f3 b2e2 f2e1 f0f1 c1a3"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 76 seldepth 11 multipv 1 score mate -5 nodes 1000588 nps 4568894 hashfull 39 tbhits 0 time 219 pv a2b2 e2g1 e0f0 e3f2 b2b0 g1f3 b0b1 f2g1 b1g1 f3g1"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 76 seldepth 10 multipv 1 score mate 5 nodes 1000614 nps 4447173 hashfull 39 tbhits 0 time 225 pv e2g1 e0f0 e3f2 b2b0 f2e1 f0f1 g1f3 b0b1 f3d2"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 96 seldepth 9 multipv 1 score mate -4 nodes 1000550 nps 6626158 hashfull 13 tbhits 0 time 151 pv e0f0 e3f2 b2b0 g1f3 b0b1 f2g1 b1g1 f3g1"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 94 seldepth 8 multipv 1 score mate 4 nodes 1000696 nps 8270214 hashfull 5 tbhits 0 time 121 pv e3f2 b2b0 f2e1 f0f1 g1f3 b0b1 f3d2"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 245 seldepth 7 multipv 1 score mate -3 nodes 633482 nps 5192475 hashfull 14 tbhits 0 time 122 pv b2b0 g1f3 b0b1 f2g1 b1g1 f3g1"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 243 seldepth 6 multipv 1 score mate 3 nodes 1000107 nps 4504986 hashfull 46 tbhits 0 time 222 pv f2e1 f0f1 g1f3 b0b1 f3d2"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 245 seldepth 5 multipv 1 score mate -2 nodes 13445 nps 4481666 hashfull 1 tbhits 0 time 3 pv f0f1 g1f3 b0b1 f3d2"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 245 seldepth 4 multipv 1 score mate 2 nodes 11537 nps 3845666 hashfull 2 tbhits 0 time 3 pv g1f3 b0b1 f3d2"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 245 seldepth 3 multipv 1 score mate -1 nodes 4518 nps 1506000 hashfull 0 tbhits 0 time 3 pv b0a0 f3d2"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 245 seldepth 2 multipv 1 score mate 1 nodes 7356 nps 2452000 hashfull 2 tbhits 0 time 3 pv f3d2"
+        }
+      ],
+      "result": "loss"
+    },
+    {
+      "game": 3,
+      "pair": 1,
+      "rule": "legacy",
+      "newColor": "black",
+      "plies": 100,
+      "status": {
+        "type": "finished",
+        "winner": "black",
+        "reason": "checkmate"
+      },
+      "moves": [
+        "g3g4",
+        "b9c7",
+        "b0c2",
+        "g6g5",
+        "g4f5",
+        "a6a5",
+        "e3e4",
+        "g5i5",
+        "h0i2",
+        "a5f5",
+        "e4d6",
+        "f9e8",
+        "i2i5",
+        "i6i5",
+        "d6c8",
+        "e9f9",
+        "g0i2",
+        "a9a6",
+        "h2h6",
+        "e8d6",
+        "c8a9",
+        "b7b3",
+        "f0e1",
+        "i5i4",
+        "a3a4",
+        "c6c5",
+        "a4c6",
+        "i4i3",
+        "b2b1",
+        "i3i2",
+        "e1e2",
+        "i2i1",
+        "e2e3",
+        "i1i0",
+        "c0e2",
+        "f5f1",
+        "a0a4",
+        "f1f0",
+        "e0e1",
+        "c5c4",
+        "c3c4",
+        "f0d0",
+        "c4c5",
+        "g9e7",
+        "a4f4",
+        "h9f8",
+        "b1d1",
+        "d0c0",
+        "h6g7",
+        "c0c2",
+        "g7f8",
+        "e7f8",
+        "f4f7",
+        "c9e7",
+        "d1d0",
+        "c2c1",
+        "e1e0",
+        "c1c5",
+        "f7h7",
+        "c5c6",
+        "h7h8",
+        "d9e8",
+        "h8h4",
+        "e6e5",
+        "h4h6",
+        "e7e6",
+        "h6h7",
+        "e8e7",
+        "d0i0",
+        "e7g7",
+        "i0f0",
+        "f9e9",
+        "h7h2",
+        "g7g9",
+        "h2f2",
+        "g9a9",
+        "f2f8",
+        "i9i1",
+        "f0g0",
+        "c6c2",
+        "g0i0",
+        "c2e2",
+        "e0f0",
+        "d6c4",
+        "f0f1",
+        "e2e0",
+        "f1f2",
+        "c4e3",
+        "f8b8",
+        "i1h2",
+        "b8g8",
+        "e3d1",
+        "f2f1",
+        "c7d5",
+        "g8g9",
+        "a9g9",
+        "i0i9",
+        "g9g2",
+        "i9i0",
+        "d5e3"
+      ],
+      "stats": [
+        {
+          "engine": 1,
+          "info": "info depth 5 seldepth 4 multipv 1 score cp 239 nodes 1000966 nps 3549524 hashfull 99 tbhits 0 time 282 pv g3g4"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 5 seldepth 3 multipv 1 score cp -365 upperbound nodes 1001079 nps 3512557 hashfull 101 tbhits 0 time 285 pv b9c7 i3i4 h7h0 i4i9"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 4 seldepth 5 multipv 1 score cp 334 upperbound nodes 1000277 nps 3345408 hashfull 108 tbhits 0 time 299 pv b0c2 g6g5 e3e4"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 10 seldepth 6 multipv 1 score cp -146 lowerbound nodes 1001081 nps 3500283 hashfull 83 tbhits 0 time 286 pv g6g5"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 10 seldepth 7 multipv 1 score cp 23 nodes 1000488 nps 3116785 hashfull 94 tbhits 0 time 321 pv g4f5 g5i5 h0i2"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 10 seldepth 7 multipv 1 score cp 109 lowerbound nodes 1000231 nps 3087132 hashfull 106 tbhits 0 time 324 pv a6a5"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 8 seldepth 7 multipv 1 score cp -369 nodes 1000281 nps 3155460 hashfull 108 tbhits 0 time 317 pv e3e4"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 11 seldepth 10 multipv 1 score cp 617 nodes 1000181 nps 3049332 hashfull 115 tbhits 0 time 328 pv g5i5 h0i2"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 9 seldepth 8 multipv 1 score cp -525 lowerbound nodes 1000428 nps 3031600 hashfull 111 tbhits 0 time 330 pv h0i2"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 11 seldepth 9 multipv 1 score cp 448 nodes 1001048 nps 2901588 hashfull 114 tbhits 0 time 345 pv a5f5 i3i4"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 10 seldepth 9 multipv 1 score cp -454 upperbound nodes 1000438 nps 3059443 hashfull 102 tbhits 0 time 327 pv e4d6 f9e8"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 11 seldepth 8 multipv 1 score cp 458 nodes 1000751 nps 3748131 hashfull 76 tbhits 0 time 267 pv f9e8"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 15 seldepth 13 multipv 1 score cp -719 nodes 1000583 nps 3146487 hashfull 82 tbhits 0 time 318 pv i2i5 i6i5 d6c8 e9f9 g0i2"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 18 seldepth 11 multipv 1 score cp 682 nodes 1000128 nps 3367434 hashfull 85 tbhits 0 time 297 pv i6i5"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 15 seldepth 14 multipv 1 score cp -550 nodes 1001154 nps 3168208 hashfull 105 tbhits 0 time 316 pv d6c8 e9f9 g0i2 i5i4"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 17 seldepth 12 multipv 1 score cp 534 nodes 1000450 nps 3136206 hashfull 103 tbhits 0 time 319 pv e9f9 g0i2 i5i4"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 16 seldepth 12 multipv 1 score cp -539 nodes 1000314 nps 3473312 hashfull 100 tbhits 0 time 288 pv g0i2 i5i4 i3i4 a9a5 d0e1"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 13 seldepth 9 multipv 1 score cp 780 nodes 1000770 nps 3166993 hashfull 84 tbhits 0 time 316 pv a9a6"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 11 seldepth 12 multipv 1 score cp -547 nodes 1000070 nps 3184936 hashfull 102 tbhits 0 time 314 pv h2h6"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 14 seldepth 13 multipv 1 score cp 671 nodes 1000186 nps 3040079 hashfull 107 tbhits 0 time 329 pv e8d6 c8a9 b7b3"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 15 seldepth 8 multipv 1 score cp -634 nodes 1000328 nps 3106608 hashfull 94 tbhits 0 time 322 pv c8a9 b7b3 a3a4"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 15 seldepth 11 multipv 1 score cp 690 nodes 1000727 nps 3291865 hashfull 87 tbhits 0 time 304 pv b7b3 a3a4 c6c5 d0e1"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 11 seldepth 9 multipv 1 score cp -451 upperbound nodes 1000592 nps 3259257 hashfull 89 tbhits 0 time 307 pv f0e1 i5i4 a3a4 a6a5 i0g0"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 16 seldepth 14 multipv 1 score cp 678 nodes 1000931 nps 3427845 hashfull 74 tbhits 0 time 292 pv i5i4 a3a4 c6c5 b2b0 i4i3"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 16 seldepth 15 multipv 1 score cp -712 nodes 1000702 nps 3335673 hashfull 100 tbhits 0 time 300 pv a3a4"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 18 seldepth 14 multipv 1 score cp 798 nodes 1000556 nps 3391715 hashfull 83 tbhits 0 time 295 pv c6c5"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 16 seldepth 13 multipv 1 score cp -673 nodes 1000424 nps 3357127 hashfull 85 tbhits 0 time 298 pv a4c6 i4h4 c0e2 i9i3 b2b1"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 18 seldepth 18 multipv 1 score cp 763 nodes 1000424 nps 3437883 hashfull 94 tbhits 0 time 291 pv i4i3 c0e2 c9a7"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 15 seldepth 16 multipv 1 score cp -890 nodes 1000467 nps 3323810 hashfull 88 tbhits 0 time 301 pv b2b1"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 17 seldepth 10 multipv 1 score cp 870 upperbound nodes 1000388 nps 3269241 hashfull 98 tbhits 0 time 306 pv i3i2 e1e2"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 17 seldepth 18 multipv 1 score cp -1070 nodes 1000834 nps 3157205 hashfull 85 tbhits 0 time 317 pv e1e2 i2i1 i0g0 f5f0"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 21 seldepth 14 multipv 1 score cp 1083 nodes 1000518 nps 3022712 hashfull 91 tbhits 0 time 331 pv i2i1 a0a4"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 16 seldepth 21 multipv 1 score cp -1288 nodes 1001058 nps 2876603 hashfull 99 tbhits 0 time 348 pv e2e3 i1i0 c0e2 f5f2"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 19 seldepth 20 multipv 1 score cp 1271 nodes 1000195 nps 2976770 hashfull 101 tbhits 0 time 336 pv i1i0 c0e2 f5f2 b1b2 e6e5"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 17 seldepth 20 multipv 1 score cp -1400 nodes 1000161 nps 2740167 hashfull 103 tbhits 0 time 365 pv c0e2 f5h5 h6g7 h5h0"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 17 seldepth 21 multipv 1 score cp 1698 nodes 1000065 nps 2770263 hashfull 94 tbhits 0 time 361 pv f5f1 a0a4 f1b1"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 18 seldepth 17 multipv 1 score cp -1902 nodes 1000740 nps 3079200 hashfull 105 tbhits 0 time 325 pv a0a4 f1b1 a4b6 b1f1 h6i7 f1f0 e0e1 f0d0 b6a4 h7h1 a9c8"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 16 seldepth 29 multipv 1 score cp 1080 nodes 1000406 nps 2667749 hashfull 114 tbhits 0 time 375 pv f1f0 e0e1 c5c4 c3c4 d6c4 a4c4 h7d7"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 22 seldepth 20 multipv 1 score cp -974 nodes 1000716 nps 2719336 hashfull 111 tbhits 0 time 368 pv e0e1 c5c4 c3c4"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 17 seldepth 22 multipv 1 score cp 1066 nodes 1000242 nps 2732901 hashfull 113 tbhits 0 time 366 pv c5c4 c3c4 e6e5"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 18 seldepth 23 multipv 1 score cp -992 nodes 1000812 nps 2987498 hashfull 88 tbhits 0 time 335 pv c3c4"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 17 seldepth 19 multipv 1 score cp 1070 nodes 1000744 nps 2803204 hashfull 106 tbhits 0 time 357 pv f0d0 c4c5 g9e7 a4f4"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 19 seldepth 21 multipv 1 score cp -1082 nodes 1000637 nps 2719122 hashfull 98 tbhits 0 time 368 pv c4c5 e6e5 a4g4 g9e7 g4g9"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 17 seldepth 20 multipv 1 score cp 1105 nodes 1000838 nps 2851390 hashfull 102 tbhits 0 time 351 pv g9e7 a4f4 f9e9 b1d1 e6e5"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 17 seldepth 21 multipv 1 score cp -1341 nodes 1000827 nps 2764715 hashfull 110 tbhits 0 time 362 pv a4f4 h9f8"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 18 seldepth 23 multipv 1 score cp 1385 nodes 1000043 nps 2695533 hashfull 103 tbhits 0 time 371 pv h9f8 h6g7 d0d2 b1d1 i9g9 d1d6"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 18 seldepth 22 multipv 1 score cp -1276 nodes 1000225 nps 2532215 hashfull 119 tbhits 0 time 395 pv b1d1 e6e5 f4b4"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 17 seldepth 20 multipv 1 score cp 1262 nodes 1000022 nps 2570750 hashfull 122 tbhits 0 time 389 pv d0c0 c6e4 e6e5"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 20 seldepth 21 multipv 1 score cp -1300 nodes 1000355 nps 2578234 hashfull 107 tbhits 0 time 388 pv h6g7 i9g9 g7f8 g9f8 c6e4 d6e4 e3e4 c0c2 f4h4 h7g7"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 18 seldepth 23 multipv 1 score cp 1537 nodes 1000881 nps 2749673 hashfull 121 tbhits 0 time 364 pv c0c2 a9b7 c2c4"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 20 seldepth 14 multipv 1 score cp -1480 nodes 1000016 nps 2785559 hashfull 98 tbhits 0 time 359 pv g7f8 e7f8"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 18 seldepth 20 multipv 1 score cp 1508 nodes 1000151 nps 2924418 hashfull 110 tbhits 0 time 342 pv e7f8 f4f7 c9e7 e1f1 c2c5 f7f8 f9e9 f8f7 b3d1 f7e7 c7e8 c6e8 d9e8 e7h7"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 18 seldepth 22 multipv 1 score cp -1572 nodes 1000540 nps 2748736 hashfull 108 tbhits 0 time 364 pv f4f7 c2c1"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 18 seldepth 23 multipv 1 score cp 1673 nodes 1000767 nps 2749359 hashfull 106 tbhits 0 time 364 pv c9e7 d1d0 c2c1 e1e0 c1c5 f7h7 c5c2 e0e1 e6e5"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 17 seldepth 21 multipv 1 score cp -1624 nodes 1000689 nps 2605960 hashfull 104 tbhits 0 time 384 pv d1d0 h7h0"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 17 seldepth 21 multipv 1 score cp 1533 nodes 1000239 nps 2558156 hashfull 107 tbhits 0 time 391 pv c2c1 e1e0 c1c5 f7h7 c5c6 d0i0 e6e5 i0f0 f9e9 h7h8 c6c2 h8f8 i9i0"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 19 seldepth 25 multipv 1 score cp -1638 nodes 1000610 nps 2661196 hashfull 102 tbhits 0 time 376 pv e1e0 c1c5 e0f0 h7g7"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 17 seldepth 26 multipv 1 score cp 1625 nodes 1000302 nps 2718211 hashfull 115 tbhits 0 time 368 pv c1c5 e0f0 e6e5 a9b7"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 17 seldepth 21 multipv 1 score cp -1721 nodes 1000473 nps 2675061 hashfull 113 tbhits 0 time 374 pv f7h7 c5c6 d0i0 c6c2 i0f0 f9e9 h7h2 c2d2 f0h0 i9g9"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 18 seldepth 21 multipv 1 score cp 1515 nodes 1000220 nps 2646084 hashfull 129 tbhits 0 time 378 pv c5c6 d0i0 c6c2 i0f0 f9e9 h7h2 e6e5 h2f2 d9e8 f2g2"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 21 seldepth 21 multipv 1 score cp -1350 nodes 1000576 nps 2605666 hashfull 118 tbhits 0 time 384 pv h7h8 e6e5"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 18 seldepth 18 multipv 1 score cp 1821 nodes 1000605 nps 2689798 hashfull 111 tbhits 0 time 372 pv d9e8"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 20 seldepth 35 multipv 1 score cp -2368 nodes 1000342 nps 2653427 hashfull 109 tbhits 0 time 377 pv h8h4 c6c0 a9b7 d6b7"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 20 seldepth 25 multipv 1 score cp 2019 upperbound nodes 1000777 nps 2612994 hashfull 114 tbhits 0 time 383 pv e6e5 h4h6 f8g7 h6g6 i9i1"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 24 seldepth 15 multipv 1 score cp -1786 upperbound nodes 1000837 nps 2572845 hashfull 116 tbhits 0 time 389 pv h4h6 e7e6"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 24 seldepth 26 multipv 1 score cp 1978 nodes 1000132 nps 2531979 hashfull 115 tbhits 0 time 395 pv e7e6 h6h7 e8e7 d0i0 c6c2 e0f0 f9e9 i0h0 i9g9"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 23 seldepth 35 multipv 1 score cp -1816 nodes 1000874 nps 2676133 hashfull 110 tbhits 0 time 374 pv h6h7 e8e7 d0i0 c6c2 i0f0 f9e9 e0e1 c7b5 h7f7 e9e8 f0h0 c2c1 e1e0 c1h1"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 21 seldepth 20 multipv 1 score cp 1953 nodes 1000283 nps 2439714 hashfull 113 tbhits 0 time 410 pv e8e7 d0i0 i9g9"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 22 seldepth 28 multipv 1 score cp -1846 nodes 1000420 nps 2501050 hashfull 104 tbhits 0 time 400 pv d0i0 c6c2 i0f0 f9e9 e0e1 c7b5 f0g0 e9e8 h7f7 i9a9 e1f1 f8e9"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 21 seldepth 20 multipv 1 score cp 1946 nodes 1000418 nps 2667781 hashfull 102 tbhits 0 time 375 pv e7g7 i0h0 i9i0"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 22 seldepth 27 multipv 1 score cp -1629 nodes 1000388 nps 2565097 hashfull 104 tbhits 0 time 390 pv i0f0 f9e9 h7h2 c6c3 h2f2 g7g9 a9c8 d6c8 f2f8"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 21 seldepth 26 multipv 1 score cp 1979 nodes 1000466 nps 2393459 hashfull 117 tbhits 0 time 418 pv f9e9 h7h2 d6c4 f0g0 g7g9 a9c8 e9e8 g0g2 i9i0"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 20 seldepth 30 multipv 1 score cp -1802 nodes 1000919 nps 2573056 hashfull 127 tbhits 0 time 389 pv h7h2 c6c2 h2f2 g7g9 a9c8"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 19 seldepth 28 multipv 1 score cp 2895 nodes 1000324 nps 2532465 hashfull 98 tbhits 0 time 395 pv g7g9 a9b7 g9g0 f0f1 i9i1 h2h9"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 21 seldepth 25 multipv 1 score cp -1792 nodes 1000582 nps 2552505 hashfull 111 tbhits 0 time 392 pv h2f2 g9a9 f2f8 i9i3 f0i0"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 18 seldepth 22 multipv 1 score cp 4231 nodes 1000337 nps 2841866 hashfull 112 tbhits 0 time 352 pv g9a9 f0g0 i9i1 f2f8"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 20 seldepth 26 multipv 1 score cp -1931 nodes 1000759 nps 2803246 hashfull 110 tbhits 0 time 357 pv f2f8 c6c2 f0f2 c2e2 e0f0 e2c2"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 18 seldepth 24 multipv 1 score cp 2024 nodes 1000569 nps 2960263 hashfull 106 tbhits 0 time 338 pv i9i1 f0f2 i1h0 f2i2 h0g1 i2i3 d6c4 i3i2"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 20 seldepth 27 multipv 1 score cp -2057 nodes 1000732 nps 2834934 hashfull 112 tbhits 0 time 353 pv f0g0 c6c1"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 22 seldepth 27 multipv 1 score cp 1858 nodes 1000215 nps 2801722 hashfull 113 tbhits 0 time 357 pv c6c2 e0e1 d6c4 g0g2"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 20 seldepth 24 multipv 1 score cp -2602 nodes 1000540 nps 2942764 hashfull 119 tbhits 0 time 340 pv g0i0 c2e2 e0f0 d6c4 f8c8 e2g2"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 20 seldepth 30 multipv 1 score cp 3454 nodes 1000736 nps 3079187 hashfull 108 tbhits 0 time 325 pv c2e2 e0f0 d6c4 f8h8 a9d9 h8h7 c4d2"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 20 seldepth 25 multipv 1 score cp -3924 nodes 1000339 nps 3247853 hashfull 113 tbhits 0 time 308 pv e0f0 d6c4 f8h8 e2e1"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 20 seldepth 21 multipv 1 score cp 4571 nodes 1000784 nps 3313854 hashfull 103 tbhits 0 time 302 pv d6c4 i0g0 c4d2 f0f1 e2e0 f1f2 i1h0 f8g8 e0e1 g0f0 h0g1 g8g1 e1g1 f2e2 d2c0 f0e0 g1e1 e2f2 e1e0"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 41 seldepth 21 multipv 1 score mate -10 nodes 1000254 nps 3534466 hashfull 84 tbhits 0 time 283 pv f0f1 e2e0 f8g8 c4e3 f1f2 e0i0 g8g3 i0f0 f2e2 f0e0 e2f2 e0e1 g3g6 e5e4 g6g3 e3g4 g3g4 e4e3 g4g3 e3e2"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 43 seldepth 18 multipv 1 score mate 9 nodes 1000443 nps 3345963 hashfull 91 tbhits 0 time 299 pv e2e0 f1f2 e0f0 f2e2 f0f8 i0g0 c4e3 g0g3 e3g2 g3g7 f8f1 g7g3 e5e4 g3d3 e4e3 e2d2 f1f2"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 49 seldepth 15 multipv 1 score mate -7 nodes 1000559 nps 3403261 hashfull 80 tbhits 0 time 294 pv f1f2 e0f0 f2e2 f0f8 i0c0 f8f0 c0c1 f0e0 e2f2 i1h0 c1c7 h0g1 f2f1 c4e3"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 54 seldepth 14 multipv 1 score mate 7 nodes 1000215 nps 3311970 hashfull 74 tbhits 0 time 302 pv c4e3 f8c8 i1h2 c8g8 e3d1 f2f1 c7d5 g8g9 a9g9 i0i9 g9g2 i9i0 d5e3"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 57 seldepth 13 multipv 1 score mate -6 nodes 1000409 nps 3862583 hashfull 44 tbhits 0 time 259 pv f8b8 e3g2 b8f8 i1h2 f8f9 a9f9 i0i9 f9f7 i9i3 h2i3 f2f1 g2f4"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 55 seldepth 12 multipv 1 score mate 6 nodes 1000192 nps 3650335 hashfull 55 tbhits 0 time 274 pv i1h2 b8g8 e3d1 f2f1 c7d5 g8g9 a9g9 i0i9 g9g2 i9i0 d5e3"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 59 seldepth 11 multipv 1 score mate -5 nodes 1000114 nps 4630157 hashfull 25 tbhits 0 time 216 pv b8g8 c7d5 i0i1 h2i1 g8g3 d5c3 g3g1 e0f0 g1f1 f0f1"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 60 seldepth 10 multipv 1 score mate 5 nodes 1000461 nps 4312331 hashfull 33 tbhits 0 time 232 pv e3d1 f2f1 c7d5 g8g9 a9g9 i0i9 g9g2 i9i0 d5e3"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 80 seldepth 9 multipv 1 score mate -4 nodes 1000255 nps 6495162 hashfull 12 tbhits 0 time 154 pv f2f1 c7d5 g8g2 d5e3 g2e2 e0e2 i0i2 e2e0"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 76 seldepth 8 multipv 1 score mate 4 nodes 1000075 nps 6803231 hashfull 8 tbhits 0 time 147 pv c7d5 g8g9 a9g9 i0i9 g9g2 i9i0 d5e3"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 245 seldepth 7 multipv 1 score mate -3 nodes 53467 nps 5940777 hashfull 0 tbhits 0 time 9 pv g8g9 a9g9 i0i9 g9g0 i9i3 d5e3"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 245 seldepth 6 multipv 1 score mate 3 nodes 14635 nps 3658750 hashfull 0 tbhits 0 time 4 pv a9g9 i0i9 g9g2 i9i0 d5e3"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 245 seldepth 5 multipv 1 score mate -2 nodes 8479 nps 2826333 hashfull 0 tbhits 0 time 3 pv i0i9 g9g0 i9i3 d5e3"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 245 seldepth 4 multipv 1 score mate 2 nodes 5689 nps 1896333 hashfull 0 tbhits 0 time 3 pv g9g2 i9i0 d5e3"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 245 seldepth 3 multipv 1 score mate -1 nodes 5749 nps 2874500 hashfull 1 tbhits 0 time 2 pv i9i0 d5e3"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 245 seldepth 2 multipv 1 score mate 1 nodes 11516 nps 3838666 hashfull 0 tbhits 0 time 3 pv d5e3"
+        }
+      ],
+      "result": "win"
+    },
+    {
+      "game": 4,
+      "pair": 2,
+      "rule": "jqe-v1",
+      "newColor": "red",
+      "plies": 58,
+      "status": {
+        "type": "finished",
+        "winner": "black",
+        "reason": "checkmate"
+      },
+      "moves": [
+        "g3g4",
+        "b9c7",
+        "b0c2",
+        "i6i5",
+        "g4h5",
+        "a6a5",
+        "i3i4",
+        "e6e5",
+        "i4i5",
+        "g6g5",
+        "h2h7",
+        "c7e7",
+        "g0e2",
+        "c6c5",
+        "h7h8",
+        "g5e3",
+        "i0i3",
+        "e5d4",
+        "h8h9",
+        "i9h9",
+        "b2b5",
+        "e3c1",
+        "f0e1",
+        "d4c3",
+        "e0f0",
+        "b7b6",
+        "b5d3",
+        "b6f6",
+        "h0f1",
+        "f6f3",
+        "a3a4",
+        "a5a4",
+        "i3h4",
+        "f3d3",
+        "f0e0",
+        "c3d2",
+        "f1f4",
+        "d2e1",
+        "c2e1",
+        "a9a5",
+        "c0a2",
+        "d9e8",
+        "e2e3",
+        "a5a8",
+        "h5i6",
+        "d3d2",
+        "h4g3",
+        "e8e3",
+        "e0f0",
+        "a8g8",
+        "e1c2",
+        "e3e6",
+        "c2d4",
+        "g8g3",
+        "f0f1",
+        "g3g1",
+        "f1f0",
+        "d2f2"
+      ],
+      "stats": [
+        {
+          "engine": 0,
+          "info": "info depth 5 seldepth 4 multipv 1 score cp 218 upperbound nodes 1000965 nps 3499877 hashfull 96 tbhits 0 time 286 pv g3g4"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 5 seldepth 3 multipv 1 score cp -364 upperbound nodes 1000742 nps 3403884 hashfull 107 tbhits 0 time 294 pv b9c7 i3i4 h7h0 i4i9"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 3 seldepth 3 multipv 1 score cp 275 nodes 1001233 nps 3304399 hashfull 96 tbhits 0 time 303 pv b0c2 h7h0"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 7 seldepth 6 multipv 1 score cp -176 nodes 1000879 nps 3079627 hashfull 102 tbhits 0 time 325 pv i6i5"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 8 seldepth 6 multipv 1 score cp 243 upperbound nodes 1000052 nps 2950005 hashfull 108 tbhits 0 time 339 pv g4h5 i5h3"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 7 seldepth 6 multipv 1 score cp -303 upperbound nodes 1000403 nps 3068720 hashfull 101 tbhits 0 time 326 pv a6a5 i3i4 a5c3"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 9 seldepth 7 multipv 1 score cp 463 nodes 1000034 nps 3257439 hashfull 95 tbhits 0 time 307 pv i3i4 g6g5 f0e1 h7h2"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 8 seldepth 7 multipv 1 score cp -456 nodes 1000702 nps 3127193 hashfull 100 tbhits 0 time 320 pv e6e5"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 9 seldepth 8 multipv 1 score cp 272 nodes 1000092 nps 3039793 hashfull 96 tbhits 0 time 329 pv i4i5 g6g5"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 11 seldepth 12 multipv 1 score cp -317 nodes 1000679 nps 3088515 hashfull 96 tbhits 0 time 324 pv g6g5"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 9 seldepth 5 multipv 1 score cp 312 upperbound nodes 1000358 nps 3126118 hashfull 98 tbhits 0 time 320 pv h2h7"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 10 seldepth 9 multipv 1 score cp -308 nodes 1000348 nps 3097052 hashfull 114 tbhits 0 time 323 pv c7e7 c0e2 g5e3"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 11 seldepth 9 multipv 1 score cp 206 lowerbound nodes 1000132 nps 3125412 hashfull 106 tbhits 0 time 320 pv g0e2"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 11 seldepth 10 multipv 1 score cp -146 nodes 1000150 nps 3205608 hashfull 95 tbhits 0 time 312 pv c6c5"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 11 seldepth 11 multipv 1 score cp 168 upperbound nodes 1000689 nps 3324548 hashfull 95 tbhits 0 time 301 pv h7h8 g5e3"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 12 seldepth 11 multipv 1 score cp -270 nodes 1001175 nps 3488414 hashfull 89 tbhits 0 time 287 pv g5e3 h8h9 i9h9 e2e3 e5d4 f0e1"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 10 seldepth 11 multipv 1 score cp 143 upperbound nodes 1000177 nps 3610747 hashfull 91 tbhits 0 time 277 pv i0i3"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 16 seldepth 14 multipv 1 score cp -251 nodes 1000487 nps 3291075 hashfull 96 tbhits 0 time 304 pv e5d4 h8h9 i9h9 d0e1"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 12 seldepth 9 multipv 1 score cp -41 nodes 1000847 nps 3463138 hashfull 96 tbhits 0 time 289 pv h8h9 i9h9 b2b5 e3g5"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 17 seldepth 15 multipv 1 score cp -251 nodes 1000857 nps 3487306 hashfull 81 tbhits 0 time 287 pv i9h9 b2b5"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 13 seldepth 13 multipv 1 score cp 41 lowerbound nodes 1000907 nps 3639661 hashfull 79 tbhits 0 time 275 pv b2b5"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 17 seldepth 10 multipv 1 score cp 166 nodes 1000194 nps 3205750 hashfull 103 tbhits 0 time 312 pv e3c1 f0e1"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 17 seldepth 12 multipv 1 score cp -437 nodes 1000255 nps 3205945 hashfull 99 tbhits 0 time 312 pv f0e1"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 18 seldepth 12 multipv 1 score cp 184 nodes 1000078 nps 3144899 hashfull 104 tbhits 0 time 318 pv d4c3 h0g2"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 15 seldepth 12 multipv 1 score cp -419 nodes 1000358 nps 3135918 hashfull 101 tbhits 0 time 319 pv e0f0 b7b6"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 12 seldepth 10 multipv 1 score cp 313 upperbound nodes 1000768 nps 3403972 hashfull 102 tbhits 0 time 294 pv b7b6 e1g2 c3d2 b5d3 e7a7 c2d4 c1a3"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 15 seldepth 15 multipv 1 score cp -1064 nodes 1001082 nps 2970569 hashfull 120 tbhits 0 time 337 pv b5d3 b6d6 e2e3 c1a3 a0a3 c3d2"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 17 seldepth 20 multipv 1 score cp 1254 nodes 1000846 nps 2734551 hashfull 108 tbhits 0 time 366 pv b6f6 h0f1 f6f3"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 17 seldepth 19 multipv 1 score cp -1287 nodes 1000485 nps 2925394 hashfull 118 tbhits 0 time 342 pv h0f1 f6f3 i3h4 f3d3 c0a2 c1a3"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 18 seldepth 19 multipv 1 score cp 1077 nodes 1000335 nps 2858100 hashfull 102 tbhits 0 time 350 pv f6f3 e2e3 f3i3 f1c1 i3i5 c1a1"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 17 seldepth 19 multipv 1 score cp -1157 nodes 1000504 nps 2891630 hashfull 121 tbhits 0 time 346 pv a3a4 f3d3 f0e0 d3f3"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 17 seldepth 19 multipv 1 score cp 1668 nodes 1000181 nps 2770584 hashfull 118 tbhits 0 time 361 pv a5a4 i3h4 f3d3 f0e0 d3d2"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 16 seldepth 16 multipv 1 score cp -1496 nodes 1000725 nps 2987238 hashfull 114 tbhits 0 time 335 pv i3h4 f3d3 c0a2"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 16 seldepth 18 multipv 1 score cp 1599 nodes 1000504 nps 2718760 hashfull 110 tbhits 0 time 368 pv f3d3 f0e0 c3d2 h4g5 d3f3 f1g1 f3g3"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 16 seldepth 14 multipv 1 score cp -1489 nodes 1000958 nps 2961414 hashfull 92 tbhits 0 time 338 pv f0e0 c3d2 f1f6 e7e1 d0e1"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 16 seldepth 22 multipv 1 score cp 1656 nodes 1000619 nps 2810727 hashfull 107 tbhits 0 time 356 pv c3d2 a0a2 d3d6 f1f2 f9e8 h4g5"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 16 seldepth 17 multipv 1 score cp -1504 nodes 1000127 nps 2976568 hashfull 106 tbhits 0 time 336 pv f1f4 f9e8"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 16 seldepth 21 multipv 1 score cp 1725 nodes 1000772 nps 2803282 hashfull 112 tbhits 0 time 357 pv d2e1 d0e1 e7c7"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 15 seldepth 14 multipv 1 score cp -1580 nodes 1000925 nps 3098839 hashfull 99 tbhits 0 time 323 pv c2e1 d3d5 f4f3"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 15 seldepth 15 multipv 1 score cp 1766 nodes 1000256 nps 2899292 hashfull 100 tbhits 0 time 345 pv a9a5 h4g5"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 15 seldepth 17 multipv 1 score cp -1980 nodes 1000308 nps 2748098 hashfull 102 tbhits 0 time 364 pv c0a2 a5a9 f4f1"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 16 seldepth 22 multipv 1 score cp 3622 nodes 1000780 nps 2483325 hashfull 113 tbhits 0 time 403 pv d9e8 f4f2 d3h3"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 16 seldepth 18 multipv 1 score cp -3765 nodes 1000515 nps 2458267 hashfull 128 tbhits 0 time 407 pv e2e3 d3e3 e0f0 e7e1 h5g4 e1e0"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 19 seldepth 24 multipv 1 score cp 3780 nodes 1000784 nps 2399961 hashfull 105 tbhits 0 time 417 pv a5a8 h5i4 d3e3"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 16 seldepth 25 multipv 1 score cp -3537 nodes 1000031 nps 2557624 hashfull 121 tbhits 0 time 391 pv h5i6 a8d8"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 16 seldepth 26 multipv 1 score cp 5299 nodes 1000169 nps 2732702 hashfull 113 tbhits 0 time 366 pv d3d2"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 19 seldepth 21 multipv 1 score cp -4163 nodes 1000834 nps 2533756 hashfull 121 tbhits 0 time 395 pv h4g3 e8e3"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 18 seldepth 26 multipv 1 score mate 21 nodes 1000126 nps 2817256 hashfull 115 tbhits 0 time 355 pv e8e3 e0f0 a8g8 e1d3 g8g3 d3e5 d2f2 f0e0 f2f1 a0b0 g3g0"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 13 seldepth 13 multipv 1 score cp -5175 nodes 1000071 nps 2702894 hashfull 116 tbhits 0 time 370 pv e0f0 a8g8 i6h5 g8g3 f4e4 f9e8 e1g0 g3g0 f0f1 g0g1 f1f0 d2f2 f0e0"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 32 seldepth 18 multipv 1 score mate 8 nodes 1000681 nps 3014099 hashfull 81 tbhits 0 time 332 pv a8g8 e1g0 g8g3 f4e4 f9e8 e4e6 g3g0 f0f1 g0g1 f1f0 e3a3 e6e1 a3a0 e1e0 d2f2"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 12 seldepth 15 multipv 1 score mate -12 upperbound nodes 1000260 nps 2841647 hashfull 116 tbhits 0 time 352 pv e1c2 g8g3"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 30 seldepth 10 multipv 1 score mate 4 nodes 1000831 nps 3051314 hashfull 102 tbhits 0 time 328 pv e3e6 f4e4 e7e4 f0f1 g8f8 g3f4 f8f4"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 11 seldepth 13 multipv 1 score cp -5979 nodes 1000513 nps 2741131 hashfull 121 tbhits 0 time 365 pv c2d4 g8g3"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 109 seldepth 6 multipv 1 score mate 3 nodes 1000540 nps 9620576 hashfull 0 tbhits 0 time 104 pv g8g3 f0f1 g3g1 f1f0 d2f2"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 245 seldepth 5 multipv 1 score mate -2 nodes 50828 nps 6353500 hashfull 0 tbhits 0 time 8 pv f0f1 g3g1 f1f0 d2f2"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 245 seldepth 4 multipv 1 score mate 2 nodes 26817 nps 5363400 hashfull 0 tbhits 0 time 5 pv g3g1 f1f0 d2f2"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 245 seldepth 3 multipv 1 score mate -1 nodes 498 nps 249000 hashfull 0 tbhits 0 time 2 pv f1f0 d2f2"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 245 seldepth 2 multipv 1 score mate 1 nodes 16434 nps 4108500 hashfull 0 tbhits 0 time 4 pv d2f2"
+        }
+      ],
+      "result": "loss"
+    },
+    {
+      "game": 5,
+      "pair": 2,
+      "rule": "jqe-v1",
+      "newColor": "black",
+      "plies": 68,
+      "status": {
+        "type": "finished",
+        "winner": "black",
+        "reason": "checkmate"
+      },
+      "moves": [
+        "g3g4",
+        "b9c7",
+        "b0c2",
+        "a6a5",
+        "i3i4",
+        "g6g5",
+        "e3e4",
+        "c6c5",
+        "d0e1",
+        "d9e8",
+        "i4i5",
+        "e8e4",
+        "c0e2",
+        "e4e1",
+        "f0e1",
+        "e6e5",
+        "i5i6",
+        "b7b3",
+        "b2b0",
+        "b3c3",
+        "b0d2",
+        "c3g3",
+        "h0g2",
+        "c7c2",
+        "g4f3",
+        "c2b2",
+        "h2h4",
+        "g9e7",
+        "a0c0",
+        "g3f3",
+        "e2e3",
+        "f3f2",
+        "e3e4",
+        "e5d4",
+        "i0i5",
+        "h7f7",
+        "g2g1",
+        "f2d2",
+        "g1g4",
+        "b2b4",
+        "i6i7",
+        "b4e4",
+        "e1f3",
+        "g5e3",
+        "f3e1",
+        "h9i7",
+        "g4g2",
+        "d2g2",
+        "g0e2",
+        "e3c1",
+        "e0d0",
+        "e4e1",
+        "i5h6",
+        "g2g0",
+        "d0d1",
+        "i7g6",
+        "h6i5",
+        "i9i5",
+        "a3a4",
+        "a5a4",
+        "h4h5",
+        "g0e0",
+        "e2e3",
+        "d4e3",
+        "h5g5",
+        "c9a7",
+        "g5h5",
+        "a9d9"
+      ],
+      "stats": [
+        {
+          "engine": 1,
+          "info": "info depth 5 seldepth 4 multipv 1 score cp 188 upperbound nodes 1000544 nps 3523042 hashfull 99 tbhits 0 time 284 pv g3g4"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 4 seldepth 5 multipv 1 score cp -360 upperbound nodes 1000344 nps 3473416 hashfull 96 tbhits 0 time 288 pv b9c7 c3c4 e6e5"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 3 seldepth 3 multipv 1 score cp 275 nodes 1000240 nps 3534416 hashfull 109 tbhits 0 time 283 pv b0c2 h7h0"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 8 seldepth 7 multipv 1 score cp -163 lowerbound nodes 1001163 nps 3282501 hashfull 116 tbhits 0 time 305 pv a6a5"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 7 seldepth 7 multipv 1 score cp 348 upperbound nodes 1001124 nps 3219048 hashfull 107 tbhits 0 time 311 pv i3i4 g6g5 e3e4"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 8 seldepth 7 multipv 1 score cp -243 upperbound nodes 1000682 nps 3238453 hashfull 103 tbhits 0 time 309 pv g6g5 e3e4 c6c5 d0e1 c5a3 a0a3"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 7 seldepth 7 multipv 1 score cp 184 upperbound nodes 1000542 nps 3116953 hashfull 107 tbhits 0 time 321 pv e3e4"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 10 seldepth 9 multipv 1 score cp -205 nodes 1000848 nps 3098600 hashfull 112 tbhits 0 time 323 pv c6c5"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 8 seldepth 8 multipv 1 score cp 300 upperbound nodes 1000823 nps 2996476 hashfull 102 tbhits 0 time 334 pv d0e1"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 11 seldepth 10 multipv 1 score cp -507 lowerbound nodes 1000989 nps 2803890 hashfull 108 tbhits 0 time 357 pv d9e8"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 11 seldepth 9 multipv 1 score cp 267 nodes 1000187 nps 2801644 hashfull 110 tbhits 0 time 357 pv i4i5 i6i5"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 12 seldepth 10 multipv 1 score cp -238 nodes 1001048 nps 2901588 hashfull 111 tbhits 0 time 345 pv e8e4"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 12 seldepth 8 multipv 1 score cp 96 lowerbound nodes 1000871 nps 3108295 hashfull 114 tbhits 0 time 322 pv c0e2"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 17 seldepth 10 multipv 1 score cp 239 nodes 1000976 nps 3051756 hashfull 104 tbhits 0 time 328 pv e4e1 f0e1 e6e5"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 14 seldepth 12 multipv 1 score cp -268 nodes 1000348 nps 3059168 hashfull 102 tbhits 0 time 327 pv f0e1"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 13 seldepth 11 multipv 1 score cp 334 nodes 1000134 nps 2915842 hashfull 104 tbhits 0 time 343 pv e6e5"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 14 seldepth 12 multipv 1 score cp -434 nodes 1000505 nps 2891632 hashfull 99 tbhits 0 time 346 pv i5i6 e5d4 i6h6 i9i0 h6h7"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 11 seldepth 13 multipv 1 score cp 426 upperbound nodes 1000203 nps 2941773 hashfull 106 tbhits 0 time 340 pv b7b3 c2d0 e5d4 i6h6 i9i0 h6h7"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 11 seldepth 9 multipv 1 score cp -857 nodes 1000047 nps 2873698 hashfull 106 tbhits 0 time 348 pv b2b0 b3c3 i6h6 h7h2 i0i9"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 14 seldepth 11 multipv 1 score cp 1341 nodes 1000178 nps 2959106 hashfull 101 tbhits 0 time 338 pv b3c3 h2h5"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 12 seldepth 11 multipv 1 score cp -1156 nodes 1000390 nps 3155804 hashfull 101 tbhits 0 time 317 pv b0d2 c7e7"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 14 seldepth 14 multipv 1 score cp 1557 nodes 1000976 nps 3187821 hashfull 87 tbhits 0 time 314 pv c3g3 h0i2"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 13 seldepth 12 multipv 1 score cp -1202 nodes 1000415 nps 3050045 hashfull 103 tbhits 0 time 328 pv h0g2 g3d3 h2h6 d3d2"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 15 seldepth 15 multipv 1 score cp 1453 nodes 1000575 nps 2969065 hashfull 99 tbhits 0 time 337 pv c7c2 h2h6 h7i7 i6i7"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 15 seldepth 12 multipv 1 score cp -1080 nodes 1000331 nps 3031306 hashfull 100 tbhits 0 time 330 pv g4f3 c2b2 h2h4 b2b9"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 17 seldepth 18 multipv 1 score cp 1529 nodes 1000382 nps 3155779 hashfull 88 tbhits 0 time 317 pv c2b2 h2h9 h7h3 i0i4 h3g1 e0d0"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 14 seldepth 14 multipv 1 score cp -1109 nodes 1000601 nps 3126878 hashfull 94 tbhits 0 time 320 pv h2h4 b2b7 i0i5 e5f6 a0c0"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 15 seldepth 14 multipv 1 score cp 1892 nodes 1001057 nps 3015231 hashfull 107 tbhits 0 time 332 pv g9e7 i6i7 g3f3 i7i8 b2b7 i8i9 h9f8 e1c2"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 15 seldepth 15 multipv 1 score cp -1342 nodes 1000143 nps 2865739 hashfull 107 tbhits 0 time 349 pv a0c0"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 17 seldepth 19 multipv 1 score cp 2014 nodes 1000302 nps 2667472 hashfull 102 tbhits 0 time 375 pv g3f3 e2e3 f3f2 e3e4 e5d4 g2i2 i9i6 e1d3 f2d2 d3b2 d2b2 g0e2 b2b0"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 16 seldepth 20 multipv 1 score cp -1673 nodes 1000019 nps 2770135 hashfull 93 tbhits 0 time 361 pv e2e3 f3f2 e3e4 e5f6 i0i4"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 20 seldepth 21 multipv 1 score cp 2016 nodes 1000268 nps 2696140 hashfull 116 tbhits 0 time 371 pv f3f2 e3e4 e5d4 i0i5 h7h8 i5h5 h9f8"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 16 seldepth 17 multipv 1 score cp -1727 nodes 1000384 nps 2786584 hashfull 99 tbhits 0 time 359 pv e3e4 e5f6 i0i4"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 18 seldepth 22 multipv 1 score cp 2014 nodes 1000713 nps 2711959 hashfull 112 tbhits 0 time 369 pv e5d4 i0i5 h7f7"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 16 seldepth 20 multipv 1 score cp -1760 nodes 1000833 nps 2606335 hashfull 113 tbhits 0 time 384 pv i0i5 i9i6 h4h5 d4c3 h5h6 c3d2 g2d2 f2d2 h6h7 a5a4 e1f3"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 15 seldepth 16 multipv 1 score cp 3458 nodes 1000971 nps 2560028 hashfull 108 tbhits 0 time 391 pv h7f7 h4h5 f7h5 g2i2 g5e3 e1d3 d4c3 c0e2 h5f7 i5h6 i9i6"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 17 seldepth 23 multipv 1 score cp -1909 nodes 1000972 nps 2489980 hashfull 100 tbhits 0 time 402 pv g2g1 f2d2 e1f3 b2b0 c0e2 d2a2 f3g5 a2a3 g0i2 d4c3 g1g2 a5a4"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 19 seldepth 20 multipv 1 score cp 2539 nodes 1000701 nps 2599223 hashfull 124 tbhits 0 time 385 pv f2d2 i6i7 b2b0 c0e2 b0b4 e4e5"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 16 seldepth 18 multipv 1 score cp -2195 nodes 1000812 nps 2668832 hashfull 118 tbhits 0 time 375 pv g1g4 a5a4 a3a4"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 17 seldepth 24 multipv 1 score cp 2729 nodes 1000182 nps 2632057 hashfull 115 tbhits 0 time 380 pv b2b4 g4d4 b4e4"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 16 seldepth 16 multipv 1 score cp -2736 nodes 1000696 nps 2501740 hashfull 105 tbhits 0 time 400 pv i6i7 b4e4 g0e2 g5i7 e2e3 d4e3"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 15 seldepth 24 multipv 1 score cp 2937 nodes 1000018 nps 2681013 hashfull 108 tbhits 0 time 373 pv b4e4 e1f3 g5e3 c0e2 h9i7 e0e1 d2d0"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 17 seldepth 21 multipv 1 score cp -3037 nodes 1000187 nps 2809514 hashfull 111 tbhits 0 time 356 pv e1f3 d2g2 g4d4 g2g0 e0e1 g0g3 f3e5 e7e6 e5g6 g5e3"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 15 seldepth 20 multipv 1 score cp 3192 nodes 1000505 nps 2682319 hashfull 106 tbhits 0 time 373 pv g5e3 f3e1 h9i7 g0e2 d2d1 e0f0 e3c1 g4d4 d1d0 f0f1 d0d4 h4h5 c1a3"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 16 seldepth 23 multipv 1 score cp -3090 nodes 1000720 nps 2619685 hashfull 107 tbhits 0 time 382 pv f3e1 h9i7 g0e2 d2d1 c0a2 e3c1 e2e3 e4e1 i5h6 c1a3 g4e4 e1e4 e3e4"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 16 seldepth 22 multipv 1 score cp 3532 nodes 1000821 nps 2683166 hashfull 112 tbhits 0 time 373 pv h9i7 g0e2 d2d1 e1g0 e3c1 e0f0 d1d0 f0f1 d0g0 g4d4 c1a3 e2e3 e4e6"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 16 seldepth 20 multipv 1 score cp -3396 nodes 1000362 nps 2558470 hashfull 116 tbhits 0 time 391 pv g4g2 d2g2 c0e2 e3c1"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 19 seldepth 27 multipv 1 score cp 4375 nodes 1000553 nps 2818459 hashfull 124 tbhits 0 time 355 pv d2g2 g0e2 e3c1 e0d0 e4e1 d0e0 e1h1 e2e3 g2f2 e0e1 c1a3 c0e2 i9g9 e3e4"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 18 seldepth 29 multipv 1 score cp -3973 nodes 1000010 nps 2865358 hashfull 111 tbhits 0 time 349 pv g0e2 e3c1"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 17 seldepth 25 multipv 1 score cp 4773 nodes 1000519 nps 2866816 hashfull 117 tbhits 0 time 349 pv e3c1 e0d0 e4e1 d0e0 e1h1 c0a2 g2e2"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 23 seldepth 23 multipv 1 score mate -8 nodes 1000232 nps 2941858 hashfull 107 tbhits 0 time 340 pv e0d0 e4e1 a3a4 a5a4 i5h6 i7g6 h6i5 i9i5 d0d1 g2g0 c0a2 e1h1 h4h5 i5g3 e2e3 c1e3 a2c0 g0c0"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 16 seldepth 18 multipv 1 score cp 4738 nodes 1000237 nps 2899237 hashfull 116 tbhits 0 time 345 pv e4e1 e2e3 i7g6 c0e2 g6i5 h4h5 i5h3 h5h6 e1h1"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 33 seldepth 27 multipv 1 score mate -7 nodes 1000651 nps 2978127 hashfull 92 tbhits 0 time 336 pv i5h6 i7g6 h6i7 c1a3 e2e3 g2g0 d0d1 a9b9 h4h5 e1h1 h5i5 g6f4 i7h8 f4h3 h8i9 h3g1 d1d2 g0d0"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 21 seldepth 29 multipv 1 score mate 7 nodes 1000909 nps 3177488 hashfull 120 tbhits 0 time 315 pv g2g0 d0d1 i7g6 h6g7 i9i1 c0a2 e1h1 g7f8 g6f8 e2e3 h1h0 d1d2 g0g2"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 24 seldepth 29 multipv 1 score mate -6 nodes 1000596 nps 3088259 hashfull 107 tbhits 0 time 324 pv d0d1 c1a3 h6g7 a9b9 g7h8 i7g6 h8i9 g6f4 i9h8 e1h1 h8g7 f4e2 g7f8 e9e8 h4h5 e2g1 d1d2 g0d0"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 18 seldepth 22 multipv 1 score mate 6 nodes 1000900 nps 3336333 hashfull 93 tbhits 0 time 300 pv i7g6 h6g7 i9i1 h4h5 i1g3 h5g5 g6e5 g7f8 e9e8 f8e7 c9e7 e2e3 c1a3"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 39 seldepth 11 multipv 1 score mate -5 nodes 1000690 nps 3427020 hashfull 74 tbhits 0 time 292 pv h6i5 e1h1 h4h5 g6f4 e2e3 c1e3 a3a4 e3g1 d1d2 g0d0"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 33 seldepth 14 multipv 1 score mate 5 nodes 1000568 nps 3166354 hashfull 78 tbhits 0 time 316 pv i9i5 d1e1 g6h4 e1d1 h4g2 a3a4 a5a4 c0a2 c9a7 e2e3 d4e3 a2c0 g0c0"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 42 seldepth 15 multipv 1 score mate -6 nodes 1000280 nps 3402312 hashfull 70 tbhits 0 time 294 pv a3a4 a5a4 e2e3 a9b9 d1e1 g0d0 c0a2 d4e3 h4h5 g6f4 h5i5 f4g2 e1e2 d0e0"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 49 seldepth 12 multipv 1 score mate 6 nodes 1000681 nps 3415293 hashfull 59 tbhits 0 time 293 pv a5a4 e2e3 e1h1 e3e4 c1e3 d1e1 e3g1 e1e2 g6f4 e2f2 g0f0"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 49 seldepth 11 multipv 1 score mate -5 nodes 1000495 nps 3346137 hashfull 52 tbhits 0 time 299 pv h4h5 e1h1 e2e3 g6f4 h5g5 c1e3 g5f5 e3g1 d1d2 d4e3"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 52 seldepth 16 multipv 1 score mate 4 nodes 1000215 nps 3922411 hashfull 47 tbhits 0 time 255 pv g0e0 h5i5 c9a7 i5h5 d4c3 h5g5 a9d9 g5f5 f9e8 f5e5 e1h1 e2e3 c1e3 c0a2 e3g1"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 81 seldepth 9 multipv 1 score mate -3 nodes 1000580 nps 7411703 hashfull 6 tbhits 0 time 135 pv e2e3 d4e3 h5i5 f9e8 i5h5 c9a7 h5g5 a9d9"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 85 seldepth 14 multipv 1 score mate 3 nodes 1000538 nps 8068854 hashfull 3 tbhits 0 time 124 pv d4e3 h5i5 c9a7 i5h5 a9d9 h5h6 f9e8 h6g6 d9c7 g6f6 c7b5 f6f7 b5c3"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 125 seldepth 9 multipv 1 score mate -2 nodes 1000564 nps 9264481 hashfull 2 tbhits 0 time 108 pv h5g5 f9e8 g5f5 c9a7 f5e5 g6e5 c0a2 a9d9"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 73 seldepth 14 multipv 1 score mate 2 nodes 1000237 nps 5619308 hashfull 15 tbhits 0 time 178 pv c9a7 g5g6 a9d9 g6f6 f9e8 f6f7 d9c7 f7e7 e8e7 c0a2 c7b5 a2c0 b5c3"
+        },
+        {
+          "engine": 1,
+          "info": "info depth 245 seldepth 7 multipv 1 score mate -1 nodes 26405 nps 6601250 hashfull 0 tbhits 0 time 4 pv g5h5 a9d9 h5g5 f9e8 g5g6 e8d8"
+        },
+        {
+          "engine": 0,
+          "info": "info depth 181 seldepth 10 multipv 1 score mate 1 nodes 1000090 nps 9009819 hashfull 1 tbhits 0 time 111 pv a9d9 h5i5 f9e8 i5h5 d9c7 c0a2 c7b5 h5g5 b5c3"
+        }
+      ],
+      "result": "win"
+    }
+  ],
+  "unfinished": {
+    "game": 6,
+    "pair": 3,
+    "rule": "legacy",
+    "newColor": "red",
+    "plies": 61,
+    "status": {
+      "type": "playing",
+      "turn": "black"
+    },
+    "moves": [
+      "g3g4",
+      "b9c7",
+      "c0e2",
+      "a6a5",
+      "i3i4",
+      "a5e5",
+      "c3c4",
+      "e5d5",
+      "e3e4",
+      "g6g5",
+      "g4f3",
+      "c6c5",
+      "c4e3",
+      "d5d3",
+      "h0g2",
+      "d3e3",
+      "f3g4",
+      "a9a5",
+      "a3a4",
+      "a5c3",
+      "b2b3",
+      "e3d3",
+      "b3b5",
+      "d3d5",
+      "b5b3",
+      "c9a7",
+      "b3c3",
+      "d9e8",
+      "f0e1",
+      "e8d8",
+      "e1b1",
+      "f9e8",
+      "d0e1",
+      "d8b8",
+      "b1a1",
+      "e8d8",
+      "b0c2",
+      "e9d9",
+      "e0f0",
+      "d8f8",
+      "g4f3",
+      "f8f9",
+      "a1a3",
+      "b7b5",
+      "a4a5",
+      "b5d7",
+      "c3d3",
+      "d5d3",
+      "a3d3",
+      "h9g7",
+      "d3b3",
+      "b8a8",
+      "f0e0",
+      "a7a6",
+      "b3b8",
+      "a8a5",
+      "f3g4",
+      "h7h4",
+      "h2h3",
+      "e6e5",
+      "b8c8"
+    ],
+    "stats": [
+      {
+        "engine": 0,
+        "info": "info depth 5 seldepth 4 multipv 1 score cp 248 upperbound nodes 1000683 nps 3612574 hashfull 102 tbhits 0 time 277 pv g3g4"
+      },
+      {
+        "engine": 1,
+        "info": "info depth 4 seldepth 4 multipv 1 score cp -353 upperbound nodes 1001210 nps 3452448 hashfull 105 tbhits 0 time 290 pv b9c7 h0g2"
+      },
+      {
+        "engine": 0,
+        "info": "info depth 5 seldepth 3 multipv 1 score cp 578 nodes 1000209 nps 3437144 hashfull 109 tbhits 0 time 291 pv c0e2"
+      },
+      {
+        "engine": 1,
+        "info": "info depth 7 seldepth 5 multipv 1 score cp -320 nodes 1000460 nps 3664688 hashfull 87 tbhits 0 time 273 pv a6a5 c3c4"
+      },
+      {
+        "engine": 0,
+        "info": "info depth 5 seldepth 4 multipv 1 score cp -31 upperbound nodes 1000741 nps 3346959 hashfull 92 tbhits 0 time 299 pv i3i4 a5d5 i4g6 b7b0"
+      },
+      {
+        "engine": 1,
+        "info": "info depth 11 seldepth 7 multipv 1 score cp 234 nodes 1000408 nps 3145937 hashfull 99 tbhits 0 time 318 pv a5e5 c3c4 e5e3"
+      },
+      {
+        "engine": 0,
+        "info": "info depth 7 seldepth 5 multipv 1 score cp -256 nodes 1000584 nps 3207000 hashfull 99 tbhits 0 time 312 pv c3c4 e5e3 b0d1"
+      },
+      {
+        "engine": 1,
+        "info": "info depth 13 seldepth 9 multipv 1 score cp -107 nodes 1000103 nps 3125321 hashfull 104 tbhits 0 time 320 pv e5d5 e3e4 g6g5"
+      },
+      {
+        "engine": 0,
+        "info": "info depth 8 seldepth 5 multipv 1 score cp 88 nodes 1001073 nps 3588075 hashfull 81 tbhits 0 time 279 pv e3e4 g6g5 h0i2 b7b0"
+      },
+      {
+        "engine": 1,
+        "info": "info depth 7 seldepth 5 multipv 1 score cp 85 nodes 1001364 nps 3476958 hashfull 89 tbhits 0 time 288 pv g6g5"
+      },
+      {
+        "engine": 0,
+        "info": "info depth 7 seldepth 6 multipv 1 score cp -278 upperbound nodes 1000198 nps 3345143 hashfull 110 tbhits 0 time 299 pv g4f3 g5h4"
+      },
+      {
+        "engine": 1,
+        "info": "info depth 7 seldepth 6 multipv 1 score cp 428 nodes 1000938 nps 3208134 hashfull 104 tbhits 0 time 312 pv c6c5"
+      },
+      {
+        "engine": 0,
+        "info": "info depth 11 seldepth 8 multipv 1 score cp -573 upperbound nodes 1000243 nps 3216215 hashfull 97 tbhits 0 time 311 pv c4e3 g5f4"
+      },
+      {
+        "engine": 1,
+        "info": "info depth 12 seldepth 10 multipv 1 score cp 621 nodes 1001111 nps 3024504 hashfull 114 tbhits 0 time 331 pv d5d3 h2g2 d3e3 g2g5 e3f3 h0g2 a9a3"
+      },
+      {
+        "engine": 0,
+        "info": "info depth 9 seldepth 8 multipv 1 score cp -794 upperbound nodes 1000041 nps 3077049 hashfull 106 tbhits 0 time 325 pv h0g2 d3e3 f3g4 a9a3 g4f5 b7b0"
+      },
+      {
+        "engine": 1,
+        "info": "info depth 12 seldepth 11 multipv 1 score cp 1037 nodes 1000081 nps 3205387 hashfull 110 tbhits 0 time 312 pv d3e3 b0c2"
+      },
+      {
+        "engine": 0,
+        "info": "info depth 10 seldepth 8 multipv 1 score cp -987 nodes 1000767 nps 3270480 hashfull 120 tbhits 0 time 306 pv f3g4 g5h4 g4h5 b7b0"
+      },
+      {
+        "engine": 1,
+        "info": "info depth 12 seldepth 9 multipv 1 score cp 992 nodes 1000703 nps 3346832 hashfull 97 tbhits 0 time 299 pv a9a5"
+      },
+      {
+        "engine": 0,
+        "info": "info depth 12 seldepth 11 multipv 1 score cp -702 upperbound nodes 1000729 nps 3187035 hashfull 96 tbhits 0 time 314 pv a3a4"
+      },
+      {
+        "engine": 1,
+        "info": "info depth 14 seldepth 12 multipv 1 score cp 652 upperbound nodes 1000340 nps 3258436 hashfull 95 tbhits 0 time 307 pv a5c3 b2b3"
+      },
+      {
+        "engine": 0,
+        "info": "info depth 13 seldepth 11 multipv 1 score cp -646 nodes 1000468 nps 3166037 hashfull 94 tbhits 0 time 316 pv b2b3"
+      },
+      {
+        "engine": 1,
+        "info": "info depth 11 seldepth 11 multipv 1 score cp 236 nodes 1000029 nps 3021235 hashfull 97 tbhits 0 time 331 pv e3d3"
+      },
+      {
+        "engine": 0,
+        "info": "info depth 13 seldepth 8 multipv 1 score cp -229 nodes 1001101 nps 3218974 hashfull 100 tbhits 0 time 311 pv b3b5 d3d5 b0c2"
+      },
+      {
+        "engine": 1,
+        "info": "info depth 14 seldepth 10 multipv 1 score cp 250 nodes 1000368 nps 3323481 hashfull 92 tbhits 0 time 301 pv d3d5 b5b3 f9e8"
+      },
+      {
+        "engine": 0,
+        "info": "info depth 13 seldepth 10 multipv 1 score cp -256 nodes 1000186 nps 3322877 hashfull 99 tbhits 0 time 301 pv b5b3 c3e5"
+      },
+      {
+        "engine": 1,
+        "info": "info depth 12 seldepth 10 multipv 1 score cp 224 upperbound nodes 1000855 nps 3404268 hashfull 96 tbhits 0 time 294 pv c9a7 b3c3 b7b5"
+      },
+      {
+        "engine": 0,
+        "info": "info depth 14 seldepth 7 multipv 1 score cp -7 nodes 1000912 nps 3439560 hashfull 92 tbhits 0 time 291 pv b3c3 d9e8"
+      },
+      {
+        "engine": 1,
+        "info": "info depth 11 seldepth 10 multipv 1 score cp 11 nodes 1000908 nps 3303326 hashfull 97 tbhits 0 time 303 pv d9e8"
+      },
+      {
+        "engine": 0,
+        "info": "info depth 13 seldepth 12 multipv 1 score cp -260 upperbound nodes 1000459 nps 2850310 hashfull 112 tbhits 0 time 351 pv f0e1 e8d8 b0a2 h9i7"
+      },
+      {
+        "engine": 1,
+        "info": "info depth 14 seldepth 15 multipv 1 score cp -237 nodes 1000871 nps 3005618 hashfull 94 tbhits 0 time 333 pv e8d8 e1b1"
+      },
+      {
+        "engine": 0,
+        "info": "info depth 16 seldepth 10 multipv 1 score cp 234 lowerbound nodes 1001013 nps 3033372 hashfull 96 tbhits 0 time 330 pv e1b1 f9e8 b1b6"
+      },
+      {
+        "engine": 1,
+        "info": "info depth 12 seldepth 12 multipv 1 score cp -246 upperbound nodes 1000286 nps 3068361 hashfull 113 tbhits 0 time 326 pv f9e8"
+      },
+      {
+        "engine": 0,
+        "info": "info depth 16 seldepth 13 multipv 1 score cp -121 nodes 1000038 nps 2849111 hashfull 94 tbhits 0 time 351 pv d0e1 e6e5"
+      },
+      {
+        "engine": 1,
+        "info": "info depth 15 seldepth 12 multipv 1 score cp 297 lowerbound nodes 1000011 nps 2840940 hashfull 88 tbhits 0 time 352 pv d8b8 b1c1 c7c6 h2h9"
+      },
+      {
+        "engine": 0,
+        "info": "info depth 18 seldepth 13 multipv 1 score cp -260 nodes 1000419 nps 2858340 hashfull 84 tbhits 0 time 350 pv b1a1 e8i8"
+      },
+      {
+        "engine": 1,
+        "info": "info depth 16 seldepth 12 multipv 1 score cp 341 nodes 1000697 nps 2850988 hashfull 94 tbhits 0 time 351 pv e8d8 b0c2 d8d9 a0d0"
+      },
+      {
+        "engine": 0,
+        "info": "info depth 13 seldepth 12 multipv 1 score cp -406 upperbound nodes 1000747 nps 2834977 hashfull 105 tbhits 0 time 353 pv b0c2"
+      },
+      {
+        "engine": 1,
+        "info": "info depth 18 seldepth 20 multipv 1 score cp 642 nodes 1000814 nps 2859468 hashfull 114 tbhits 0 time 350 pv e9d9 e0f0 d8d6 c3f3 h7f7 h2h7 b8f8 a1b1 f8f3 b1b7 f3e3"
+      },
+      {
+        "engine": 0,
+        "info": "info depth 17 seldepth 18 multipv 1 score cp -558 nodes 1000613 nps 2951660 hashfull 103 tbhits 0 time 339 pv e0f0 d8f8"
+      },
+      {
+        "engine": 1,
+        "info": "info depth 17 seldepth 15 multipv 1 score cp 619 nodes 1001079 nps 2827906 hashfull 117 tbhits 0 time 354 pv d8f8 f0e0"
+      },
+      {
+        "engine": 0,
+        "info": "info depth 17 seldepth 15 multipv 1 score cp -552 nodes 1000078 nps 2785732 hashfull 101 tbhits 0 time 359 pv g4f3 f8f9 a4a5 c7c6"
+      },
+      {
+        "engine": 1,
+        "info": "info depth 16 seldepth 14 multipv 1 score cp 597 nodes 1000782 nps 2843130 hashfull 99 tbhits 0 time 352 pv f8f9 f0e0 b7b5 h2h9 i9h9"
+      },
+      {
+        "engine": 0,
+        "info": "info depth 17 seldepth 10 multipv 1 score cp -522 nodes 1000338 nps 2841869 hashfull 102 tbhits 0 time 352 pv a1a3 b7b5"
+      },
+      {
+        "engine": 1,
+        "info": "info depth 15 seldepth 14 multipv 1 score cp 547 lowerbound nodes 1000660 nps 2726594 hashfull 108 tbhits 0 time 367 pv b7b5"
+      },
+      {
+        "engine": 0,
+        "info": "info depth 18 seldepth 13 multipv 1 score cp -126 nodes 1000414 nps 2625758 hashfull 109 tbhits 0 time 381 pv a4a5 h7h3 a5b5"
+      },
+      {
+        "engine": 1,
+        "info": "info depth 17 seldepth 18 multipv 1 score cp 200 nodes 1000278 nps 2710780 hashfull 101 tbhits 0 time 369 pv b5d7 c3d3 d5d3 a3d3 b8d8 d3d7 f9f3 f0e0 h7h4"
+      },
+      {
+        "engine": 0,
+        "info": "info depth 18 seldepth 19 multipv 1 score cp -185 upperbound nodes 1000398 nps 2598436 hashfull 108 tbhits 0 time 385 pv c3d3 d5d3"
+      },
+      {
+        "engine": 1,
+        "info": "info depth 19 seldepth 18 multipv 1 score cp 185 nodes 1000201 nps 2667202 hashfull 96 tbhits 0 time 375 pv d5d3 a3d3 g9e7 a0a4"
+      },
+      {
+        "engine": 0,
+        "info": "info depth 20 seldepth 20 multipv 1 score cp -185 nodes 1000417 nps 2740868 hashfull 107 tbhits 0 time 365 pv a3d3 h9g7"
+      },
+      {
+        "engine": 1,
+        "info": "info depth 18 seldepth 19 multipv 1 score cp 203 nodes 1000958 nps 2676358 hashfull 112 tbhits 0 time 374 pv h9g7"
+      },
+      {
+        "engine": 0,
+        "info": "info depth 16 seldepth 12 multipv 1 score cp -53 nodes 1000990 nps 2676443 hashfull 115 tbhits 0 time 374 pv d3b3 b8d8 h2h5 d8h8"
+      },
+      {
+        "engine": 1,
+        "info": "info depth 18 seldepth 13 multipv 1 score cp 41 nodes 1000253 nps 2674473 hashfull 111 tbhits 0 time 374 pv b8a8 f0e0 h7h4"
+      },
+      {
+        "engine": 0,
+        "info": "info depth 17 seldepth 17 multipv 1 score cp 45 nodes 1000119 nps 2725119 hashfull 110 tbhits 0 time 367 pv f0e0 a7a6 b3b8 a8a7"
+      },
+      {
+        "engine": 1,
+        "info": "info depth 18 seldepth 18 multipv 1 score cp 29 nodes 1000586 nps 2647052 hashfull 111 tbhits 0 time 378 pv a7a6 b3b8 a8a5 f3g4 h7h4"
+      },
+      {
+        "engine": 0,
+        "info": "info depth 19 seldepth 21 multipv 1 score cp 66 nodes 1000284 nps 2696183 hashfull 111 tbhits 0 time 371 pv b3b8 a8a5 f3g4 h7h4"
+      },
+      {
+        "engine": 1,
+        "info": "info depth 20 seldepth 15 multipv 1 score cp 15 nodes 1000950 nps 2765055 hashfull 106 tbhits 0 time 362 pv a8a5 b8b3 a5b5"
+      },
+      {
+        "engine": 0,
+        "info": "info depth 21 seldepth 21 multipv 1 score cp 59 nodes 1000778 nps 2819092 hashfull 121 tbhits 0 time 355 pv f3g4 h7h4"
+      },
+      {
+        "engine": 1,
+        "info": "info depth 13 seldepth 13 multipv 1 score cp -30 nodes 1000265 nps 2866088 hashfull 111 tbhits 0 time 349 pv h7h4"
+      },
+      {
+        "engine": 0,
+        "info": "info depth 17 seldepth 17 multipv 1 score cp 168 nodes 1000862 nps 2867799 hashfull 101 tbhits 0 time 349 pv h2h3"
+      },
+      {
+        "engine": 1,
+        "info": "info depth 16 seldepth 16 multipv 1 score cp -333 lowerbound nodes 1000374 nps 2618780 hashfull 100 tbhits 0 time 382 pv e6e5"
+      },
+      {
+        "engine": 0,
+        "info": "info depth 23 seldepth 26 multipv 1 score cp 429 nodes 1000762 nps 2446850 hashfull 96 tbhits 0 time 409 pv b8c8 g9i7"
+      }
+    ]
+  },
+  "errors": [],
+  "elapsedSeconds": 180.129
+}

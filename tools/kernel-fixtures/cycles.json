@@ -1,0 +1,299 @@
+[
+  {
+    "id": "quiet-twofold",
+    "pieces": {
+      "e0": "K",
+      "d9": "k"
+    },
+    "moves": [
+      "e0f0",
+      "d9d8",
+      "f0e0",
+      "d8d9"
+    ]
+  },
+  {
+    "id": "quiet-threefold",
+    "pieces": {
+      "e0": "K",
+      "d9": "k"
+    },
+    "moves": [
+      "e0f0",
+      "d9d8",
+      "f0e0",
+      "d8d9",
+      "e0f0",
+      "d9d8",
+      "f0e0",
+      "d8d9"
+    ]
+  },
+  {
+    "id": "check-twofold",
+    "pieces": {
+      "d0": "K",
+      "e9": "k",
+      "e7": "R"
+    },
+    "moves": [
+      "e9f9",
+      "e7f7",
+      "f9e9",
+      "f7e7"
+    ],
+    "turn": "black"
+  },
+  {
+    "id": "check-threefold",
+    "pieces": {
+      "d0": "K",
+      "e9": "k",
+      "e7": "R"
+    },
+    "moves": [
+      "e9f9",
+      "e7f7",
+      "f9e9",
+      "f7e7",
+      "e9f9",
+      "e7f7",
+      "f9e9",
+      "f7e7"
+    ],
+    "turn": "black"
+  },
+  {
+    "id": "chase-twofold",
+    "pieces": {
+      "d0": "K",
+      "e9": "k",
+      "a1": "R",
+      "b3": "n",
+      "h7": "n"
+    },
+    "moves": [
+      "a1b1",
+      "b3a5",
+      "b1a1",
+      "a5b3"
+    ]
+  },
+  {
+    "id": "chase-threefold",
+    "pieces": {
+      "d0": "K",
+      "e9": "k",
+      "a1": "R",
+      "b3": "n",
+      "h7": "n"
+    },
+    "moves": [
+      "a1b1",
+      "b3a5",
+      "b1a1",
+      "a5b3",
+      "a1b1",
+      "b3a5",
+      "b1a1",
+      "a5b3"
+    ]
+  },
+  {
+    "id": "unequal-mixed-check",
+    "pieces": {
+      "d0": "K",
+      "e9": "k",
+      "e7": "R"
+    },
+    "moves": [
+      "e9f9",
+      "e7e6",
+      "f9f8",
+      "e6e7",
+      "f8f9",
+      "e7f7",
+      "f9e9",
+      "f7e7",
+      "e9f9"
+    ],
+    "turn": "black"
+  },
+  {
+    "id": "mixed-check-chase",
+    "pieces": {
+      "d0": "K",
+      "e9": "k",
+      "e7": "R",
+      "e5": "n"
+    },
+    "moves": [
+      "e9f9",
+      "e7e6",
+      "f9f8",
+      "e6e7",
+      "f8f9",
+      "e7f7",
+      "f9e9",
+      "f7e7",
+      "e9f9"
+    ],
+    "turn": "black"
+  },
+  {
+    "id": "swap-identical-pieces",
+    "pieces": {
+      "e0": "K",
+      "d9": "k",
+      "a1": "R",
+      "b2": "R"
+    },
+    "moves": [
+      "a1a2",
+      "d9d8",
+      "b2b1",
+      "d8d9",
+      "a2b2",
+      "d9d8",
+      "b1a1",
+      "d8d9",
+      "a1a2",
+      "d9d8",
+      "b2b1",
+      "d8d9",
+      "a2b2",
+      "d9d8",
+      "b1a1",
+      "d8d9"
+    ]
+  },
+  {
+    "id": "clock-79",
+    "pieces": {
+      "e0": "K",
+      "d9": "k"
+    },
+    "moves": [
+      "e0f0"
+    ],
+    "idle": 78
+  },
+  {
+    "id": "clock-80",
+    "pieces": {
+      "e0": "K",
+      "d9": "k"
+    },
+    "moves": [
+      "e0f0"
+    ],
+    "idle": 79
+  },
+  {
+    "id": "clock-119",
+    "pieces": {
+      "e0": "K",
+      "d9": "k"
+    },
+    "moves": [
+      "e0f0"
+    ],
+    "idle": 118
+  },
+  {
+    "id": "clock-120",
+    "pieces": {
+      "e0": "K",
+      "d9": "k"
+    },
+    "moves": [
+      "e0f0"
+    ],
+    "idle": 119
+  },
+  {
+    "id": "check-precedes-clock-80",
+    "pieces": {
+      "d0": "K",
+      "e9": "k",
+      "e7": "R"
+    },
+    "moves": [
+      "e9f9",
+      "e7f7",
+      "f9e9",
+      "f7e7",
+      "e9f9",
+      "e7f7",
+      "f9e9",
+      "f7e7"
+    ],
+    "turn": "black",
+    "idle": 72
+  },
+  {
+    "id": "capture-resets-clock",
+    "pieces": {
+      "e0": "K",
+      "d9": "k",
+      "a1": "R",
+      "a2": "n"
+    },
+    "moves": [
+      "a1a2"
+    ],
+    "idle": 79
+  },
+  {
+    "id": "soldier-does-not-reset-clock",
+    "pieces": {
+      "e0": "K",
+      "d9": "k",
+      "a3": "P"
+    },
+    "moves": [
+      "a3a4"
+    ],
+    "idle": 79
+  },
+  {
+    "id": "reveal-does-not-reset-clock",
+    "pieces": {
+      "e0": "K",
+      "d9": "k",
+      "a3": "X"
+    },
+    "moves": [
+      "a3a4P"
+    ],
+    "idle": 79
+  },
+  {
+    "id": "tree-twofold-prune",
+    "pieces": {
+      "e0": "K",
+      "d9": "k"
+    },
+    "moves": [
+      "e0f0",
+      "d9d8",
+      "f0e0",
+      "d8d9"
+    ],
+    "ply": 5
+  },
+  {
+    "id": "root-boundary-twofold",
+    "pieces": {
+      "e0": "K",
+      "d9": "k"
+    },
+    "moves": [
+      "e0f0",
+      "d9d8",
+      "f0e0",
+      "d8d9"
+    ],
+    "ply": 4
+  }
+]

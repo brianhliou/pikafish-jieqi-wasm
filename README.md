@@ -24,6 +24,17 @@ make -C src -j4 build ARCH=apple-silicon COMP=clang
 For other targets, see `make -C src help` and the
 [Pikafish compilation documentation](https://github.com/official-pikafish/Pikafish/wiki/Compiling-from-source).
 
+## Browser build and rules
+
+See [wasm/README.md](wasm/README.md) for the pinned Emscripten 3.1.74 browser
+build and persistent UCI entry points. The same net is embedded in WebAssembly.
+
+`Jieqi Rule` defaults to `legacy`: threefold cycles draw and the no-capture limit
+is 120 plies. Select `jqe-v1` for the site's stamped rules: unilateral perpetual
+check or chase loses and the no-capture limit is 80 plies. Set the option while
+idle, before `position` / `go`. See [kernel fixtures](tools/kernel-fixtures/README.md)
+for checks against the site's rules kernel.
+
 ## Licenses
 
 The engine is distributed under GPL v3; see [Copying.txt](Copying.txt) and

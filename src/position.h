@@ -49,6 +49,7 @@ struct StateInfo {
     Value majorMaterial[COLOR_NB];
     int   rule40;
     int   pliesFromNull;
+    int   pliesSinceIrreversible;
 
     // Not copied when making a move (will be recomputed anyhow)
     Key        key;
@@ -74,6 +75,9 @@ using StateListPtr = std::unique_ptr<std::deque<StateInfo>>;
 // pieces, side to move, hash keys, etc. Important methods are
 // do_move() and undo_move(), used by the search to update node info when
 // traversing the search tree.
+// Set by the UCI option callback only while searches are idle.
+extern bool JieqiJqeV1;
+
 class Position {
    public:
     static void init();
@@ -151,9 +155,8 @@ class Position {
     // Other properties of the position
     Color    side_to_move() const;
     int      game_ply() const;
-    bool     rule_judge(Value& result, int ply = 0);
+    bool     rule_judge(Value& result, int ply = 0) const;
     int      rule40_count() const;
-    uint16_t chased(Color c);
     Value    major_material(Color c) const;
     Value    major_material() const;
 
@@ -176,14 +179,8 @@ class Position {
     void set_check_info() const;
 
     // Other helpers
-    void                  move_piece(Square from, Square to);
-    std::pair<Piece, int> do_move(Move m);
-    void                  undo_move(Move m, Piece captured, int id = 0);
-    Value                 detect_chases(int d, int ply = 0);
-    bool                  chase_legal(Move m) const;
-
-    template<bool AfterMove>
-    Key adjust_key40(Key k) const;
+    void  move_piece(Square from, Square to);
+    Value chase_result(int distance, int ply) const;
 
     // Data members
     Piece      board[SQUARE_NB];
@@ -198,9 +195,6 @@ class Position {
 
     // Bloom filter for fast repetition filtering
     BloomFilter filter;
-
-    // Board for chasing detection
-    int idBoard[SQUARE_NB];
 };
 
 std::ostream& operator<<(std::ostream& os, const Position& pos);
@@ -270,14 +264,6 @@ inline Bitboard Position::blockers_for_king(Color c) const { return st->blockers
 inline Bitboard Position::pinners(Color c) const { return st->pinners[c]; }
 
 inline Bitboard Position::check_squares(PieceType pt) const { return st->checkSquares[pt]; }
-
-inline Key Position::key() const { return adjust_key40<false>(st->key); }
-
-template<bool AfterMove>
-inline Key Position::adjust_key40(Key k) const {
-    return (st->rule40 < 14 - AfterMove ? k : k ^ make_key((st->rule40 - (14 - AfterMove)) / 8))
-         ^ (filter[st->key] ? make_key(14) : 0);
-}
 
 inline Key Position::pawn_key() const { return st->pawnKey; }
 

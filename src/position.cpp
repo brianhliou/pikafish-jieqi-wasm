@@ -17,6 +17,7 @@
 */
 
 #include "position.h"
+#include "jieqi_chase.h"
 
 #include <algorithm>
 #include <array>
@@ -39,10 +40,13 @@ using std::string;
 
 namespace Stockfish {
 
+bool JieqiJqeV1 = false;
+
 namespace Zobrist {
 
 Key psq[PIECE_NB + 1][SQUARE_NB];
 Key side, noPawns;
+Key noCapture[121], jqeRule;
 }
 
 namespace {
@@ -106,6 +110,9 @@ void Position::init() {
 
     Zobrist::side    = rng.rand<Key>();
     Zobrist::noPawns = rng.rand<Key>();
+    for (Key& k : Zobrist::noCapture)
+        k = rng.rand<Key>();
+    Zobrist::jqeRule = rng.rand<Key>();
 }
 
 
@@ -113,30 +120,8 @@ void Position::init() {
 // This function is not very robust - make sure that input FENs are correct,
 // this is assumed to be the responsibility of the GUI.
 Position& Position::set(const string& fenStr, StateInfo* si) {
-    /*
-   A FEN string defines a particular position using only the ASCII character set.
-
-   A FEN string contains six fields separated by a space. The fields are:
-
-   1) Piece placement (from white's perspective). Each rank is described, starting
-      with rank 9 and ending with rank 0. Within each rank, the contents of each
-      square are described from file A through file I. Following the Standard
-      Algebraic Notation (SAN), each piece is identified by a single letter taken
-      from the standard English names. White pieces are designated using upper-case
-      letters ("RACPNBK") whilst Black uses lowercase ("racpnbk"). Blank squares are
-      noted using digits 1 through 9 (the number of blank squares), and "/"
-      separates ranks.
-
-   2) Active color. "w" means white moves next, "b" means black.
-
-   3) Halfmove clock. This is the number of halfmoves since the last pawn advance
-      or capture. This is used to determine if a draw can be claimed under the
-      fifty-move rule.
-
-   4) Fullmove number. The number of the full move. It starts at 1, and is
-      incremented after Black's move.
-*/
-
+    // Five fields: board, turn, hidden identity pool, no-capture plies, fullmove.
+    // Soldier moves and reveals do not reset the no-capture clock.
     unsigned char      token;
     size_t             idx;
     Square             sq = SQ_A9;
@@ -177,19 +162,20 @@ Position& Position::set(const string& fenStr, StateInfo* si) {
     sideToMove = (token == 'w' ? WHITE : BLACK);
     ss >> token;
 
-    // 3. Rest pieces
-    while ((ss >> token) && !isspace(token))
+    // 3. Hidden identity pool. X is the empty-pool marker.
+    std::string pool;
+    ss >> std::skipws >> pool;
+    std::istringstream poolStream(pool);
+    while (poolStream >> token)
     {
-        if ((idx = PieceToChar.find(token)) != string::npos)
-        {
-            Piece pc = Piece(idx);
-            ss >> token;
-            restPieces[pc] = token - '0';
-        }
+        idx = PieceToChar.find(token);
+        if (idx != string::npos && idx > 0 && idx < PIECE_NB && type_of(Piece(idx)) != KING)
+            poolStream >> restPieces[idx];
     }
 
-    // 4-5. Halfmove clock and fullmove number
-    ss >> std::skipws >> st->rule40 >> gamePly;
+    // 4-5. No-capture plies and fullmove number.
+    ss >> st->rule40 >> gamePly;
+    st->rule40 = std::max(0, st->rule40);
 
     // Convert from fullmove starting from 1 to gamePly starting from 0,
     // handle also common incorrect FEN with fullmove = 0.
@@ -313,12 +299,19 @@ string Position::fen() const {
 
     ss << (sideToMove == WHITE ? " w " : " b ");
 
+    bool hasPool = false;
     for (Color c : {WHITE, BLACK})
         for (PieceType pt = ROOK; pt < KING; ++pt)
         {
             Piece pc = make_piece(c, pt);
-            ss << PieceToChar[pc] << restPieces[pc];
+            if (restPieces[pc] > 0)
+            {
+                hasPool = true;
+                ss << PieceToChar[pc] << restPieces[pc];
+            }
         }
+    if (!hasPool)
+        ss << "X";
 
     ss << " " << st->rule40 << " " << 1 + (gamePly - (sideToMove == BLACK)) / 2;
 
@@ -620,6 +613,9 @@ DirtyPiece Position::do_move(Move                      m,
     ++gamePly;
     ++st->rule40;
     ++st->pliesFromNull;
+    ++st->pliesSinceIrreversible;
+    if (captured || moveDark)
+        st->pliesSinceIrreversible = 0;
 
     if (pc == make_piece(us, KING))
     {
@@ -926,260 +922,84 @@ bool Position::see_ge(Move m, int threshold) const {
 }
 
 
-// A lighter version of do_move(), used in chasing detection
-std::pair<Piece, int> Position::do_move(Move m) {
-
-    assert(capture(m));
-
-    Square from     = m.from_sq();
-    Square to       = m.to_sq();
-    Piece  captured = piece_on(to);
-    int    id       = idBoard[to];
-
-    // Update id board
-    idBoard[to]   = idBoard[from];
-    idBoard[from] = 0;
-
-    // Update board and piece lists
-    remove_piece(to);
-    move_piece(from, to);
-
-    sideToMove = ~sideToMove;
-
-    return {captured, id};
+// TT scores must not leak across clocks or between legacy and stamped games.
+Key Position::key() const {
+    return st->key ^ Zobrist::noCapture[std::min(st->rule40, 120)]
+         ^ (JieqiJqeV1 ? Zobrist::jqeRule : 0);
 }
 
-
-// A lighter version of undo_move(), used in chasing detection
-void Position::undo_move(Move m, Piece captured, int id) {
-
-    sideToMove = ~sideToMove;
-
-    Square from = m.from_sq();
-    Square to   = m.to_sq();
-
-    // Put back id board
-    idBoard[from] = idBoard[to];
-    idBoard[to]   = id;
-
-    move_piece(to, from);  // Put the piece back at the source square
-
-    if (captured)
-        put_piece(captured, to);  // Restore the captured piece
-}
-
-
-// Tests whether a pseudo-legal move is chase legal
-bool Position::chase_legal(Move m) const {
-
-    assert(m.is_ok());
-
-    Color    us       = sideToMove;
-    Square   from     = m.from_sq();
-    Square   to       = m.to_sq();
-    Bitboard occupied = (pieces() ^ from) | to;
-
-    assert(color_of(moved_piece(m)) == us);
-    assert(piece_on(king_square(us)) == make_piece(us, KING));
-
-    // If the moving piece is a king, check whether the destination
-    // square is not under new attack after the move.
-    if (type_of(piece_on(from)) == KING)
-        return !(checkers_to(~us, to, occupied));
-
-    // A non-king move is chase legal if the king is not under new attack after the move.
-    return !(checkers_to(~us, king_square(us), occupied) & ~square_bb(to));
-}
-
-
-// Calculates the chase information for a given color.
-uint16_t Position::chased(Color c) {
-
-    uint16_t chase = 0;
-
-    std::swap(c, sideToMove);
-
-    // King and pawn can legally perpetual chase
-    Bitboard attackers = pieces(sideToMove) ^ pieces(sideToMove, KING, PAWN);
-    while (attackers)
+// Only called for a check-free, reversible, complete three-occurrence interval.
+Value Position::chase_result(int distance, int ply) const {
+    using namespace JieqiChase;
+    Board after{};
+    Ids ids{};
+    for (int s = 0; s < 90; ++s)
     {
-        Square    from         = pop_lsb(attackers);
-        PieceType attackerType = type_of(piece_on(from));
-        Bitboard  attacks      = attacks_bb(attackerType, from, pieces());
-
-        // Restrict to pinners if pinned, otherwise exclude attacks on unpromoted pawns and checks
-        if (blockers_for_king(sideToMove) & from)
-            attacks &= pinners(~sideToMove) & ~pieces(KING);
-        else
-            attacks &= (pieces(~sideToMove) ^ pieces(~sideToMove, KING, PAWN))
-                     | (pieces(~sideToMove, PAWN) & HalfBB[sideToMove]);
-
-        while (attacks)
-        {
-            Square to = pop_lsb(attacks);
-            Move   m  = Move(from, to);
-
-            if (chase_legal(m))
-            {
-                // Attacks against stronger pieces
-                if ((attackerType == KNIGHT || attackerType == CANNON)
-                    && type_of(piece_on(to)) == ROOK)
-                    chase |= (1 << idBoard[to]);
-                if ((attackerType == ADVISOR || attackerType == BISHOP)
-                    && type_of(piece_on(to)) & 1)
-                    chase |= (1 << idBoard[to]);
-                // Attacks against potentially unprotected pieces
-                else
-                {
-                    bool trueChase             = true;
-                    const auto& [captured, id] = do_move(m);
-                    Bitboard recaptures        = attackers_to(to) & pieces(sideToMove);
-                    while (recaptures)
-                    {
-                        Square s = pop_lsb(recaptures);
-                        if (chase_legal(Move(s, to)))
-                        {
-                            trueChase = false;
-                            break;
-                        }
-                    }
-                    undo_move(m, captured, id);
-
-                    if (trueChase)
-                    {
-                        // Exclude mutual/symmetric attacks except pins
-                        if (attackerType == type_of(piece_on(to)))
-                        {
-                            sideToMove = ~sideToMove;
-                            if ((attackerType == KNIGHT && ((between_bb(from, to) ^ to) & pieces()))
-                                || !chase_legal(Move(to, from)))
-                                chase |= (1 << idBoard[to]);
-                            sideToMove = ~sideToMove;
-                        }
-                        else
-                            chase |= (1 << idBoard[to]);
-                    }
-                }
-            }
-        }
+        after[s] = piece_on(Square(s));
+        ids[s] = s; // Any bijection identifies the same physical pieces.
     }
-
-    std::swap(c, sideToMove);
-
-    return chase;
+    Targets common[COLOR_NB];
+    common[WHITE].set();
+    common[BLACK].set();
+    const StateInfo* cursor = st;
+    Color actor = ~sideToMove;
+    for (int i = 0; i < distance; ++i)
+    {
+        Targets newTargets = targets(after, ids, actor);
+        int from = cursor->move.from_sq(), to = cursor->move.to_sq();
+        assert(!cursor->capturedPiece);
+        Board before = relocate(after, to, from);
+        ids[from] = ids[to];
+        common[actor] &= newTargets & ~targets(before, ids, actor);
+        after = before;
+        cursor = cursor->previous;
+        actor = ~actor;
+    }
+    bool us = common[sideToMove].any(), them = common[~sideToMove].any();
+    return us == them ? VALUE_DRAW : us ? mated_in(ply) : mate_in(ply);
 }
 
-
-// Detects chases from state st - d to state st
-Value Position::detect_chases(int d, int ply) {
-
-    // Grant each piece on board a unique id for each side
-    int whiteId = 0;
-    int blackId = 0;
-    for (Square s = SQ_A0; s <= SQ_I9; ++s)
-        if (board[s] != NO_PIECE)
-            idBoard[s] = color_of(board[s]) == WHITE ? whiteId++ : blackId++;
-
-    Color us = sideToMove, them = ~us;
-
-    // Rollback until we reached st - d
-    uint16_t chase[COLOR_NB] = {0xFFFF, 0xFFFF};
-    for (int i = 0; i < d; ++i)
-    {
-        if (st->checkersBB)
-            return VALUE_DRAW;
-        else if (!chase[~sideToMove])
-        {
-            if (!chase[sideToMove])
-                break;
-            undo_move(st->move, st->capturedPiece);
-            st = st->previous;
-        }
-        else
-        {
-            uint16_t after = chased(~sideToMove);
-            undo_move(st->move, st->capturedPiece);
-            st = st->previous;
-            // Take the exact diff to detect the chase
-            chase[sideToMove] &= after & ~chased(sideToMove);
-        }
-    }
-
-    return bool(chase[us]) ^ bool(chase[them]) ? chase[us] ? mated_in(ply) : mate_in(ply)
-                                               : VALUE_DRAW;
-}
-
-
-// Tests whether the position may end the game by rule 60, insufficient material, draw repetition,
-// perpetual check repetition or perpetual chase repetition that allows a player to claim a game result.
-bool Position::rule_judge(Value& result, int ply) {
-
-    int end = std::min(st->rule40, st->pliesFromNull);
-
-    if (end >= 4 && filter[st->key] >= 1)
-    {
-        int        cnt       = 0;
-        StateInfo* stp       = st->previous->previous;
-        bool       checkThem = st->checkersBB && stp->checkersBB;
-        bool       checkUs   = st->previous->checkersBB && stp->previous->checkersBB;
-
-        for (int i = 4; i <= end; i += 2)
-        {
-            stp = stp->previous->previous;
-            checkThem &= bool(stp->checkersBB);
-
-            // Return a score if a position repeats once earlier but strictly
-            // after the root, or repeats twice before or at the root.
-            if (stp->key == st->key && (++cnt == 2 || ply > i))
-            {
-                if (!checkThem && !checkUs)
-                {
-                    // Copy the current position to a rollback struct, so we don't need to do those moves again
-                    Position rollback;
-                    memcpy((void*) &rollback, (const void*) this, offsetof(Position, filter));
-
-                    // Chasing detection
-                    result = rollback.detect_chases(i, ply);
-                }
-                else
-                    // Checking detection
-                    result = !checkUs ? mate_in(ply) : !checkThem ? mated_in(ply) : VALUE_DRAW;
-
-                // 3 folds and 2 fold draws can be judged immediately
-                if (result == VALUE_DRAW || cnt == 2)
-                    return true;
-
-                // 2 fold mates need further investigations
-                if (filter[st->key] <= 1)
-                {
-                    // Not exceeding rule 40 and have the same previous step
-                    if (st->rule40 < 80 && st->previous->key == stp->previous->key)
-                    {
-                        // Even if we entering this loop again, it will not lead to a 3 fold repetition
-                        StateInfo* prev = st->previous;
-                        while ((prev = prev->previous) != stp)
-                            if (filter[prev->key] > 1)
-                                break;
-                        if (prev == stp)
-                            return true;
-                    }
-                    // We know there can't be another fold
-                    break;
-                }
-            }
-
-            if (i + 1 <= end)
-                checkUs &= bool(stp->previous->checkersBB);
-        }
-    }
-
-    // 40 move rule
-    if (st->rule40 >= 80)
-    {
-        result = MoveList<LEGAL>(*this).size() ? VALUE_DRAW : mated_in(ply);
+// History requires three occurrences; a second occurrence strictly inside the
+// search tree retains the existing distance < ply draw shortcut.
+bool Position::rule_judge(Value& result, int ply) const {
+    const bool stamped = JieqiJqeV1;
+    const int limit = stamped ? 80 : 120;
+    const int end = std::min(st->pliesFromNull, st->pliesSinceIrreversible);
+    auto adjudicate = [&](Value value) {
+        // The kernel orders mate/stalemate before repetition and the clock.
+        result = MoveList<LEGAL>(*this).size() ? value : mated_in(ply);
         return true;
+    };
+    if (end >= 4 && filter[st->key])
+    {
+        const StateInfo* cursor = st;
+        int matches = 0;
+        bool perpetual[COLOR_NB] = {true, true};
+        bool anyCheck = false;
+        for (int i = 1; i <= end; ++i)
+        {
+            const Color mover = (i & 1) ? ~sideToMove : sideToMove;
+            perpetual[mover] &= bool(cursor->checkersBB);
+            anyCheck |= bool(cursor->checkersBB);
+            cursor = cursor->previous;
+            if (i < 4 || (i & 1) || cursor->key != st->key)
+                continue;
+            if (++matches < 2)
+            {
+                if (i < ply)
+                    return adjudicate(VALUE_DRAW);
+                continue;
+            }
+            if (!stamped)
+                return adjudicate(VALUE_DRAW);
+            if (perpetual[WHITE] != perpetual[BLACK])
+                return adjudicate(perpetual[sideToMove] ? mated_in(ply) : mate_in(ply));
+            // jqe-v1 pins mixed/intermittent check intervals to a draw.
+            return adjudicate(anyCheck ? VALUE_DRAW : chase_result(i, ply));
+        }
     }
-
+    if (st->rule40 >= limit)
+        return adjudicate(VALUE_DRAW);
     return false;
 }
 

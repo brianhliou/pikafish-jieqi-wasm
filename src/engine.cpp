@@ -104,6 +104,17 @@ Engine::Engine(std::optional<std::string> path) :
 
     options.add("ChanceMix", Option(true));
 
+    options.add("Jieqi Rule", Option("legacy var legacy var jqe-v1", "legacy",
+      [this](const Option& o) {
+          const bool stamped = o == "jqe-v1";
+          if (JieqiJqeV1 != stamped)
+          {
+              search_clear(); // Wait for searches before changing the cached rule.
+              JieqiJqeV1 = stamped;
+          }
+          return std::nullopt;
+      }));
+
     options.add(  //
       "EvalFile", Option(EvalFileDefaultNameBig, [this](const Option& o) {
           load_big_network(o);
@@ -127,6 +138,16 @@ void Engine::go(Search::LimitsType& limits) {
     threads.start_thinking(pos, states, limits);
 }
 void Engine::stop() { threads.stop = true; }
+
+std::string Engine::rule_probe(int ply) {
+    wait_for_search_finished();
+    Value result = VALUE_NONE;
+    bool terminal = pos.rule_judge(result, ply);
+    return std::string("ruleprobe ")
+      + (!terminal ? "ongoing" : result == VALUE_DRAW ? "draw" : result > 0 ? "win" : "loss")
+      + " fen " + pos.fen();
+}
+
 
 void Engine::search_clear() {
     wait_for_search_finished();

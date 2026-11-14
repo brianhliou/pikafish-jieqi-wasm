@@ -23,6 +23,7 @@
 #include <cctype>
 #include <cstdlib>
 #include <iostream>
+#include <set>
 #include <sstream>
 #include <utility>
 
@@ -159,12 +160,14 @@ Option& Option::operator=(const std::string& v) {
 
     if (type == "combo")
     {
-        OptionsMap         comboMap;  // To have case insensitive compare
+        // A UCI combo repeats its default in the var list. Validate choices
+        // without registering duplicate option names or consuming option IDs.
+        std::set<std::string, CaseInsensitiveLess> comboValues;
         std::string        token;
         std::istringstream ss(defaultValue);
         while (ss >> token)
-            comboMap.add(token, Option());
-        if (!comboMap.count(v) || v == "var")
+            comboValues.insert(token);
+        if (!comboValues.count(v) || v == "var")
             return *this;
     }
 

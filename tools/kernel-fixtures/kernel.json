@@ -1,0 +1,2366 @@
+{
+  "reference": "/Users/brianliou/projects/mistboard",
+  "recordedAt": "2026-11-14T00:39:14.703Z",
+  "cases": [
+    {
+      "id": "quiet-twofold/legacy",
+      "rule": "legacy",
+      "fen": "3k5/9/9/9/9/9/9/9/9/4K4 w X 0 1",
+      "moves": [
+        "e0f0",
+        "d9d8",
+        "f0e0",
+        "d8d9"
+      ],
+      "ply": 0,
+      "expected": "ongoing",
+      "status": {
+        "type": "playing",
+        "turn": "red"
+      },
+      "clock": 4,
+      "interval": 0,
+      "timeline": [
+        {
+          "move": "e0f0",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 1
+        },
+        {
+          "move": "d9d8",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 2
+        },
+        {
+          "move": "f0e0",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 3
+        },
+        {
+          "move": "d8d9",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 4
+        }
+      ]
+    },
+    {
+      "id": "quiet-twofold/jqe-v1",
+      "rule": "jqe-v1",
+      "fen": "3k5/9/9/9/9/9/9/9/9/4K4 w X 0 1",
+      "moves": [
+        "e0f0",
+        "d9d8",
+        "f0e0",
+        "d8d9"
+      ],
+      "ply": 0,
+      "expected": "ongoing",
+      "status": {
+        "type": "playing",
+        "turn": "red"
+      },
+      "clock": 4,
+      "interval": 0,
+      "timeline": [
+        {
+          "move": "e0f0",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 1
+        },
+        {
+          "move": "d9d8",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 2
+        },
+        {
+          "move": "f0e0",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 3
+        },
+        {
+          "move": "d8d9",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 4
+        }
+      ]
+    },
+    {
+      "id": "quiet-threefold/legacy",
+      "rule": "legacy",
+      "fen": "3k5/9/9/9/9/9/9/9/9/4K4 w X 0 1",
+      "moves": [
+        "e0f0",
+        "d9d8",
+        "f0e0",
+        "d8d9",
+        "e0f0",
+        "d9d8",
+        "f0e0",
+        "d8d9"
+      ],
+      "ply": 0,
+      "expected": "draw",
+      "status": {
+        "type": "finished",
+        "winner": null,
+        "reason": "repetition"
+      },
+      "clock": 8,
+      "interval": 9,
+      "timeline": [
+        {
+          "move": "e0f0",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 1
+        },
+        {
+          "move": "d9d8",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 2
+        },
+        {
+          "move": "f0e0",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 3
+        },
+        {
+          "move": "d8d9",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 4
+        },
+        {
+          "move": "e0f0",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 5
+        },
+        {
+          "move": "d9d8",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 6
+        },
+        {
+          "move": "f0e0",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 7
+        },
+        {
+          "move": "d8d9",
+          "status": {
+            "type": "finished",
+            "winner": null,
+            "reason": "repetition"
+          },
+          "clock": 8
+        }
+      ]
+    },
+    {
+      "id": "quiet-threefold/jqe-v1",
+      "rule": "jqe-v1",
+      "fen": "3k5/9/9/9/9/9/9/9/9/4K4 w X 0 1",
+      "moves": [
+        "e0f0",
+        "d9d8",
+        "f0e0",
+        "d8d9",
+        "e0f0",
+        "d9d8",
+        "f0e0",
+        "d8d9"
+      ],
+      "ply": 0,
+      "expected": "draw",
+      "status": {
+        "type": "finished",
+        "winner": null,
+        "reason": "repetition"
+      },
+      "clock": 8,
+      "interval": 9,
+      "timeline": [
+        {
+          "move": "e0f0",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 1
+        },
+        {
+          "move": "d9d8",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 2
+        },
+        {
+          "move": "f0e0",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 3
+        },
+        {
+          "move": "d8d9",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 4
+        },
+        {
+          "move": "e0f0",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 5
+        },
+        {
+          "move": "d9d8",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 6
+        },
+        {
+          "move": "f0e0",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 7
+        },
+        {
+          "move": "d8d9",
+          "status": {
+            "type": "finished",
+            "winner": null,
+            "reason": "repetition"
+          },
+          "clock": 8
+        }
+      ]
+    },
+    {
+      "id": "check-twofold/legacy",
+      "rule": "legacy",
+      "fen": "4k4/9/4R4/9/9/9/9/9/9/3K5 b X 0 1",
+      "moves": [
+        "e9f9",
+        "e7f7",
+        "f9e9",
+        "f7e7"
+      ],
+      "ply": 0,
+      "expected": "ongoing",
+      "status": {
+        "type": "playing",
+        "turn": "black"
+      },
+      "clock": 4,
+      "interval": 0,
+      "timeline": [
+        {
+          "move": "e9f9",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 1
+        },
+        {
+          "move": "e7f7",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 2
+        },
+        {
+          "move": "f9e9",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 3
+        },
+        {
+          "move": "f7e7",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 4
+        }
+      ]
+    },
+    {
+      "id": "check-twofold/jqe-v1",
+      "rule": "jqe-v1",
+      "fen": "4k4/9/4R4/9/9/9/9/9/9/3K5 b X 0 1",
+      "moves": [
+        "e9f9",
+        "e7f7",
+        "f9e9",
+        "f7e7"
+      ],
+      "ply": 0,
+      "expected": "ongoing",
+      "status": {
+        "type": "playing",
+        "turn": "black"
+      },
+      "clock": 4,
+      "interval": 0,
+      "timeline": [
+        {
+          "move": "e9f9",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 1
+        },
+        {
+          "move": "e7f7",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 2
+        },
+        {
+          "move": "f9e9",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 3
+        },
+        {
+          "move": "f7e7",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 4
+        }
+      ]
+    },
+    {
+      "id": "check-threefold/legacy",
+      "rule": "legacy",
+      "fen": "4k4/9/4R4/9/9/9/9/9/9/3K5 b X 0 1",
+      "moves": [
+        "e9f9",
+        "e7f7",
+        "f9e9",
+        "f7e7",
+        "e9f9",
+        "e7f7",
+        "f9e9",
+        "f7e7"
+      ],
+      "ply": 0,
+      "expected": "draw",
+      "status": {
+        "type": "finished",
+        "winner": null,
+        "reason": "repetition"
+      },
+      "clock": 8,
+      "interval": 9,
+      "timeline": [
+        {
+          "move": "e9f9",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 1
+        },
+        {
+          "move": "e7f7",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 2
+        },
+        {
+          "move": "f9e9",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 3
+        },
+        {
+          "move": "f7e7",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 4
+        },
+        {
+          "move": "e9f9",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 5
+        },
+        {
+          "move": "e7f7",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 6
+        },
+        {
+          "move": "f9e9",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 7
+        },
+        {
+          "move": "f7e7",
+          "status": {
+            "type": "finished",
+            "winner": null,
+            "reason": "repetition"
+          },
+          "clock": 8
+        }
+      ]
+    },
+    {
+      "id": "check-threefold/jqe-v1",
+      "rule": "jqe-v1",
+      "fen": "4k4/9/4R4/9/9/9/9/9/9/3K5 b X 0 1",
+      "moves": [
+        "e9f9",
+        "e7f7",
+        "f9e9",
+        "f7e7",
+        "e9f9",
+        "e7f7",
+        "f9e9",
+        "f7e7"
+      ],
+      "ply": 0,
+      "expected": "win",
+      "status": {
+        "type": "finished",
+        "winner": "black",
+        "reason": "chasing"
+      },
+      "clock": 8,
+      "interval": 9,
+      "timeline": [
+        {
+          "move": "e9f9",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 1
+        },
+        {
+          "move": "e7f7",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 2
+        },
+        {
+          "move": "f9e9",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 3
+        },
+        {
+          "move": "f7e7",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 4
+        },
+        {
+          "move": "e9f9",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 5
+        },
+        {
+          "move": "e7f7",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 6
+        },
+        {
+          "move": "f9e9",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 7
+        },
+        {
+          "move": "f7e7",
+          "status": {
+            "type": "finished",
+            "winner": "black",
+            "reason": "chasing"
+          },
+          "clock": 8
+        }
+      ]
+    },
+    {
+      "id": "chase-twofold/legacy",
+      "rule": "legacy",
+      "fen": "4k4/9/7n1/9/9/9/1n7/9/R8/3K5 w X 0 1",
+      "moves": [
+        "a1b1",
+        "b3a5",
+        "b1a1",
+        "a5b3"
+      ],
+      "ply": 0,
+      "expected": "ongoing",
+      "status": {
+        "type": "playing",
+        "turn": "red"
+      },
+      "clock": 4,
+      "interval": 0,
+      "timeline": [
+        {
+          "move": "a1b1",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 1
+        },
+        {
+          "move": "b3a5",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 2
+        },
+        {
+          "move": "b1a1",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 3
+        },
+        {
+          "move": "a5b3",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 4
+        }
+      ]
+    },
+    {
+      "id": "chase-twofold/jqe-v1",
+      "rule": "jqe-v1",
+      "fen": "4k4/9/7n1/9/9/9/1n7/9/R8/3K5 w X 0 1",
+      "moves": [
+        "a1b1",
+        "b3a5",
+        "b1a1",
+        "a5b3"
+      ],
+      "ply": 0,
+      "expected": "ongoing",
+      "status": {
+        "type": "playing",
+        "turn": "red"
+      },
+      "clock": 4,
+      "interval": 0,
+      "timeline": [
+        {
+          "move": "a1b1",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 1
+        },
+        {
+          "move": "b3a5",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 2
+        },
+        {
+          "move": "b1a1",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 3
+        },
+        {
+          "move": "a5b3",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 4
+        }
+      ]
+    },
+    {
+      "id": "chase-threefold/legacy",
+      "rule": "legacy",
+      "fen": "4k4/9/7n1/9/9/9/1n7/9/R8/3K5 w X 0 1",
+      "moves": [
+        "a1b1",
+        "b3a5",
+        "b1a1",
+        "a5b3",
+        "a1b1",
+        "b3a5",
+        "b1a1",
+        "a5b3"
+      ],
+      "ply": 0,
+      "expected": "draw",
+      "status": {
+        "type": "finished",
+        "winner": null,
+        "reason": "repetition"
+      },
+      "clock": 8,
+      "interval": 9,
+      "timeline": [
+        {
+          "move": "a1b1",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 1
+        },
+        {
+          "move": "b3a5",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 2
+        },
+        {
+          "move": "b1a1",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 3
+        },
+        {
+          "move": "a5b3",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 4
+        },
+        {
+          "move": "a1b1",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 5
+        },
+        {
+          "move": "b3a5",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 6
+        },
+        {
+          "move": "b1a1",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 7
+        },
+        {
+          "move": "a5b3",
+          "status": {
+            "type": "finished",
+            "winner": null,
+            "reason": "repetition"
+          },
+          "clock": 8
+        }
+      ]
+    },
+    {
+      "id": "chase-threefold/jqe-v1",
+      "rule": "jqe-v1",
+      "fen": "4k4/9/7n1/9/9/9/1n7/9/R8/3K5 w X 0 1",
+      "moves": [
+        "a1b1",
+        "b3a5",
+        "b1a1",
+        "a5b3",
+        "a1b1",
+        "b3a5",
+        "b1a1",
+        "a5b3"
+      ],
+      "ply": 0,
+      "expected": "loss",
+      "status": {
+        "type": "finished",
+        "winner": "black",
+        "reason": "perpetual-chase"
+      },
+      "clock": 8,
+      "interval": 9,
+      "timeline": [
+        {
+          "move": "a1b1",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 1
+        },
+        {
+          "move": "b3a5",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 2
+        },
+        {
+          "move": "b1a1",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 3
+        },
+        {
+          "move": "a5b3",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 4
+        },
+        {
+          "move": "a1b1",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 5
+        },
+        {
+          "move": "b3a5",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 6
+        },
+        {
+          "move": "b1a1",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 7
+        },
+        {
+          "move": "a5b3",
+          "status": {
+            "type": "finished",
+            "winner": "black",
+            "reason": "perpetual-chase"
+          },
+          "clock": 8
+        }
+      ]
+    },
+    {
+      "id": "unequal-mixed-check/legacy",
+      "rule": "legacy",
+      "fen": "4k4/9/4R4/9/9/9/9/9/9/3K5 b X 0 1",
+      "moves": [
+        "e9f9",
+        "e7e6",
+        "f9f8",
+        "e6e7",
+        "f8f9",
+        "e7f7",
+        "f9e9",
+        "f7e7",
+        "e9f9"
+      ],
+      "ply": 0,
+      "expected": "draw",
+      "status": {
+        "type": "finished",
+        "winner": null,
+        "reason": "repetition"
+      },
+      "clock": 9,
+      "interval": 9,
+      "timeline": [
+        {
+          "move": "e9f9",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 1
+        },
+        {
+          "move": "e7e6",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 2
+        },
+        {
+          "move": "f9f8",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 3
+        },
+        {
+          "move": "e6e7",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 4
+        },
+        {
+          "move": "f8f9",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 5
+        },
+        {
+          "move": "e7f7",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 6
+        },
+        {
+          "move": "f9e9",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 7
+        },
+        {
+          "move": "f7e7",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 8
+        },
+        {
+          "move": "e9f9",
+          "status": {
+            "type": "finished",
+            "winner": null,
+            "reason": "repetition"
+          },
+          "clock": 9
+        }
+      ]
+    },
+    {
+      "id": "unequal-mixed-check/jqe-v1",
+      "rule": "jqe-v1",
+      "fen": "4k4/9/4R4/9/9/9/9/9/9/3K5 b X 0 1",
+      "moves": [
+        "e9f9",
+        "e7e6",
+        "f9f8",
+        "e6e7",
+        "f8f9",
+        "e7f7",
+        "f9e9",
+        "f7e7",
+        "e9f9"
+      ],
+      "ply": 0,
+      "expected": "draw",
+      "status": {
+        "type": "finished",
+        "winner": null,
+        "reason": "repetition"
+      },
+      "clock": 9,
+      "interval": 9,
+      "timeline": [
+        {
+          "move": "e9f9",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 1
+        },
+        {
+          "move": "e7e6",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 2
+        },
+        {
+          "move": "f9f8",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 3
+        },
+        {
+          "move": "e6e7",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 4
+        },
+        {
+          "move": "f8f9",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 5
+        },
+        {
+          "move": "e7f7",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 6
+        },
+        {
+          "move": "f9e9",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 7
+        },
+        {
+          "move": "f7e7",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 8
+        },
+        {
+          "move": "e9f9",
+          "status": {
+            "type": "finished",
+            "winner": null,
+            "reason": "repetition"
+          },
+          "clock": 9
+        }
+      ]
+    },
+    {
+      "id": "mixed-check-chase/legacy",
+      "rule": "legacy",
+      "fen": "4k4/9/4R4/9/4n4/9/9/9/9/3K5 b X 0 1",
+      "moves": [
+        "e9f9",
+        "e7e6",
+        "f9f8",
+        "e6e7",
+        "f8f9",
+        "e7f7",
+        "f9e9",
+        "f7e7",
+        "e9f9"
+      ],
+      "ply": 0,
+      "expected": "draw",
+      "status": {
+        "type": "finished",
+        "winner": null,
+        "reason": "repetition"
+      },
+      "clock": 9,
+      "interval": 9,
+      "timeline": [
+        {
+          "move": "e9f9",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 1
+        },
+        {
+          "move": "e7e6",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 2
+        },
+        {
+          "move": "f9f8",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 3
+        },
+        {
+          "move": "e6e7",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 4
+        },
+        {
+          "move": "f8f9",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 5
+        },
+        {
+          "move": "e7f7",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 6
+        },
+        {
+          "move": "f9e9",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 7
+        },
+        {
+          "move": "f7e7",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 8
+        },
+        {
+          "move": "e9f9",
+          "status": {
+            "type": "finished",
+            "winner": null,
+            "reason": "repetition"
+          },
+          "clock": 9
+        }
+      ]
+    },
+    {
+      "id": "mixed-check-chase/jqe-v1",
+      "rule": "jqe-v1",
+      "fen": "4k4/9/4R4/9/4n4/9/9/9/9/3K5 b X 0 1",
+      "moves": [
+        "e9f9",
+        "e7e6",
+        "f9f8",
+        "e6e7",
+        "f8f9",
+        "e7f7",
+        "f9e9",
+        "f7e7",
+        "e9f9"
+      ],
+      "ply": 0,
+      "expected": "draw",
+      "status": {
+        "type": "finished",
+        "winner": null,
+        "reason": "repetition"
+      },
+      "clock": 9,
+      "interval": 9,
+      "timeline": [
+        {
+          "move": "e9f9",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 1
+        },
+        {
+          "move": "e7e6",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 2
+        },
+        {
+          "move": "f9f8",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 3
+        },
+        {
+          "move": "e6e7",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 4
+        },
+        {
+          "move": "f8f9",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 5
+        },
+        {
+          "move": "e7f7",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 6
+        },
+        {
+          "move": "f9e9",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 7
+        },
+        {
+          "move": "f7e7",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 8
+        },
+        {
+          "move": "e9f9",
+          "status": {
+            "type": "finished",
+            "winner": null,
+            "reason": "repetition"
+          },
+          "clock": 9
+        }
+      ]
+    },
+    {
+      "id": "swap-identical-pieces/legacy",
+      "rule": "legacy",
+      "fen": "3k5/9/9/9/9/9/9/1R7/R8/4K4 w X 0 1",
+      "moves": [
+        "a1a2",
+        "d9d8",
+        "b2b1",
+        "d8d9",
+        "a2b2",
+        "d9d8",
+        "b1a1",
+        "d8d9",
+        "a1a2",
+        "d9d8",
+        "b2b1",
+        "d8d9",
+        "a2b2",
+        "d9d8",
+        "b1a1",
+        "d8d9"
+      ],
+      "ply": 0,
+      "expected": "draw",
+      "status": {
+        "type": "finished",
+        "winner": null,
+        "reason": "repetition"
+      },
+      "clock": 16,
+      "interval": 17,
+      "timeline": [
+        {
+          "move": "a1a2",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 1
+        },
+        {
+          "move": "d9d8",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 2
+        },
+        {
+          "move": "b2b1",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 3
+        },
+        {
+          "move": "d8d9",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 4
+        },
+        {
+          "move": "a2b2",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 5
+        },
+        {
+          "move": "d9d8",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 6
+        },
+        {
+          "move": "b1a1",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 7
+        },
+        {
+          "move": "d8d9",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 8
+        },
+        {
+          "move": "a1a2",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 9
+        },
+        {
+          "move": "d9d8",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 10
+        },
+        {
+          "move": "b2b1",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 11
+        },
+        {
+          "move": "d8d9",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 12
+        },
+        {
+          "move": "a2b2",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 13
+        },
+        {
+          "move": "d9d8",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 14
+        },
+        {
+          "move": "b1a1",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 15
+        },
+        {
+          "move": "d8d9",
+          "status": {
+            "type": "finished",
+            "winner": null,
+            "reason": "repetition"
+          },
+          "clock": 16
+        }
+      ]
+    },
+    {
+      "id": "swap-identical-pieces/jqe-v1",
+      "rule": "jqe-v1",
+      "fen": "3k5/9/9/9/9/9/9/1R7/R8/4K4 w X 0 1",
+      "moves": [
+        "a1a2",
+        "d9d8",
+        "b2b1",
+        "d8d9",
+        "a2b2",
+        "d9d8",
+        "b1a1",
+        "d8d9",
+        "a1a2",
+        "d9d8",
+        "b2b1",
+        "d8d9",
+        "a2b2",
+        "d9d8",
+        "b1a1",
+        "d8d9"
+      ],
+      "ply": 0,
+      "expected": "draw",
+      "status": {
+        "type": "finished",
+        "winner": null,
+        "reason": "repetition"
+      },
+      "clock": 16,
+      "interval": 17,
+      "timeline": [
+        {
+          "move": "a1a2",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 1
+        },
+        {
+          "move": "d9d8",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 2
+        },
+        {
+          "move": "b2b1",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 3
+        },
+        {
+          "move": "d8d9",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 4
+        },
+        {
+          "move": "a2b2",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 5
+        },
+        {
+          "move": "d9d8",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 6
+        },
+        {
+          "move": "b1a1",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 7
+        },
+        {
+          "move": "d8d9",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 8
+        },
+        {
+          "move": "a1a2",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 9
+        },
+        {
+          "move": "d9d8",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 10
+        },
+        {
+          "move": "b2b1",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 11
+        },
+        {
+          "move": "d8d9",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 12
+        },
+        {
+          "move": "a2b2",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 13
+        },
+        {
+          "move": "d9d8",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 14
+        },
+        {
+          "move": "b1a1",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 15
+        },
+        {
+          "move": "d8d9",
+          "status": {
+            "type": "finished",
+            "winner": null,
+            "reason": "repetition"
+          },
+          "clock": 16
+        }
+      ]
+    },
+    {
+      "id": "clock-79/legacy",
+      "rule": "legacy",
+      "fen": "3k5/9/9/9/9/9/9/9/9/4K4 w X 78 1",
+      "moves": [
+        "e0f0"
+      ],
+      "ply": 0,
+      "expected": "ongoing",
+      "status": {
+        "type": "playing",
+        "turn": "black"
+      },
+      "clock": 79,
+      "interval": 0,
+      "timeline": [
+        {
+          "move": "e0f0",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 79
+        }
+      ]
+    },
+    {
+      "id": "clock-79/jqe-v1",
+      "rule": "jqe-v1",
+      "fen": "3k5/9/9/9/9/9/9/9/9/4K4 w X 78 1",
+      "moves": [
+        "e0f0"
+      ],
+      "ply": 0,
+      "expected": "ongoing",
+      "status": {
+        "type": "playing",
+        "turn": "black"
+      },
+      "clock": 79,
+      "interval": 0,
+      "timeline": [
+        {
+          "move": "e0f0",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 79
+        }
+      ]
+    },
+    {
+      "id": "clock-80/legacy",
+      "rule": "legacy",
+      "fen": "3k5/9/9/9/9/9/9/9/9/4K4 w X 79 1",
+      "moves": [
+        "e0f0"
+      ],
+      "ply": 0,
+      "expected": "ongoing",
+      "status": {
+        "type": "playing",
+        "turn": "black"
+      },
+      "clock": 80,
+      "interval": 0,
+      "timeline": [
+        {
+          "move": "e0f0",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 80
+        }
+      ]
+    },
+    {
+      "id": "clock-80/jqe-v1",
+      "rule": "jqe-v1",
+      "fen": "3k5/9/9/9/9/9/9/9/9/4K4 w X 79 1",
+      "moves": [
+        "e0f0"
+      ],
+      "ply": 0,
+      "expected": "draw",
+      "status": {
+        "type": "finished",
+        "winner": null,
+        "reason": "no-capture-clock"
+      },
+      "clock": 80,
+      "interval": 0,
+      "timeline": [
+        {
+          "move": "e0f0",
+          "status": {
+            "type": "finished",
+            "winner": null,
+            "reason": "no-capture-clock"
+          },
+          "clock": 80
+        }
+      ]
+    },
+    {
+      "id": "clock-119/legacy",
+      "rule": "legacy",
+      "fen": "3k5/9/9/9/9/9/9/9/9/4K4 w X 118 1",
+      "moves": [
+        "e0f0"
+      ],
+      "ply": 0,
+      "expected": "ongoing",
+      "status": {
+        "type": "playing",
+        "turn": "black"
+      },
+      "clock": 119,
+      "interval": 0,
+      "timeline": [
+        {
+          "move": "e0f0",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 119
+        }
+      ]
+    },
+    {
+      "id": "clock-119/jqe-v1",
+      "rule": "jqe-v1",
+      "fen": "3k5/9/9/9/9/9/9/9/9/4K4 w X 118 1",
+      "moves": [
+        "e0f0"
+      ],
+      "ply": 0,
+      "expected": "draw",
+      "status": {
+        "type": "finished",
+        "winner": null,
+        "reason": "no-capture-clock"
+      },
+      "clock": 119,
+      "interval": 0,
+      "timeline": [
+        {
+          "move": "e0f0",
+          "status": {
+            "type": "finished",
+            "winner": null,
+            "reason": "no-capture-clock"
+          },
+          "clock": 119
+        }
+      ]
+    },
+    {
+      "id": "clock-120/legacy",
+      "rule": "legacy",
+      "fen": "3k5/9/9/9/9/9/9/9/9/4K4 w X 119 1",
+      "moves": [
+        "e0f0"
+      ],
+      "ply": 0,
+      "expected": "draw",
+      "status": {
+        "type": "finished",
+        "winner": null,
+        "reason": "no-capture-clock"
+      },
+      "clock": 120,
+      "interval": 0,
+      "timeline": [
+        {
+          "move": "e0f0",
+          "status": {
+            "type": "finished",
+            "winner": null,
+            "reason": "no-capture-clock"
+          },
+          "clock": 120
+        }
+      ]
+    },
+    {
+      "id": "clock-120/jqe-v1",
+      "rule": "jqe-v1",
+      "fen": "3k5/9/9/9/9/9/9/9/9/4K4 w X 119 1",
+      "moves": [
+        "e0f0"
+      ],
+      "ply": 0,
+      "expected": "draw",
+      "status": {
+        "type": "finished",
+        "winner": null,
+        "reason": "no-capture-clock"
+      },
+      "clock": 120,
+      "interval": 0,
+      "timeline": [
+        {
+          "move": "e0f0",
+          "status": {
+            "type": "finished",
+            "winner": null,
+            "reason": "no-capture-clock"
+          },
+          "clock": 120
+        }
+      ]
+    },
+    {
+      "id": "check-precedes-clock-80/legacy",
+      "rule": "legacy",
+      "fen": "4k4/9/4R4/9/9/9/9/9/9/3K5 b X 72 1",
+      "moves": [
+        "e9f9",
+        "e7f7",
+        "f9e9",
+        "f7e7",
+        "e9f9",
+        "e7f7",
+        "f9e9",
+        "f7e7"
+      ],
+      "ply": 0,
+      "expected": "draw",
+      "status": {
+        "type": "finished",
+        "winner": null,
+        "reason": "repetition"
+      },
+      "clock": 80,
+      "interval": 9,
+      "timeline": [
+        {
+          "move": "e9f9",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 73
+        },
+        {
+          "move": "e7f7",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 74
+        },
+        {
+          "move": "f9e9",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 75
+        },
+        {
+          "move": "f7e7",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 76
+        },
+        {
+          "move": "e9f9",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 77
+        },
+        {
+          "move": "e7f7",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 78
+        },
+        {
+          "move": "f9e9",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 79
+        },
+        {
+          "move": "f7e7",
+          "status": {
+            "type": "finished",
+            "winner": null,
+            "reason": "repetition"
+          },
+          "clock": 80
+        }
+      ]
+    },
+    {
+      "id": "check-precedes-clock-80/jqe-v1",
+      "rule": "jqe-v1",
+      "fen": "4k4/9/4R4/9/9/9/9/9/9/3K5 b X 72 1",
+      "moves": [
+        "e9f9",
+        "e7f7",
+        "f9e9",
+        "f7e7",
+        "e9f9",
+        "e7f7",
+        "f9e9",
+        "f7e7"
+      ],
+      "ply": 0,
+      "expected": "win",
+      "status": {
+        "type": "finished",
+        "winner": "black",
+        "reason": "chasing"
+      },
+      "clock": 80,
+      "interval": 9,
+      "timeline": [
+        {
+          "move": "e9f9",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 73
+        },
+        {
+          "move": "e7f7",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 74
+        },
+        {
+          "move": "f9e9",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 75
+        },
+        {
+          "move": "f7e7",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 76
+        },
+        {
+          "move": "e9f9",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 77
+        },
+        {
+          "move": "e7f7",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 78
+        },
+        {
+          "move": "f9e9",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 79
+        },
+        {
+          "move": "f7e7",
+          "status": {
+            "type": "finished",
+            "winner": "black",
+            "reason": "chasing"
+          },
+          "clock": 80
+        }
+      ]
+    },
+    {
+      "id": "capture-resets-clock/legacy",
+      "rule": "legacy",
+      "fen": "3k5/9/9/9/9/9/9/n8/R8/4K4 w X 79 1",
+      "moves": [
+        "a1a2"
+      ],
+      "ply": 0,
+      "expected": "ongoing",
+      "status": {
+        "type": "playing",
+        "turn": "black"
+      },
+      "clock": 0,
+      "interval": 0,
+      "timeline": [
+        {
+          "move": "a1a2",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 0
+        }
+      ]
+    },
+    {
+      "id": "capture-resets-clock/jqe-v1",
+      "rule": "jqe-v1",
+      "fen": "3k5/9/9/9/9/9/9/n8/R8/4K4 w X 79 1",
+      "moves": [
+        "a1a2"
+      ],
+      "ply": 0,
+      "expected": "ongoing",
+      "status": {
+        "type": "playing",
+        "turn": "black"
+      },
+      "clock": 0,
+      "interval": 0,
+      "timeline": [
+        {
+          "move": "a1a2",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 0
+        }
+      ]
+    },
+    {
+      "id": "soldier-does-not-reset-clock/legacy",
+      "rule": "legacy",
+      "fen": "3k5/9/9/9/9/9/P8/9/9/4K4 w X 79 1",
+      "moves": [
+        "a3a4"
+      ],
+      "ply": 0,
+      "expected": "ongoing",
+      "status": {
+        "type": "playing",
+        "turn": "black"
+      },
+      "clock": 80,
+      "interval": 0,
+      "timeline": [
+        {
+          "move": "a3a4",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 80
+        }
+      ]
+    },
+    {
+      "id": "soldier-does-not-reset-clock/jqe-v1",
+      "rule": "jqe-v1",
+      "fen": "3k5/9/9/9/9/9/P8/9/9/4K4 w X 79 1",
+      "moves": [
+        "a3a4"
+      ],
+      "ply": 0,
+      "expected": "draw",
+      "status": {
+        "type": "finished",
+        "winner": null,
+        "reason": "no-capture-clock"
+      },
+      "clock": 80,
+      "interval": 0,
+      "timeline": [
+        {
+          "move": "a3a4",
+          "status": {
+            "type": "finished",
+            "winner": null,
+            "reason": "no-capture-clock"
+          },
+          "clock": 80
+        }
+      ]
+    },
+    {
+      "id": "reveal-does-not-reset-clock/legacy",
+      "rule": "legacy",
+      "fen": "3k5/9/9/9/9/9/X8/9/9/4K4 w P1 79 1",
+      "moves": [
+        "a3a4P"
+      ],
+      "ply": 0,
+      "expected": "ongoing",
+      "status": {
+        "type": "playing",
+        "turn": "black"
+      },
+      "clock": 80,
+      "interval": 0,
+      "timeline": [
+        {
+          "move": "a3a4P",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 80
+        }
+      ]
+    },
+    {
+      "id": "reveal-does-not-reset-clock/jqe-v1",
+      "rule": "jqe-v1",
+      "fen": "3k5/9/9/9/9/9/X8/9/9/4K4 w P1 79 1",
+      "moves": [
+        "a3a4P"
+      ],
+      "ply": 0,
+      "expected": "draw",
+      "status": {
+        "type": "finished",
+        "winner": null,
+        "reason": "no-capture-clock"
+      },
+      "clock": 80,
+      "interval": 0,
+      "timeline": [
+        {
+          "move": "a3a4P",
+          "status": {
+            "type": "finished",
+            "winner": null,
+            "reason": "no-capture-clock"
+          },
+          "clock": 80
+        }
+      ]
+    },
+    {
+      "id": "tree-twofold-prune/legacy",
+      "rule": "legacy",
+      "fen": "3k5/9/9/9/9/9/9/9/9/4K4 w X 0 1",
+      "moves": [
+        "e0f0",
+        "d9d8",
+        "f0e0",
+        "d8d9"
+      ],
+      "ply": 5,
+      "expected": "ongoing",
+      "status": {
+        "type": "playing",
+        "turn": "red"
+      },
+      "clock": 4,
+      "interval": 0,
+      "timeline": [
+        {
+          "move": "e0f0",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 1
+        },
+        {
+          "move": "d9d8",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 2
+        },
+        {
+          "move": "f0e0",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 3
+        },
+        {
+          "move": "d8d9",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 4
+        }
+      ]
+    },
+    {
+      "id": "tree-twofold-prune/jqe-v1",
+      "rule": "jqe-v1",
+      "fen": "3k5/9/9/9/9/9/9/9/9/4K4 w X 0 1",
+      "moves": [
+        "e0f0",
+        "d9d8",
+        "f0e0",
+        "d8d9"
+      ],
+      "ply": 5,
+      "expected": "ongoing",
+      "status": {
+        "type": "playing",
+        "turn": "red"
+      },
+      "clock": 4,
+      "interval": 0,
+      "timeline": [
+        {
+          "move": "e0f0",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 1
+        },
+        {
+          "move": "d9d8",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 2
+        },
+        {
+          "move": "f0e0",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 3
+        },
+        {
+          "move": "d8d9",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 4
+        }
+      ]
+    },
+    {
+      "id": "root-boundary-twofold/legacy",
+      "rule": "legacy",
+      "fen": "3k5/9/9/9/9/9/9/9/9/4K4 w X 0 1",
+      "moves": [
+        "e0f0",
+        "d9d8",
+        "f0e0",
+        "d8d9"
+      ],
+      "ply": 4,
+      "expected": "ongoing",
+      "status": {
+        "type": "playing",
+        "turn": "red"
+      },
+      "clock": 4,
+      "interval": 0,
+      "timeline": [
+        {
+          "move": "e0f0",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 1
+        },
+        {
+          "move": "d9d8",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 2
+        },
+        {
+          "move": "f0e0",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 3
+        },
+        {
+          "move": "d8d9",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 4
+        }
+      ]
+    },
+    {
+      "id": "root-boundary-twofold/jqe-v1",
+      "rule": "jqe-v1",
+      "fen": "3k5/9/9/9/9/9/9/9/9/4K4 w X 0 1",
+      "moves": [
+        "e0f0",
+        "d9d8",
+        "f0e0",
+        "d8d9"
+      ],
+      "ply": 4,
+      "expected": "ongoing",
+      "status": {
+        "type": "playing",
+        "turn": "red"
+      },
+      "clock": 4,
+      "interval": 0,
+      "timeline": [
+        {
+          "move": "e0f0",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 1
+        },
+        {
+          "move": "d9d8",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 2
+        },
+        {
+          "move": "f0e0",
+          "status": {
+            "type": "playing",
+            "turn": "black"
+          },
+          "clock": 3
+        },
+        {
+          "move": "d8d9",
+          "status": {
+            "type": "playing",
+            "turn": "red"
+          },
+          "clock": 4
+        }
+      ]
+    }
+  ]
+}

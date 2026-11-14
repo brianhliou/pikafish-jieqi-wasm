@@ -60,6 +60,7 @@ class Engine {
     void go(Search::LimitsType&);
     // non blocking call to stop searching
     void stop();
+    std::string rule_probe(int ply = 0);
 
     // blocking call to wait for search to finish
     void wait_for_search_finished();

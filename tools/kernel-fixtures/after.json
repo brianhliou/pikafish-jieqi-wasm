@@ -1,0 +1,310 @@
+{
+  "binary": "src/pikafish",
+  "recordedAt": "2026-11-14T00:39:35.366Z",
+  "results": [
+    {
+      "id": "quiet-twofold/legacy",
+      "expected": "ongoing",
+      "searchExpected": "ongoing",
+      "actual": "ongoing",
+      "agree": true,
+      "probe": "info string ruleprobe ongoing fen 3k5/9/9/9/9/9/9/9/9/4K4 w X 4 3"
+    },
+    {
+      "id": "quiet-twofold/jqe-v1",
+      "expected": "ongoing",
+      "searchExpected": "ongoing",
+      "actual": "ongoing",
+      "agree": true,
+      "probe": "info string ruleprobe ongoing fen 3k5/9/9/9/9/9/9/9/9/4K4 w X 4 3"
+    },
+    {
+      "id": "quiet-threefold/legacy",
+      "expected": "draw",
+      "searchExpected": "draw",
+      "actual": "draw",
+      "agree": true,
+      "probe": "info string ruleprobe draw fen 3k5/9/9/9/9/9/9/9/9/4K4 w X 8 5"
+    },
+    {
+      "id": "quiet-threefold/jqe-v1",
+      "expected": "draw",
+      "searchExpected": "draw",
+      "actual": "draw",
+      "agree": true,
+      "probe": "info string ruleprobe draw fen 3k5/9/9/9/9/9/9/9/9/4K4 w X 8 5"
+    },
+    {
+      "id": "check-twofold/legacy",
+      "expected": "ongoing",
+      "searchExpected": "ongoing",
+      "actual": "ongoing",
+      "agree": true,
+      "probe": "info string ruleprobe ongoing fen 4k4/9/4R4/9/9/9/9/9/9/3K5 b X 4 3"
+    },
+    {
+      "id": "check-twofold/jqe-v1",
+      "expected": "ongoing",
+      "searchExpected": "ongoing",
+      "actual": "ongoing",
+      "agree": true,
+      "probe": "info string ruleprobe ongoing fen 4k4/9/4R4/9/9/9/9/9/9/3K5 b X 4 3"
+    },
+    {
+      "id": "check-threefold/legacy",
+      "expected": "draw",
+      "searchExpected": "draw",
+      "actual": "draw",
+      "agree": true,
+      "probe": "info string ruleprobe draw fen 4k4/9/4R4/9/9/9/9/9/9/3K5 b X 8 5"
+    },
+    {
+      "id": "check-threefold/jqe-v1",
+      "expected": "win",
+      "searchExpected": "win",
+      "actual": "win",
+      "agree": true,
+      "probe": "info string ruleprobe win fen 4k4/9/4R4/9/9/9/9/9/9/3K5 b X 8 5"
+    },
+    {
+      "id": "chase-twofold/legacy",
+      "expected": "ongoing",
+      "searchExpected": "ongoing",
+      "actual": "ongoing",
+      "agree": true,
+      "probe": "info string ruleprobe ongoing fen 4k4/9/7n1/9/9/9/1n7/9/R8/3K5 w X 4 3"
+    },
+    {
+      "id": "chase-twofold/jqe-v1",
+      "expected": "ongoing",
+      "searchExpected": "ongoing",
+      "actual": "ongoing",
+      "agree": true,
+      "probe": "info string ruleprobe ongoing fen 4k4/9/7n1/9/9/9/1n7/9/R8/3K5 w X 4 3"
+    },
+    {
+      "id": "chase-threefold/legacy",
+      "expected": "draw",
+      "searchExpected": "draw",
+      "actual": "draw",
+      "agree": true,
+      "probe": "info string ruleprobe draw fen 4k4/9/7n1/9/9/9/1n7/9/R8/3K5 w X 8 5"
+    },
+    {
+      "id": "chase-threefold/jqe-v1",
+      "expected": "loss",
+      "searchExpected": "loss",
+      "actual": "loss",
+      "agree": true,
+      "probe": "info string ruleprobe loss fen 4k4/9/7n1/9/9/9/1n7/9/R8/3K5 w X 8 5"
+    },
+    {
+      "id": "unequal-mixed-check/legacy",
+      "expected": "draw",
+      "searchExpected": "draw",
+      "actual": "draw",
+      "agree": true,
+      "probe": "info string ruleprobe draw fen 5k3/9/4R4/9/9/9/9/9/9/3K5 w X 9 6"
+    },
+    {
+      "id": "unequal-mixed-check/jqe-v1",
+      "expected": "draw",
+      "searchExpected": "draw",
+      "actual": "draw",
+      "agree": true,
+      "probe": "info string ruleprobe draw fen 5k3/9/4R4/9/9/9/9/9/9/3K5 w X 9 6"
+    },
+    {
+      "id": "mixed-check-chase/legacy",
+      "expected": "draw",
+      "searchExpected": "draw",
+      "actual": "draw",
+      "agree": true,
+      "probe": "info string ruleprobe draw fen 5k3/9/4R4/9/4n4/9/9/9/9/3K5 w X 9 6"
+    },
+    {
+      "id": "mixed-check-chase/jqe-v1",
+      "expected": "draw",
+      "searchExpected": "draw",
+      "actual": "draw",
+      "agree": true,
+      "probe": "info string ruleprobe draw fen 5k3/9/4R4/9/4n4/9/9/9/9/3K5 w X 9 6"
+    },
+    {
+      "id": "swap-identical-pieces/legacy",
+      "expected": "draw",
+      "searchExpected": "draw",
+      "actual": "draw",
+      "agree": true,
+      "probe": "info string ruleprobe draw fen 3k5/9/9/9/9/9/9/1R7/R8/4K4 w X 16 9"
+    },
+    {
+      "id": "swap-identical-pieces/jqe-v1",
+      "expected": "draw",
+      "searchExpected": "draw",
+      "actual": "draw",
+      "agree": true,
+      "probe": "info string ruleprobe draw fen 3k5/9/9/9/9/9/9/1R7/R8/4K4 w X 16 9"
+    },
+    {
+      "id": "clock-79/legacy",
+      "expected": "ongoing",
+      "searchExpected": "ongoing",
+      "actual": "ongoing",
+      "agree": true,
+      "probe": "info string ruleprobe ongoing fen 3k5/9/9/9/9/9/9/9/9/5K3 b X 79 1"
+    },
+    {
+      "id": "clock-79/jqe-v1",
+      "expected": "ongoing",
+      "searchExpected": "ongoing",
+      "actual": "ongoing",
+      "agree": true,
+      "probe": "info string ruleprobe ongoing fen 3k5/9/9/9/9/9/9/9/9/5K3 b X 79 1"
+    },
+    {
+      "id": "clock-80/legacy",
+      "expected": "ongoing",
+      "searchExpected": "ongoing",
+      "actual": "ongoing",
+      "agree": true,
+      "probe": "info string ruleprobe ongoing fen 3k5/9/9/9/9/9/9/9/9/5K3 b X 80 1"
+    },
+    {
+      "id": "clock-80/jqe-v1",
+      "expected": "draw",
+      "searchExpected": "draw",
+      "actual": "draw",
+      "agree": true,
+      "probe": "info string ruleprobe draw fen 3k5/9/9/9/9/9/9/9/9/5K3 b X 80 1"
+    },
+    {
+      "id": "clock-119/legacy",
+      "expected": "ongoing",
+      "searchExpected": "ongoing",
+      "actual": "ongoing",
+      "agree": true,
+      "probe": "info string ruleprobe ongoing fen 3k5/9/9/9/9/9/9/9/9/5K3 b X 119 1"
+    },
+    {
+      "id": "clock-119/jqe-v1",
+      "expected": "draw",
+      "searchExpected": "draw",
+      "actual": "draw",
+      "agree": true,
+      "probe": "info string ruleprobe draw fen 3k5/9/9/9/9/9/9/9/9/5K3 b X 119 1"
+    },
+    {
+      "id": "clock-120/legacy",
+      "expected": "draw",
+      "searchExpected": "draw",
+      "actual": "draw",
+      "agree": true,
+      "probe": "info string ruleprobe draw fen 3k5/9/9/9/9/9/9/9/9/5K3 b X 120 1"
+    },
+    {
+      "id": "clock-120/jqe-v1",
+      "expected": "draw",
+      "searchExpected": "draw",
+      "actual": "draw",
+      "agree": true,
+      "probe": "info string ruleprobe draw fen 3k5/9/9/9/9/9/9/9/9/5K3 b X 120 1"
+    },
+    {
+      "id": "check-precedes-clock-80/legacy",
+      "expected": "draw",
+      "searchExpected": "draw",
+      "actual": "draw",
+      "agree": true,
+      "probe": "info string ruleprobe draw fen 4k4/9/4R4/9/9/9/9/9/9/3K5 b X 80 5"
+    },
+    {
+      "id": "check-precedes-clock-80/jqe-v1",
+      "expected": "win",
+      "searchExpected": "win",
+      "actual": "win",
+      "agree": true,
+      "probe": "info string ruleprobe win fen 4k4/9/4R4/9/9/9/9/9/9/3K5 b X 80 5"
+    },
+    {
+      "id": "capture-resets-clock/legacy",
+      "expected": "ongoing",
+      "searchExpected": "ongoing",
+      "actual": "ongoing",
+      "agree": true,
+      "probe": "info string ruleprobe ongoing fen 3k5/9/9/9/9/9/9/R8/9/4K4 b X 0 1"
+    },
+    {
+      "id": "capture-resets-clock/jqe-v1",
+      "expected": "ongoing",
+      "searchExpected": "ongoing",
+      "actual": "ongoing",
+      "agree": true,
+      "probe": "info string ruleprobe ongoing fen 3k5/9/9/9/9/9/9/R8/9/4K4 b X 0 1"
+    },
+    {
+      "id": "soldier-does-not-reset-clock/legacy",
+      "expected": "ongoing",
+      "searchExpected": "ongoing",
+      "actual": "ongoing",
+      "agree": true,
+      "probe": "info string ruleprobe ongoing fen 3k5/9/9/9/9/P8/9/9/9/4K4 b X 80 1"
+    },
+    {
+      "id": "soldier-does-not-reset-clock/jqe-v1",
+      "expected": "draw",
+      "searchExpected": "draw",
+      "actual": "draw",
+      "agree": true,
+      "probe": "info string ruleprobe draw fen 3k5/9/9/9/9/P8/9/9/9/4K4 b X 80 1"
+    },
+    {
+      "id": "reveal-does-not-reset-clock/legacy",
+      "expected": "ongoing",
+      "searchExpected": "ongoing",
+      "actual": "ongoing",
+      "agree": true,
+      "probe": "info string ruleprobe ongoing fen 3k5/9/9/9/9/P8/9/9/9/4K4 b X 80 1"
+    },
+    {
+      "id": "reveal-does-not-reset-clock/jqe-v1",
+      "expected": "draw",
+      "searchExpected": "draw",
+      "actual": "draw",
+      "agree": true,
+      "probe": "info string ruleprobe draw fen 3k5/9/9/9/9/P8/9/9/9/4K4 b X 80 1"
+    },
+    {
+      "id": "tree-twofold-prune/legacy",
+      "expected": "ongoing",
+      "searchExpected": "draw",
+      "actual": "draw",
+      "agree": true,
+      "probe": "info string ruleprobe draw fen 3k5/9/9/9/9/9/9/9/9/4K4 w X 4 3"
+    },
+    {
+      "id": "tree-twofold-prune/jqe-v1",
+      "expected": "ongoing",
+      "searchExpected": "draw",
+      "actual": "draw",
+      "agree": true,
+      "probe": "info string ruleprobe draw fen 3k5/9/9/9/9/9/9/9/9/4K4 w X 4 3"
+    },
+    {
+      "id": "root-boundary-twofold/legacy",
+      "expected": "ongoing",
+      "searchExpected": "ongoing",
+      "actual": "ongoing",
+      "agree": true,
+      "probe": "info string ruleprobe ongoing fen 3k5/9/9/9/9/9/9/9/9/4K4 w X 4 3"
+    },
+    {
+      "id": "root-boundary-twofold/jqe-v1",
+      "expected": "ongoing",
+      "searchExpected": "ongoing",
+      "actual": "ongoing",
+      "agree": true,
+      "probe": "info string ruleprobe ongoing fen 3k5/9/9/9/9/9/9/9/9/4K4 w X 4 3"
+    }
+  ]
+}

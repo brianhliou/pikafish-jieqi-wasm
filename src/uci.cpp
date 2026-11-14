@@ -149,6 +149,12 @@ bool UCIEngine::command(const std::string& cmd) {
         sync_cout << engine.visualize() << sync_endl;
     else if (token == "eval")
         engine.trace_eval();
+    else if (token == "ruleprobe")
+    {
+        int ply = 0;
+        is >> ply;
+        print_info_string(engine.rule_probe(ply));
+    }
     else if (token == "compiler")
         sync_cout << compiler_info() << sync_endl;
     else if (token == "export_net")

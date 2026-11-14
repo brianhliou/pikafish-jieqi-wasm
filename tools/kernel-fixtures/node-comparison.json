@@ -1,0 +1,115 @@
+{
+  "nodes": 1000000,
+  "results": [
+    {
+      "rule": "jqe-v1",
+      "ply": 0,
+      "fen": "xxxxkxxxx/9/1x5x1/x1x1x1x1x/9/9/X1X1X1X1X/1X5X1/9/XXXXKXXXX w R2A2C2P5N2B2r2a2c2p5n2b2 0 1",
+      "moves": [],
+      "before": {
+        "bestmove": "bestmove g3g4",
+        "score": "score cp 239",
+        "depth": 5,
+        "nps": 1563045
+      },
+      "after": {
+        "bestmove": "bestmove g3g4",
+        "score": "score cp 247",
+        "depth": 5,
+        "nps": 3380983
+      }
+    },
+    {
+      "rule": "jqe-v1",
+      "ply": 17,
+      "fen": "xxx1kxxxx/4n4/9/x7x/c1p3p2/4P3P/X1X6/BA2P3B/7aN/X2XKXXX1 w R1A1C2P2N1B0r2a1c1p2n1b2 7 9",
+      "moves": [
+        "e2e3"
+      ],
+      "before": {
+        "bestmove": "bestmove e8f6 ponder g0e2",
+        "score": "score cp 857",
+        "depth": 16,
+        "nps": 1520496
+      },
+      "after": {
+        "bestmove": "bestmove e8d6 ponder b2c1",
+        "score": "score cp 854",
+        "depth": 13,
+        "nps": 3498989
+      }
+    },
+    {
+      "rule": "jqe-v1",
+      "ply": 32,
+      "fen": "xxx1k1xxx/4p4/9/8x/1cp1P1p2/P7n/2A1P4/B3A3B/3CC2aN/4KX1X1 w R2A0C0P1N1B0r2a1c1p1n1b1 0 17",
+      "moves": [],
+      "before": {
+        "bestmove": "bestmove d1h1 ponder a9a4",
+        "score": "score cp -614",
+        "depth": 17,
+        "nps": 1387828
+      },
+      "after": {
+        "bestmove": "bestmove d1h1 ponder i6i5",
+        "score": "score cp -551",
+        "depth": 17,
+        "nps": 2918192
+      }
+    },
+    {
+      "rule": "legacy",
+      "ply": 0,
+      "fen": "xxxxkxxxx/9/1x5x1/x1x1x1x1x/9/9/X1X1X1X1X/1X5X1/9/XXXXKXXXX w R2A2C2P5N2B2r2a2c2p5n2b2 0 1",
+      "moves": [],
+      "before": {
+        "bestmove": "bestmove g3g4",
+        "score": "score cp 236",
+        "depth": 5,
+        "nps": 1946182
+      },
+      "after": {
+        "bestmove": "bestmove b0c2",
+        "score": "score cp 257",
+        "depth": 4,
+        "nps": 3611841
+      }
+    },
+    {
+      "rule": "legacy",
+      "ply": 17,
+      "fen": "2xxkxxxx/9/2n6/2xNx1x1x/7A1/8P/p1X6/4P1r2/4R4/Xb2KXX1X b R1A0C0P2N1B1r0a2c2p4n1b1 1 9",
+      "moves": [],
+      "before": {
+        "bestmove": "bestmove g6g5",
+        "score": "score cp -88",
+        "depth": 15,
+        "nps": 1684218
+      },
+      "after": {
+        "bestmove": "bestmove b0d2 ponder d6c8",
+        "score": "score cp -68",
+        "depth": 14,
+        "nps": 3156261
+      }
+    },
+    {
+      "rule": "legacy",
+      "ply": 32,
+      "fen": "2R2xxxx/5k3/2n1N4/4x3x/2p4A1/8P/1pX6/4P4/9/X3KXr2 w R1A1C0P3N0B2r0a2c0p2n1b1 0 17",
+      "moves": [],
+      "before": {
+        "bestmove": "bestmove c9f9 ponder f8e8",
+        "score": "score cp -1",
+        "depth": 18,
+        "nps": 1665539
+      },
+      "after": {
+        "bestmove": "bestmove c9f9 ponder f8e8",
+        "score": "score cp 0",
+        "depth": 19,
+        "nps": 3059776
+      }
+    }
+  ]
+}

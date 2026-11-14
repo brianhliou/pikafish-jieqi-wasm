@@ -158,6 +158,16 @@ void Search::Worker::start_searching() {
                             main_manager()->originalTimeAdjust);
     tt.new_search();
 
+    Value adjudication;
+    if (rootPos.rule_judge(adjudication))
+    {
+        // UCI mate 0 denotes a loss; immediate rule wins need positive mate 1.
+        Value score = adjudication == VALUE_MATE ? mate_in(1) : adjudication;
+        main_manager()->updates.onUpdateNoMoves({0, {score, rootPos}});
+        main_manager()->updates.onBestmove("0000", "");
+        return;
+    }
+
     if (rootMoves.empty())
     {
         rootMoves.emplace_back(Move::none());

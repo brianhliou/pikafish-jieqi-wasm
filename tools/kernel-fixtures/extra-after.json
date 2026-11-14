@@ -1,0 +1,130 @@
+{
+  "binary": "src/pikafish",
+  "recordedAt": "2026-11-14T00:39:35.533Z",
+  "results": [
+    {
+      "id": "quiet-unequal-length/legacy",
+      "expected": "draw",
+      "searchExpected": "draw",
+      "actual": "draw",
+      "agree": true,
+      "probe": "info string ruleprobe draw fen 3k5/9/9/9/9/9/9/9/9/4K4 w X 12 7"
+    },
+    {
+      "id": "quiet-unequal-length/jqe-v1",
+      "expected": "draw",
+      "searchExpected": "draw",
+      "actual": "draw",
+      "agree": true,
+      "probe": "info string ruleprobe draw fen 3k5/9/9/9/9/9/9/9/9/4K4 w X 12 7"
+    },
+    {
+      "id": "mate-before-clock/legacy",
+      "expected": "loss",
+      "searchExpected": "loss",
+      "actual": "loss",
+      "agree": true,
+      "probe": "info string ruleprobe ongoing fen 3k5/3RR4/9/9/9/9/9/9/9/5K3 b X 80 1",
+      "search": "bestmove (none)"
+    },
+    {
+      "id": "mate-before-clock/jqe-v1",
+      "expected": "loss",
+      "searchExpected": "loss",
+      "actual": "loss",
+      "agree": true,
+      "probe": "info string ruleprobe loss fen 3k5/3RR4/9/9/9/9/9/9/9/5K3 b X 80 1",
+      "search": "bestmove 0000"
+    },
+    {
+      "id": "stalemate-before-clock/legacy",
+      "expected": "loss",
+      "searchExpected": "loss",
+      "actual": "loss",
+      "agree": true,
+      "probe": "info string ruleprobe ongoing fen 3k5/1R7/4R4/9/9/9/9/9/9/5K3 b X 80 1",
+      "search": "bestmove (none)"
+    },
+    {
+      "id": "stalemate-before-clock/jqe-v1",
+      "expected": "loss",
+      "searchExpected": "loss",
+      "actual": "loss",
+      "agree": true,
+      "probe": "info string ruleprobe loss fen 3k5/1R7/4R4/9/9/9/9/9/9/5K3 b X 80 1",
+      "search": "bestmove 0000"
+    },
+    {
+      "id": "mixed-new-chase-and-check/legacy",
+      "expected": "draw",
+      "searchExpected": "draw",
+      "actual": "draw",
+      "agree": true,
+      "probe": "info string ruleprobe draw fen 5k3/9/4R4/5n3/9/9/9/9/9/3K5 w X 9 6"
+    },
+    {
+      "id": "mixed-new-chase-and-check/jqe-v1",
+      "expected": "draw",
+      "searchExpected": "draw",
+      "actual": "draw",
+      "agree": true,
+      "probe": "info string ruleprobe draw fen 5k3/9/4R4/5n3/9/9/9/9/9/3K5 w X 9 6"
+    },
+    {
+      "id": "check-twofold-at-clock-80/legacy",
+      "expected": "ongoing",
+      "searchExpected": "ongoing",
+      "actual": "ongoing",
+      "agree": true,
+      "probe": "info string ruleprobe ongoing fen 4k4/9/4R4/9/9/9/9/9/9/3K5 b X 80 3"
+    },
+    {
+      "id": "check-twofold-at-clock-80/jqe-v1",
+      "expected": "draw",
+      "searchExpected": "draw",
+      "actual": "draw",
+      "agree": true,
+      "probe": "info string ruleprobe draw fen 4k4/9/4R4/9/9/9/9/9/9/3K5 b X 80 3"
+    },
+    {
+      "id": "chase-twofold-at-clock-80/legacy",
+      "expected": "ongoing",
+      "searchExpected": "ongoing",
+      "actual": "ongoing",
+      "agree": true,
+      "probe": "info string ruleprobe ongoing fen 4k4/9/7n1/9/9/9/1n7/9/R8/3K5 w X 80 3"
+    },
+    {
+      "id": "chase-twofold-at-clock-80/jqe-v1",
+      "expected": "draw",
+      "searchExpected": "draw",
+      "actual": "draw",
+      "agree": true,
+      "probe": "info string ruleprobe draw fen 4k4/9/7n1/9/9/9/1n7/9/R8/3K5 w X 80 3"
+    },
+    {
+      "id": "chase-threefold-at-clock-80/legacy",
+      "expected": "draw",
+      "searchExpected": "draw",
+      "actual": "draw",
+      "agree": true,
+      "probe": "info string ruleprobe draw fen 4k4/9/7n1/9/9/9/1n7/9/R8/3K5 w X 80 5"
+    },
+    {
+      "id": "chase-threefold-at-clock-80/jqe-v1",
+      "expected": "loss",
+      "searchExpected": "loss",
+      "actual": "loss",
+      "agree": true,
+      "probe": "info string ruleprobe loss fen 4k4/9/7n1/9/9/9/1n7/9/R8/3K5 w X 80 5"
+    },
+    {
+      "id": "legacy-check-at-clock-120/legacy",
+      "expected": "draw",
+      "searchExpected": "draw",
+      "actual": "draw",
+      "agree": true,
+      "probe": "info string ruleprobe draw fen 4k4/9/4R4/9/9/9/9/9/9/3K5 b X 120 5"
+    }
+  ]
+}
