@@ -51,6 +51,7 @@ void start_logger(const std::string& fname);
 size_t str_to_size_t(const std::string& s);
 
 std::stringstream read_compressed_nnue(const std::string& fpath);
+std::stringstream read_compressed_nnue(std::istream& input);
 
 #if defined(__linux__)
 

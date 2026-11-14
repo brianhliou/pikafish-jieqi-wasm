@@ -29,11 +29,8 @@ class Position;
 
 namespace Eval {
 
-// The default net name MUST follow the format nn-[SHA256 first 12 digits].nnue
-// for the build process (profile-build and fishtest) to work. Do not change the
-// name of the macro or the location where this macro is defined, as it is used
-// in the Makefile/Fishtest.
-#define EvalFileDefaultNameBig "pikafish.nnue"
+// The checked-in 256-wide net is identified by its compressed SHA-256 prefix.
+#define EvalFileDefaultNameBig "jieqi-b395f77e3ee9.nnue.zst"
 
 namespace NNUE {
 struct Networks;

@@ -15,3 +15,6 @@ src/-lstdc++.res
 # Neural network for the NNUE evaluation
 **/*.nnue
 
+
+# Generated embedded net byte array
+src/nnue/embedded_net.h

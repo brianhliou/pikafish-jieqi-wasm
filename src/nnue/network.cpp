@@ -38,6 +38,8 @@
 
 namespace Stockfish::Eval::NNUE {
 
+#include "embedded_net.h"
+
 
 namespace Detail {
 
@@ -107,6 +109,19 @@ void Network<Arch, Transformer>::load(const std::string& rootDirectory, std::str
 
     if (evalfilePath.empty())
         evalfilePath = evalFile.defaultName;
+
+    if (evalfilePath == evalFile.defaultName && evalFile.current != evalfilePath)
+    {
+        std::istringstream compressed(std::string(
+          reinterpret_cast<const char*>(EmbeddedNet), sizeof(EmbeddedNet)));
+        auto stream = read_compressed_nnue(compressed);
+        auto description = load(stream);
+        if (description.has_value())
+        {
+            evalFile.current = evalfilePath;
+            evalFile.netDescription = description.value();
+        }
+    }
 
     for (const auto& directory : dirs)
     {
@@ -186,9 +201,7 @@ void Network<Arch, Transformer>::verify(std::string                             
             std::string msg3 = "The UCI option EvalFile might need to specify the full path, "
                                "including the directory name, to the network file.";
             std::string msg4 =
-              "The default net can be downloaded from: "
-              "https://github.com/official-pikafish/Networks/releases/download/master-net/"
-              + evalFile.defaultName;
+              "The default net is embedded from the checked-in file: " + evalFile.defaultName;
             std::string msg5 = "The engine will be terminated now.";
 
             std::string msg = "ERROR: " + msg1 + '\n' + "ERROR: " + msg2 + '\n' + "ERROR: " + msg3

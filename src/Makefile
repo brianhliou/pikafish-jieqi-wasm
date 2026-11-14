@@ -884,7 +884,7 @@ help:
 	echo "help                    > Display architecture details" && \
 	echo "profile-build           > standard build with profile-guided optimization" && \
 	echo "build                   > skip profile-guided optimization" && \
-	echo "net                     > Download the default nnue nets" && \
+	echo "net                     > Verify and embed the checked-in jieqi net" && \
 	echo "strip                   > Strip executable" && \
 	echo "install                 > Install executable" && \
 	echo "clean                   > Clean up" && \
@@ -1009,6 +1009,11 @@ profileclean:
 # evaluation network (nnue)
 net:
 	@$(SHELL) ../scripts/net.sh
+
+nnue/embedded_net.h: jieqi-b395f77e3ee9.nnue.zst ../scripts/embed-net.py
+	@$(SHELL) ../scripts/net.sh
+
+network.o: nnue/embedded_net.h
 
 format:
 	$(CLANG-FORMAT) -i $(filter %.cpp,$(SRCS)) $(HEADERS) -style=file

@@ -525,9 +525,12 @@ std::string CommandLine::get_working_directory() {
 }
 
 std::stringstream read_compressed_nnue(const std::string& fpath) {
-    std::stringstream ss;
-
     std::ifstream fin(fpath, std::ios::binary);
+    return read_compressed_nnue(fin);
+}
+
+std::stringstream read_compressed_nnue(std::istream& fin) {
+    std::stringstream ss;
     if (!fin)
         return ss;
     std::vector<char> buffIn(ZSTD_DStreamInSize()), buffOut(ZSTD_DStreamOutSize());
