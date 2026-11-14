@@ -41,6 +41,7 @@ class UCIEngine {
     UCIEngine(int argc, char** argv);
 
     void loop();
+    bool command(const std::string& cmd);
 
     static int         to_cp(Value v, const Position& pos);
     static std::string format_score(const Score& s);

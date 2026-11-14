@@ -85,94 +85,96 @@ void UCIEngine::init_search_update_listeners() {
 }
 
 void UCIEngine::loop() {
-    std::string token, cmd;
-
+    std::string cmd;
     for (int i = 1; i < cli.argc; ++i)
         cmd += std::string(cli.argv[i]) + " ";
 
     do
     {
-        if (cli.argc == 1
-            && !getline(std::cin, cmd))  // Wait for an input or an end-of-file (EOF) indication
+        if (cli.argc == 1 && !getline(std::cin, cmd))
             cmd = "quit";
-
-        std::istringstream is(cmd);
-
-        token.clear();  // Avoid a stale if getline() returns nothing or a blank line
-        is >> std::skipws >> token;
-
-        if (token == "quit" || token == "stop")
-            engine.stop();
-
-        // The GUI sends 'ponderhit' to tell that the user has played the expected move.
-        // So, 'ponderhit' is sent if pondering was done on the same move that the user
-        // has played. The search should continue, but should also switch from pondering
-        // to the normal search.
-        else if (token == "ponderhit")
-            engine.set_ponderhit(false);
-
-        else if (token == "uci")
-        {
-            sync_cout << "id name " << engine_info(true) << "\n"
-                      << engine.get_options() << sync_endl;
-
-            sync_cout << "uciok" << sync_endl;
-        }
-
-        else if (token == "setoption")
-            setoption(is);
-        else if (token == "go")
-        {
-            // send info strings after the go command is sent for old GUIs and python-chess
-            print_info_string(engine.numa_config_information_as_string());
-            print_info_string(engine.thread_allocation_information_as_string());
-            go(is);
-        }
-        else if (token == "position")
-            position(is);
-        else if (token == "ucinewgame")
-            engine.search_clear();
-        else if (token == "isready")
-            sync_cout << "readyok" << sync_endl;
-
-        // Add custom non-UCI commands, mainly for debugging purposes.
-        // These commands must not be used during a search!
-        else if (token == "flip")
-            engine.flip();
-        else if (token == "bench")
-            bench(is);
-        else if (token == BenchmarkCommand)
-            benchmark(is);
-        else if (token == "d")
-            sync_cout << engine.visualize() << sync_endl;
-        else if (token == "eval")
-            engine.trace_eval();
-        else if (token == "compiler")
-            sync_cout << compiler_info() << sync_endl;
-        else if (token == "export_net")
-        {
-            std::pair<std::optional<std::string>, std::string> files;
-
-            if (is >> std::skipws >> files.second)
-                files.first = files.second;
-
-            engine.save_network(files);
-        }
-        else if (token == "--help" || token == "help" || token == "--license" || token == "license")
-            sync_cout
-              << "\nPikafish is a powerful xiangqi engine for playing and analyzing."
-                 "\nIt is released as free software licensed under the GNU GPLv3 License."
-                 "\nPikafish is normally used with a graphical user interface (GUI) and implements"
-                 "\nthe Universal Chess Interface (UCI) protocol to communicate with a GUI, an API, etc."
-                 "\nFor any further information, visit https://github.com/official-pikafish/Pikafish#readme"
-                 "\nor read the corresponding README.md and Copying.txt files distributed along with this program.\n"
-              << sync_endl;
-        else if (!token.empty() && token[0] != '#')
-            sync_cout << "Unknown command: '" << cmd << "'. Type help for more information."
-                      << sync_endl;
-
-    } while (token != "quit" && cli.argc == 1);  // The command-line arguments are one-shot
+    } while (!command(cmd) && cli.argc == 1);
 }
+
+bool UCIEngine::command(const std::string& cmd) {
+    std::string token;
+    std::istringstream is(cmd);
+
+    token.clear();  // Avoid a stale if getline() returns nothing or a blank line
+    is >> std::skipws >> token;
+
+    if (token == "quit" || token == "stop")
+        engine.stop();
+
+    // The GUI sends 'ponderhit' to tell that the user has played the expected move.
+    // So, 'ponderhit' is sent if pondering was done on the same move that the user
+    // has played. The search should continue, but should also switch from pondering
+    // to the normal search.
+    else if (token == "ponderhit")
+        engine.set_ponderhit(false);
+
+    else if (token == "uci")
+    {
+        sync_cout << "id name " << engine_info(true) << "\n"
+                  << engine.get_options() << sync_endl;
+
+        sync_cout << "uciok" << sync_endl;
+    }
+
+    else if (token == "setoption")
+        setoption(is);
+    else if (token == "go")
+    {
+        // send info strings after the go command is sent for old GUIs and python-chess
+        print_info_string(engine.numa_config_information_as_string());
+        print_info_string(engine.thread_allocation_information_as_string());
+        go(is);
+    }
+    else if (token == "position")
+        position(is);
+    else if (token == "ucinewgame")
+        engine.search_clear();
+    else if (token == "isready")
+        sync_cout << "readyok" << sync_endl;
+
+    // Add custom non-UCI commands, mainly for debugging purposes.
+    // These commands must not be used during a search!
+    else if (token == "flip")
+        engine.flip();
+    else if (token == "bench")
+        bench(is);
+    else if (token == BenchmarkCommand)
+        benchmark(is);
+    else if (token == "d")
+        sync_cout << engine.visualize() << sync_endl;
+    else if (token == "eval")
+        engine.trace_eval();
+    else if (token == "compiler")
+        sync_cout << compiler_info() << sync_endl;
+    else if (token == "export_net")
+    {
+        std::pair<std::optional<std::string>, std::string> files;
+
+        if (is >> std::skipws >> files.second)
+            files.first = files.second;
+
+        engine.save_network(files);
+    }
+    else if (token == "--help" || token == "help" || token == "--license" || token == "license")
+        sync_cout
+          << "\nPikafish is a powerful xiangqi engine for playing and analyzing."
+             "\nIt is released as free software licensed under the GNU GPLv3 License."
+             "\nPikafish is normally used with a graphical user interface (GUI) and implements"
+             "\nthe Universal Chess Interface (UCI) protocol to communicate with a GUI, an API, etc."
+             "\nFor any further information, visit https://github.com/official-pikafish/Pikafish#readme"
+             "\nor read the corresponding README.md and Copying.txt files distributed along with this program.\n"
+          << sync_endl;
+    else if (!token.empty() && token[0] != '#')
+        sync_cout << "Unknown command: '" << cmd << "'. Type help for more information."
+                  << sync_endl;
+    return token == "quit";
+}
+
 
 Search::LimitsType UCIEngine::parse_limits(std::istream& is) {
     Search::LimitsType limits;

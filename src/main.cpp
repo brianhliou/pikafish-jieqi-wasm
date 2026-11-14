@@ -25,9 +25,42 @@
 #include "uci.h"
 #include "tune.h"
 
+#ifdef __EMSCRIPTEN__
+#include <emscripten/emscripten.h>
+#endif
+
 using namespace Stockfish;
 
+#ifdef __EMSCRIPTEN__
+namespace {
+UCIEngine& browser_engine() {
+    static auto engine = [] {
+        std::cout << engine_info() << std::endl;
+        Bitboards::init();
+        Position::init();
+        static char program[] = "PikaJieQi";
+        static char* argv[] = {program, nullptr};
+        auto* uci = new UCIEngine(1, argv);
+        Tune::init(uci->engine_options());
+        return uci; // Persistent for the lifetime of the browser module.
+    }();
+    return *engine;
+}
+}
+
+extern "C" {
+EMSCRIPTEN_KEEPALIVE void pikajieqi_initialize() { browser_engine(); }
+EMSCRIPTEN_KEEPALIVE void pikajieqi_command(const char* command) {
+    if (command)
+        browser_engine().command(command);
+}
+}
+#endif
+
 int main(int argc, char* argv[]) {
+#ifdef __EMSCRIPTEN__
+    pikajieqi_initialize();
+#else
 
     std::cout << engine_info() << std::endl;
 
@@ -40,5 +73,6 @@ int main(int argc, char* argv[]) {
 
     uci.loop();
 
+#endif
     return 0;
 }
